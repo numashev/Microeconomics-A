@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\newcommand\der[2]{\frac{\partial{#1}}{\partial{#2}}}
+\usepackage{sectsty}
+\usepackage[parfill]{parskip}
+\usepackage{changepage}   % for the adjustwidth environment
+\usepackage{graphicx}
+\graphicspath{ {./Pictures/} }
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\setlength{\parindent}{0em}
+\sectionfont{\fontsize{12}{12}\selectfont}
+\nonfrenchspacing
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\DeclareUnicodeCharacter{2212}{-}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\titleformat{\section}[block]{\color{blue}\Large\bfseries\filcenter}{}{1em}{}
+\usepackage[normalem]{ulem}
+\usepackage{calrsfs}
+\renewcommand{\labelitemiv}{$\circledast$}
+\renewcommand{\labelitemii}{$\circ$}
+
+\title{Macroeconomics A Notes}
+\author{Nicholas Umashev \footnote{content is not of my own authorship}}
+\date{2019}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Dynamic Optimization in Discrete Time}
