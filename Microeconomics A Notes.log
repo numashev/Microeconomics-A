@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.15)  19 MAR 2020 21:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.15)  19 MAR 2020 23:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -518,24 +518,101 @@ LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 4
 \tf@toc=\write4
 \openout4 = `"Microeconomics A Notes.toc"'.
 
+ [1
 
-./Microeconomics A Notes.tex:45: I can't write on file `"Microeconomics A Notes.pdf"'.
-(Press Enter to retry, or Control-Z to exit; default file extension is `.pdf')
-Please type another file name for output
-./Microeconomics A Notes.tex:45: Emergency stop.
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.45 \newpage
-             
-*** (job aborted, file error in nonstop mode)
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (42.60765pt too wide) in paragraph at lines 66--67
+[]$[]$\OT1/cmr/m/n/10 : in a two di-men-sional space this is equiv-a-lent to $\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) == []$,
+ []
 
- 
+
+Overfull \hbox (27.0702pt too wide) in paragraph at lines 69--71
+[]$[]$\OT1/cmr/m/n/10 : the dis-tance be-tween $\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = (2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2)$ and $\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4)$ is $\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = [] =
+ []
+
+<./Pictures/pic1.png, id=17, 301.125pt x 231.11343pt>
+File: ./Pictures/pic1.png Graphic file (type png)
+<use ./Pictures/pic1.png>
+Package pdftex.def Info: ./Pictures/pic1.png  used on input line 71.
+(pdftex.def)             Requested size: 142.26852pt x 85.359pt.
+[2 <./Pictures/pic1.png>]
+<./Pictures/pic2.png, id=31, 329.73187pt x 82.80937pt>
+File: ./Pictures/pic2.png Graphic file (type png)
+<use ./Pictures/pic2.png>
+Package pdftex.def Info: ./Pictures/pic2.png  used on input line 82.
+(pdftex.def)             Requested size: 142.26494pt x 85.36282pt.
+<./Pictures/pic3.png, id=32, 150.5625pt x 139.27031pt>
+File: ./Pictures/pic3.png Graphic file (type png)
+<use ./Pictures/pic3.png>
+Package pdftex.def Info: ./Pictures/pic3.png  used on input line 86.
+(pdftex.def)             Requested size: 142.27771pt x 85.36064pt.
+ [3 <./Pictures/pic2.png> <./Pictures/pic3.png>]
+<./Pictures/pic4.png, id=40, 160.34906pt x 138.5175pt>
+File: ./Pictures/pic4.png Graphic file (type png)
+<use ./Pictures/pic4.png>
+Package pdftex.def Info: ./Pictures/pic4.png  used on input line 118.
+(pdftex.def)             Requested size: 142.26735pt x 85.3579pt.
+ [4 <./Pictures/pic4.png>]
+<./Pictures/pic5.png, id=46, 478.03593pt x 208.52907pt>
+File: ./Pictures/pic5.png Graphic file (type png)
+<use ./Pictures/pic5.png>
+Package pdftex.def Info: ./Pictures/pic5.png  used on input line 134.
+(pdftex.def)             Requested size: 142.25938pt x 85.35745pt.
+<./Pictures/pic8.png, id=47, 499.11469pt x 133.24782pt>
+File: ./Pictures/pic8.png Graphic file (type png)
+<use ./Pictures/pic8.png>
+Package pdftex.def Info: ./Pictures/pic8.png  used on input line 146.
+(pdftex.def)             Requested size: 142.26439pt x 85.35963pt.
+ [5 <./Pictures/pic5.png> <./Pictures/pic8.png>]
+<./Pictures/pic6.png, id=54, 278.54062pt x 159.59625pt>
+File: ./Pictures/pic6.png Graphic file (type png)
+<use ./Pictures/pic6.png>
+Package pdftex.def Info: ./Pictures/pic6.png  used on input line 160.
+(pdftex.def)             Requested size: 142.26634pt x 85.35756pt.
+<./Pictures/pic7.png, id=55, 316.93407pt x 124.21407pt>
+File: ./Pictures/pic7.png Graphic file (type png)
+<use ./Pictures/pic7.png>
+Package pdftex.def Info: ./Pictures/pic7.png  used on input line 164.
+(pdftex.def)             Requested size: 142.26598pt x 85.35904pt.
+ [6 <./Pictures/pic6.png> <./Pictures/pic7.png>]
+<./Pictures/pic12.png, id=61, 375.65344pt x 432.86719pt>
+File: ./Pictures/pic12.png Graphic file (type png)
+<use ./Pictures/pic12.png>
+Package pdftex.def Info: ./Pictures/pic12.png  used on input line 184.
+(pdftex.def)             Requested size: 227.62354pt x 170.71315pt.
+ [7 <./Pictures/pic12.png>] [8]
+<./Pictures/pic11.png, id=70, 456.95718pt x 406.51875pt>
+File: ./Pictures/pic11.png Graphic file (type png)
+<use ./Pictures/pic11.png>
+Package pdftex.def Info: ./Pictures/pic11.png  used on input line 213.
+(pdftex.def)             Requested size: 227.62039pt x 170.71188pt.
+ [9 <./Pictures/pic11.png>]
+<./Pictures/pic9.png, id=75, 282.30469pt x 201.00093pt>
+File: ./Pictures/pic9.png Graphic file (type png)
+<use ./Pictures/pic9.png>
+Package pdftex.def Info: ./Pictures/pic9.png  used on input line 260.
+(pdftex.def)             Requested size: 227.6274pt x 170.71663pt.
+ [10]
+<./Pictures/pic10.png, id=79, 304.13625pt x 202.50656pt>
+File: ./Pictures/pic10.png Graphic file (type png)
+<use ./Pictures/pic10.png>
+Package pdftex.def Info: ./Pictures/pic10.png  used on input line 273.
+(pdftex.def)             Requested size: 227.62827pt x 170.71924pt.
+ [11 <./Pictures/pic9.png>] [12 <./Pictures/pic10.png>] (./Microeconomics A Notes.aux) ) 
 Here is how much of TeX's memory you used:
- 15289 strings out of 481242
- 289180 string characters out of 5921879
- 519406 words of memory out of 5000000
- 30244 multiletter control sequences out of 15000+600000
- 539975 words of font info for 55 fonts, out of 8000000 for 9000
+ 15401 strings out of 481242
+ 291036 string characters out of 5921879
+ 527406 words of memory out of 5000000
+ 30347 multiletter control sequences out of 15000+600000
+ 542656 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,60p,1213b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
-./Microeconomics A Notes.tex:45:  ==> Fatal error occurred, no output PDF file produced!
+ 60i,11n,60p,1288b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive
+/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "Microeconomics A Notes.pdf" (12 pages, 984132 bytes).
+PDF statistics:
+ 156 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+
