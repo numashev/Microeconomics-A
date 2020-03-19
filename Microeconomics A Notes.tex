@@ -48,18 +48,21 @@
 
 \vspace{2.5mm}
 \subsection{Mathematical Concepts}
-\underline{Consumption/Choice Set X}: the set of all alternative, or complete consumption plans, that the consumer can conceive -whether achievable or note
+\subsubsection{Consumption/Choice Set X}
+The set of all alternative, or complete consumption plans, that the consumer can conceive -whether achievable or note
 \begin{itemize}
   \item  \underline{Alternative Definition}: the consumpsion set is the entire non-negative orthan, $X = \mathbb{R}^{n}_{+}$
   \item  \underline{Consumption Bundle}: a consumption bundle of $n$ goods is defined as a vector $x == (x_{1}, \dots, x_{n}) \in \mathbb{R}_{+}^{n}$, specifying the quantities of the $n$ available commodities
   \item  \underline{Properties of Consumption Set}: (1) $X \subseteq \mathbb{R}_{+}^{n}$, (2) $X$ is closed, (3) $X$ is convex, (4) $0 \in X$
 \end{itemize}
-\underline{Complements of Sets}: for a given subset $A \subseteq X$, we define the complement of $A$ in $X$ to be the set $A^{c} = \left\{ x \in X: x \notin A \right\}$
+\subsubsection{Complements of Sets}
+For a given subset $A \subseteq X$, we define the complement of $A$ in $X$ to be the set $A^{c} = \left\{ x \in X: x \notin A \right\}$
 \begin{itemize}
   \item \underline{Alternative Definition}: the complement set of set $A$ in $X$ is all the stuff in the universe $X$ that is not in $A$
   \item  \underline{Application}: typically we define either \textit{open sets} or \textit{closed sets} and the other (\textit{closed} or \textit{open}) as the complement of the first
 \end{itemize}
-\underline{Metric Distance}: in huge space $\mathbb{R}_{+}^{n}$, open balls (neighbourhoods) are determined using a metric distance function
+\subsubsection{Metric Distance}
+In huge space $\mathbb{R}_{+}^{n}$, open balls (neighbourhoods) are determined using a metric distance function
 \begin{itemize}
   \item  \underline{Euclidean Metric}: measures the distance between two points $x, y \in \mathbb{R}_{+}^{n}$ as $d(x,y) = \sqrt{\sum_{i=1}^{n}(x_{i}-y_{i})^{2}}$
   \begin{itemize}
@@ -71,7 +74,8 @@
     \item  \includegraphics[width=5cm, height=3cm]{pic1}
   \end{itemize}
 \end{itemize}
-\underline{Open Balls (neighborhoods)}: an open ball $B_{\varepsilon}(x) = \left\{ y \in \mathbb{R}_{+}^{n}: d(x,y) < \varepsilon \right\}$ is the set of points that are closer in Euclidean distance to $x \in \mathbb{R}_{+}^{n}$ than some real number $\varepsilon > 0$
+\subsubsection{Open Balls (neighborhoods)}
+An open ball $B_{\varepsilon}(x) = \left\{ y \in \mathbb{R}_{+}^{n}: d(x,y) < \varepsilon \right\}$ is the set of points that are closer in Euclidean distance to $x \in \mathbb{R}_{+}^{n}$ than some real number $\varepsilon > 0$
 \begin{itemize}
   \item  \underline{Alternative Definition}: the open ball $B_{\varepsilon}(x)$ with radius $\varepsilon > 0$ and center $x \in \mathbb{R}^{m}$ is the set of points $y \in \mathbb{R}^{m}$ with distance less than $r$ from $x$, i.e. $B_{\varepsilon}(x) = \left\{ y \in \mathbb{R}^{m}: \ ||y - x|| < \varepsilon \right\}$
   \begin{itemize}
@@ -86,7 +90,8 @@
     \item  \includegraphics[width=5cm, height=3cm]{pic3}
   \end{itemize}
 \end{itemize}
-\underline{Open Set}: a set $A \subseteq \mathbb{R}_{+}^{n}$ is open if and only if for each point $x \in A$ there is a radius $\varepsilon_{x} > 0$ such that the open ball $B_{\varepsilon}(x) \subseteq A$
+\subsubsection{Open Set}
+A set $A \subseteq \mathbb{R}_{+}^{n}$ is open if and only if for each point $x \in A$ there is a radius $\varepsilon_{x} > 0$ such that the open ball $B_{\varepsilon}(x) \subseteq A$
 \begin{itemize}
   \item  \underline{Alternative Definition}: a set $S \in \mathbb{R}^{m}$ is open if and only if for each $x \in S$ there exists an open ball around $x$ that is completely contained in $S$
   \item  \underline{Boundary Points}: open sets cannot contain their boundary points, in other words the limit is not in the set since there is no open ball around $limit_{x}$ that is entirely in S. This distinguishes open sets from closed sets
@@ -110,7 +115,8 @@
     \end{itemize}
   \end{itemize}
 \end{itemize}
-\underline{Closed Set}: a set $A \subset \mathbb{R}_{+}^{n}$ is closed if and only if the complement $A^{c} = \left\{ x \in \mathbb{R}_{+}^{n}: \ x \notin A \right\}$ of A is an open set
+\subsubsection{Closed Set}
+A set $A \subset \mathbb{R}_{+}^{n}$ is closed if and only if the complement $A^{c} = \left\{ x \in \mathbb{R}_{+}^{n}: \ x \notin A \right\}$ of A is an open set
 \begin{itemize}
   \item  \underline{Alternative Definition}: a set $S \in \mathbb{R}^{m}$ is closed if, whenever $\left\{ x_{n} \right\}_{n=1}^{\infty}$ is a convergent sequence completely contained in $S$, its limit is also contained in $S$ - in other words, a set $S \subseteq \mathbb{R}^{m}$ is closed if it contains all of its boundary points
   \item  \underline{Example 1}: continuing from example 1 of open balls, the complement of the yellow open ball is a closed set. Formally, this is the entire positive quadrant excluding the yellow open ball, $A^{c} = \left\{ x \in \mathbb{R}_{+}^{n}: \ x \notin B_{1}((2,2)) \right\}$
@@ -118,7 +124,8 @@
     \item  \includegraphics[width=5cm, height=3cm]{pic4}
   \end{itemize}
 \end{itemize}
-\underline{DeMoran's Laws}: (Law 1) the complement of the union of any family of sets is equal to the intersection of the complements of the family, (Law 2) the complement of the intersection of any family of sets is equal to the union of the complements of the family
+\subsubsection{DeMoran's Laws}
+(Law 1) the complement of the union of any family of sets is equal to the intersection of the complements of the family \\ (Law 2) the complement of the intersection of any family of sets is equal to the union of the complements of the family
 \begin{itemize}
   \item  \underline{Implications}: (1) the empty set $\varnothing$ and universal set $\mathbb{R}_{+}^{n}$ are both closed and open, (2) the union of any finite family of closed(open) sets is closed(open), (3) the intersection of any family of closed(open) sets is closed(open)
   \begin{itemize}
@@ -126,7 +133,8 @@
     \item  \underline{Note}: implications 2 and 3 arise by combining Law 1 and Law 2
   \end{itemize}
 \end{itemize}
-\underline{Bounded Set}: a set $A \subseteq \mathbb{R}_{+}^{n}$ is bounded if and only if we can put an open ball in $\mathbb{R}^{n}$ around the set $A$
+\subsubsection{Bounded Set}
+A set $A \subseteq \mathbb{R}_{+}^{n}$ is bounded if and only if we can put an open ball in $\mathbb{R}^{n}$ around the set $A$
 \begin{itemize}
   \item  \underline{Alternative Definition}: a set is bounded if there is an open ball that contains it, i.e. $S \subseteq R^{m}$ is bounded if $\exists K > 0: \ ||x|| < K, \ \forall x \in S $
   \item  \underline{Example}: the left image is bounded, the right is not bounded
@@ -138,7 +146,8 @@
 \begin{itemize}
   \item  \underline{Example}: $B_{1} = \left\{ (x_{1},x_{2}) \in mathbb{R}^{2}: p_{1}x_{1} + p_{2}x_{2} \leq w \right\}$ is closed but not bounded. However, $B_{2} = \left\{ (x_{1},x_{2}) \in \mathbb{R}^{2}: p_{1}x_{1} + p_{2}x_{2} \leq w, x_{1} \geq 0, x_{2} \geq 0 \right\}$ is closed and bounded and therefore compact.
 \end{itemize}
-\underline{Convex Set}: a set $A \subseteq \mathbb{R}_{+}^{n}$ is a convex set if and only if for all $x, y \in A$, and each $\alpha \in [0,1]$, the point $\alpha x + (1- \alpha)y$ is also in A
+\subsubsection{Convex Set}
+A set $A \subseteq \mathbb{R}_{+}^{n}$ is a convex set if and only if for all $x, y \in A$, and each $\alpha \in [0,1]$, the point $\alpha x + (1- \alpha)y$ is also in A
 \begin{itemize}
   \item  \underline{Alternative Definition}: a set $S \subseteq \mathbb{R}^{n}$ is convex if and only if for every two points of the set the line segment between the two points also belongs to the set
   \item  \underline{Example}: parts (a) and (b) are convex sets since all points between any two points are contained in the set, parts (c) and (d) are not convex sets since they contain two points where points between them are not contained in the set
@@ -146,11 +155,13 @@
     \item  \includegraphics[width=5cm, height=3cm]{pic8}
   \end{itemize}
 \end{itemize}
-\underline{Convergence}: for all $\varepsilon > 0$ there exists a $\mathbb{N}$ such that for all values of $n$ greater than $\mathbb{N}$ the $n^{th}$ \textit{elements value in the sequence minus the limit's value} will be less than $\varepsilon$
+\subsubsection{Convergence}
+For all $\varepsilon > 0$ there exists a $\mathbb{N}$ such that for all values of $n$ greater than $\mathbb{N}$ the $n^{th}$ \textit{elements value in the sequence minus the limit's value} will be less than $\varepsilon$
 \begin{itemize}
   \item  \underline{Mathemtical Definition}: let $(x_{n})_{n \in \mathbb{N}}$ be a sequence with codomain $\mathbb{R}$. We say that $(x_{n})$ converges to $x^{*}$ or that $x^{*}$ is the limit of $(x_{n})_{n \in \mathbb{N}}$ if: $\forall \varepsilon > 0 \exists N \in \mathbb{N} \forall n \geq N: \ |x_{n} - x^{*}| < \varepsilon$
 \end{itemize}
-\underline{Continuous Function}: a function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is continuous if and only if the inverse image $f^{-1} (B) = \left\{ x \in \mathbb{R}_{+}^{n}: f(x) \in B \right\}$ of each open ball $B$ in the range $\mathbb{R}$ is also open in the doman $\mathbb{R}_{+}^{n}$
+\subsubsection{Continuous Function}
+A function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is continuous if and only if the inverse image $f^{-1} (B) = \left\{ x \in \mathbb{R}_{+}^{n}: f(x) \in B \right\}$ of each open ball $B$ in the range $\mathbb{R}$ is also open in the doman $\mathbb{R}_{+}^{n}$
 \begin{itemize}
   \item  \underline{Alternative Definition 1}: a function that maps nearby points into nearby points - i.e. you can draw the graph of the function without lifting your pencil from the paper. In other words, if we want to get all the $f(x)$ values to stay in some small neighborhood around $f(x_{0})$ we simply need to choose a small enough neighborhood for the $x$ values around $x_{0}$. If we can do that no matter how small the $f(x)$ neighborhood is, then $f$ is continuous at $x_{0}$
   \item  \underline{Alternative Definition 2}: let $D \subseteq \mathbb{R}^{k}$. A function $f: D \rightarrow \mathbb{R}^{m}$ is continuous at $x = (x_{1}, x_{2}, \dots, x_{k}) \in D$ if for every sequence $(x_{n})_{n \in \mathbb{N}} \in D$ that converges to x, the sequence $(f(x_{n}))_{n\in \mathbb{N}} \in \mathbb{R}$ converges to $f(x)$. The function is continuous if it is continuous at $x$ for all $x \in D$
@@ -168,7 +179,8 @@
 
 \vspace{2.5mm}
 \subsection{Preferences}
-\underline{Preference Relation}: preferences are defined for each consumer over bundles of goods, with the notation $\succeq$ meaning "at least as good as"
+\subsubsection{Preference Relation}
+Preferences are defined for each consumer over bundles of goods, with the notation $\succeq$ meaning "at least as good as"
 \begin{itemize}
   \item \underline{Preferences Definition}: preferences of a consumer on the set of bundles in $\mathbb{R}_{+}^{n}$ (i.e. a single bundle) is a subset $\succeq$ of $\mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$ (i.e. all possible bundles available). In mathematics, this subset is referred to as a \textit{binary relation} on the set $\mathbb{R}_{+}^{n}$
   \begin{itemize}
@@ -179,13 +191,13 @@
     \item  \underline{Example 1}: $\succeq = \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$ represents the case where every possible bundle is at least as good as every other
     \item  \underline{Example 2}: $\succeq = \varnothing$ represents the case where no bundle is at least as good as any other (including itself
     \item  \underline{Example 3}: $\succeq = \left\{ (x,y) \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}: \ x_{i} \geq y_{i} \ \text{for all} \ i = 1, \dots, n \right\}$ represents the case where only bundles where one has at least as much of each good as the other can be compared
-    \item  \underline{Example 4}: $\succeq = \left\{ (x,y) \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}: \ \prod_{i=1}^{n} x_{i} \geq \prod_{i=1}^{n} y_{i} \right\}$ represents the case where all bundles are compared and on is at least as good as another whenever the product of quantities is higher. See below for a graphical representation where $x_{1}x_{2} = 2$
+    \item  \underline{Example 4}: $\succeq = \left\{ (x,y) \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}: \ \prod_{i=1}^{n} x_{i} \geq \prod_{i=1}^{n} y_{i} \right\}$ represents the case where all bundles are compared and on is at least as good as another whenever the product of quantities is higher. See below for a graphical representation where $x_{1}x_{2} = 2$, red represents the better than sets and blue the worse than sets
     \begin{itemize}
-      \item  \includegraphics[width=8cm, height=6cm]{pic12}
+      \item  \includegraphics[width=4cm, height=3cm]{pic12}
     \end{itemize}
   \end{itemize}
 \end{itemize}
-\underline{Strict and Indifferent Preference Relations}
+\subsubsection{Strict and Indifferent Preference Relations}
   \begin{itemize}
     \item  \underline{Strict Preference Relation}: when the binary relation $\succ$ on the consumption set $X$ is defined as follows; $x_{1} \succ x_{2}$ if and only if $x_{2} \nsucceq x_{1}$. This is read $x_{1}$ is strictly preferred to $x_{2}$
     \begin{itemize}
@@ -203,14 +215,15 @@
     \end{itemize}
     \item  \underline{Combining Implications of Indifference and Strict Preference}: from implications 2 we have that both indifference and strict preferences require that "one is atleast as good as the other". The combination of the strict preference implication $i$ and indifference implication $i$ yields example $i$ from the preference relation section
   \end{itemize}
-\underline{Lexicographic Preferences}: describe preferences where an agent prefers any amount of one good (X) to any amount of another (Y), therefore if offered several bundles then the agent will choose the bundle that offers the most $X$ no matter how much $Y$ there is
+\subsubsection{Lexicographic Preferences}
+Describe preferences where an agent prefers any amount of one good (X) to any amount of another (Y), therefore if offered several bundles then the agent will choose the bundle that offers the most $X$ no matter how much $Y$ there is
 \begin{itemize}
   \item  \underline{Idea}: first compare two bundles $x$ and $y$ according to the quantity of the the first good. If one bundle has more than the other of that good, then the one having more is strictly preferred. If neither has more of that good, go to the next good and compare in the same way. Repeat this until one bundle has more of good $z$ than the other bundle, where $z$ is the most recently compared good (i.e. the good with the lowest rank of those compared so far). If there is no bundle with more of good $z$, then the bundles are deemed to be indifferent to each other as they are the same bundle
   \item  \underline{Example for Two Goods}: $\mathbb{R}_{+}^{2}: \ x \succeq y$ if and only if (a) $x_{1} > y_{1}$ or (b) $x_{1} = y_{1}$ and $x_{2} \geq y_{2}$
   \begin{itemize}
     \item  \underline{Cases}: for $(1,2)$ vs $(2,1)$ the latter has more of the first good so is strictly preferred, for $(1,2)$ vs $(1,1)$ both have same amounts of the first good but the former has more of the second good so it is preferred, for $(1,2)$ and $(1,2)$ both have the same amount of the first and second goods so they are indifferent. This is shown in the below figure where bundle $x = (x_{1}, x_{2}) = (2,1)$ and what is marked in red are the $y \succeq x$ bundles that follow $\succeq$, note that the dotted red line is open to represent the boundary point where the $y \succeq x$ relationship does not hold
     \begin{itemize}
-      \item  \includegraphics[width=8cm, height=6cm]{pic11}
+      \item  \includegraphics[width=4cm, height=3cm]{pic11}
     \end{itemize}
     \item  \underline{Defining by Strict and Indifference Preferences}: from $\succeq$ we have that:
     \begin{itemize}
@@ -219,10 +232,11 @@
     \end{itemize}
   \end{itemize}
 \end{itemize}
-\underline{Consumer Choice Axioms}: all bundles in the subset can be compared (completeness), choices are consistent (transitivity), the consumer can choose all bundles in the subset (continuity), and more is always better (strict monotonicity). These four axioms must hold for preferences to be considered 'rational'
+\subsubsection{Consumer Choice Axioms}
+All bundles in the subset can be compared (completeness), choices are consistent (transitivity), the consumer can choose all bundles in the subset (continuity), and more is always better (strict monotonicity). These four axioms must hold for preferences to be considered 'rational'
 \begin{itemize}
-  \item  \underline{Completeness}: for all $x_{1}$ and $x_{2}$ in $X$, either $x_{1} \succeq x_{2}$ or $x_{2} \succeq x_{1}$
-  \item  \underline{Transitivity}: for any three elements $x_{1}, x_{2}, x_{3}$ in $X$, if $x_{1} \succeq x_{2}$ and $x_{2} \succeq x_{3}$ then $x_{1} \succeq x_{3}$
+  \item  \underline{Axiom 1 - Completeness}: for all $x_{1}$ and $x_{2}$ in $X$, either $x_{1} \succeq x_{2}$ or $x_{2} \succeq x_{1}$
+  \item  \underline{Axion 2 - Transitivity}: for any three elements $x_{1}, x_{2}, x_{3}$ in $X$, if $x_{1} \succeq x_{2}$ and $x_{2} \succeq x_{3}$ then $x_{1} \succeq x_{3}$
   \begin{itemize}
     \item  \underline{Note}: although we require only that the consumer be capable of comparing two alternatives at a time, the assumption of transitivity requires that otther pairwise comparisons be linked together in a consistent way
     \item  \underline{Transitivity Transfers to Indifference and Strict}: suppose that preferences $\succeq$ are transitive, then:
@@ -232,15 +246,15 @@
       \item  \underline{3}: for all $x, y, z \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$ if $x \succeq y$ and $y \succeq z$ (with at least one strict), then $x \succ y$
     \end{itemize}
   \end{itemize}
-  \item  \underline{Continuity}: for all $x \in \mathbb{R}_{+}^{n}$, the "at least as good as set" $\succeq (x)$ and the "no better than" set $\preceq (x)$ are closed in $\mathbb{R}_{+}^{n}$
+  \item  \underline{Axiom 3 - Continuity}: for all $x \in \mathbb{R}_{+}^{n}$, the "at least as good as set" $\succeq (x)$ and the "no better than" set $\preceq (x)$ are closed in $\mathbb{R}_{+}^{n}$
   \begin{itemize}
     \item  \underline{Conditions from Definition} preferences are continuious if $G(x) = \left\{ y \in \mathbb{R}_{+}^{n}: \ y \succeq x \right\}$ and $W(x) = \left\{ y \in \mathbb{R}_{+}^{n}: \ x \succeq y \right\}$ are both closed in $\mathbb{R}_{+}^{n}$
     \item  \underline{Theorem 1}: suppose that preferences are complete. Then, they are continuous if and only if for all $x \in \mathbb{R}_{+}^{n}$ the sets $SG(x) = \left\{ y \in \mathbb{R}_{+}^{n}: \ y \succ x \right\}$ and $SW(x) = \left\{ y \in \mathbb{R}_{+}^{n}: \ x \succ y \right\}$ are open in $\mathbb{R}_{+}^{2}$
     \begin{itemize}
-      \item  \underline{Logic}: \begingroup\color{magenta} $SG(x)$ follows by definition of continuity and completeness when taking the complement of $W(x)$, $SW(x)$ follows by definition of continuity and completeness when taking the complement of $G(x)$  \endgroup
+      \item  \underline{Logic}: $SG(x)$ follows by definition of continuity and completeness when taking the complement of $G(x)$, $SW(x)$ follows by definition of continuity and completeness when taking the complement of $W(x)$
     \end{itemize}
   \end{itemize}
-  \item  \underline{Strict Monotonicity}: for all $x_{0}, x_{1} \in \mathbb{R}_{+}^{n}$, if $x_{0} \geq x_{1}$ then $x_{0} \succeq x_{1}$ while if $x_{0} > x_{1}$ then $x_{0} \succ x_{1}$
+  \item  \underline{Axiom 4 - Strict Monotonicity}: for all $x_{0}, x_{1} \in \mathbb{R}_{+}^{n}$, if $x_{0} \geq x_{1}$ then $x_{0} \succeq x_{1}$ while if $x_{0} > x_{1}$ then $x_{0} \succ x_{1}$
   \begin{itemize}
     \item  \underline{Alternative Definition}: if $x$ has at least as much of each good as $y$ and strictly more of some good, then $x \succ y$
     \begin{itemize}
@@ -248,7 +262,8 @@
     \end{itemize}
   \end{itemize}
 \end{itemize}
-\underline{Intermediate Value Version of Continuity}: if the preferences are continuous and complete, then for any $x, y, z \in \mathbb{R}_{+}^{n}$, if $x \succ y$ and $y \succ x$, then there is some $\alpha \in (0,1)$ such that the convex combination $\alpha x + (1- \alpha)z$ is indifferent to y. This resembles the \textit{intermediate value theorem}
+\subsubsection{Intermediate Value Version of Continuity}
+If the preferences are continuous and complete, then for any $x, y, z \in \mathbb{R}_{+}^{n}$, if $x \succ y$ and $y \succ x$, then there is some $\alpha \in (0,1)$ such that the convex combination $\alpha x + (1- \alpha)z$ is indifferent to y. This resembles the \textit{intermediate value theorem}
 \begin{itemize}
   \item  \underline{Proof}: this can be proved using completeness and continuity together with the least upper bound property (i.e. that every non-empty set of reals that is bounded above, has a least upper bound). We know that $x \succ y$ and $y \succ z$ and that the preferences are continuous. We need to show that there is some point on the line between $x$ and $z$ that is indifferent to $y$. Consider the set $A = \left\{ \alpha \in [0,1]: \ y \succ \alpha x + (1- \alpha)z \right\}$. It stands that $\alpha = 0$ is an element of $A$ since $0x + (1 - 0)z = z$ and $y \succ z$, therefore $A$ is a set of reals. It also stands that $\alpha = 1$ is not an element of $A$ since $1x + (1-1)z = x$ and $x \succ y$, therefore $A$ is bounded above by $1$ and must have a least upper bound. Call the least upper bound $\alpha^{*}$, we can show that $\alpha^{*}x + (1 - \alpha_{*})z \sim y$ using the following steps:
   \begin{itemize}
@@ -257,10 +272,11 @@
   \end{itemize}
   \item  \underline{Usefulness}: this means that something on the line connecting $x$ and $z$ is indifferent to $y$
   \begin{itemize}
-    \item  \includegraphics[width=8cm, height=6cm]{pic9}
+    \item  \includegraphics[width=4cm, height=3cm]{pic9}
   \end{itemize}
 \end{itemize}
-\underline{Utility Representation}: a utility representation of preferences $\succeq$ is a real valued function $u: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ over the set of bundless such that for all bundles $x,y \in R_{+}$: \\ (a) if $x \succeq y$ then $u(x) \geq u(y)$ \\ (b) if $u(x) \geq u(y)$ then $x \succeq y$
+\subsubsection{Utility Representation}
+A utility representation of preferences $\succeq$ is a real valued function $u: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ over the set of bundless such that for all bundles $x,y \in R_{+}$: \\ (a) if $x \succeq y$ then $u(x) \geq u(y)$ \\ (b) if $u(x) \geq u(y)$ then $x \succeq y$
 \begin{itemize}
   \item  \underline{Alternative Definition} a real values function $u: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is called a utility function representing the relation $\succeq$ if for all $x_{0}, x_{1} \in \mathbb{R}_{+}^{n}, u(x_{0}) \geq u(x_{1}) \Longleftrightarrow x_{0} \succeq x_{1}$
   \item  \underline{Strict Preferences}: $u: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is a utility representation of preferences $\succeq$ if and only if for all bundles $x, y \in \mathbb{R}_{+}^{n}$: (a) if $x \succ y$ then $u(x) > u(y)$, (b) if $u(x) > u(y)$ then $x \succ y$
@@ -270,7 +286,7 @@
     \begin{itemize}
       \item  \underline{Step 1}: if $x$ is on the $45^{\circ}$ line, we are done as by completeness $x \sim x$. Consider $x$ not on the $45^{\circ}$ line, let $\widetilde{x}$ be the bundle on the $45^{\circ}$ line where the amount of each good is the larger of $x_{1}$ and $x_{2}$ (e.g. if $x = (5,2)$ then $\widetilde{x} = (5,5)$). Since $\widetilde{x}$ has more of at least one good and at least as much of each of the others then $\widetilde{x} \succ x$ by strict monotonicity. Also, by strict monotinicity $\widetilde{x} \succ z$, where $z$ is the origin $(0,0)$. Hence, there is a point on the diagonal that is indifferent to $x$ by the \textit{intermediate value version of continuity} (i.e. $\exists \alpha, x = \alpha \widetilde{x} + (1-\alpha)z$). Note that, by strict monotonicity, there is only one bundle on the diagonal that is indifferent to $x$ referred to as $x^{d}$ where $x^{d} \sim x$
       \begin{itemize}
-        \item  \includegraphics[width=8cm, height=6cm]{pic10}
+        \item  \includegraphics[width=4cm, height=3cm]{pic10}
       \end{itemize}
       \item  \underline{Step 2}: take the example where $x = (5,2)$ and the point on the diagonal that is indifferent to $x$ is $x^{d} = (2.5, 2.5)$ which yields $u(x) = 2.5$. Clearly, $u(x^{d}) = u(x)$ since $x^{d} = x$ in this case
       \item  \underline{Step 3}: suppose $x \succeq y$ and that by definition $x^{d} \sim x, y \sim y^{d}$. Therefore by transitivity we have that $x^{d} \succeq y^{d}$ and by strict monotonicity we can infer that $u(x^{d}) \geq u(y^{d})$.
@@ -285,12 +301,13 @@
   \item  \underline{Huge Spaces}: for the huge space $\mathbb{R}^{n}_{+}$, we can get a utility representation without monotonicity
   \item  \underline{Properties}: preferences represented by a utility function will always be complete and transitive, preferences represented by a continuous utility function will always be continuous
 \end{itemize}
-\underline{Exercise 1}: which are transitive, complete, and continuous?
+\subsubsection{Exercise 1}
+Which are transitive, complete, and continuous? \begingroup\color{blue} do homework \endgroup
   \begin{itemize}
-    \item  \underline{Example 1}: $x \succeq y$ if and only if $x_{1}x_{2} \geq y_{1}y_{2}$
-    \item  \underline{Example 2}: $x \succeq y$ if and only if $(x_{1})^{2} + x_{2} \geq (y_{1})^{2} + y_{2}$
-    \item  \underline{Example 3}: $x \succeq y$ if and only if (a) $x_{1} > y_{1}$ or (b) $x_{1} = y_{1}$ and $x_{2} \geq y_{2}$
-    \item  \underline{Example 4}: $x \succeq y$ if and only if $(x_{1} - 3)^{2} + (x_{2} - 4)^{2} \geq (y_{1} - 3)^{2} + (y_{2}-4)^{2}$
+    \item  \underline{question 1}: $x \succeq y$ if and only if $x_{1}x_{2} \geq y_{1}y_{2}$
+    \item  \underline{question 2}: $x \succeq y$ if and only if $(x_{1})^{2} + x_{2} \geq (y_{1})^{2} + y_{2}$
+    \item  \underline{question 3}: $x \succeq y$ if and only if (a) $x_{1} > y_{1}$ or (b) $x_{1} = y_{1}$ and $x_{2} \geq y_{2}$
+    \item  \underline{question 4}: $x \succeq y$ if and only if $(x_{1} - 3)^{2} + (x_{2} - 4)^{2} \geq (y_{1} - 3)^{2} + (y_{2}-4)^{2}$
   \end{itemize}
 
 
