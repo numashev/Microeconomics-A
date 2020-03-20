@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.15)  20 MAR 2020 01:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.15)  20 MAR 2020 23:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -437,20 +437,20 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 ) (./Microeconomics A Notes.aux)
 \openout1 = `"Microeconomics A Notes.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
  (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count289
@@ -505,115 +505,128 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 41.
- (c:/texlive/2019/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd) (./Microeconomics A Notes.toc)
+LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 43.
+ (c:/texlive/2019/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd) (./Microeconomics A Notes.toc [1
+
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `"Microeconomics A Notes.toc"'.
 
- [1
-
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (42.60765pt too wide) in paragraph at lines 69--70
+ [2]
+Overfull \hbox (20.60765pt too wide) in paragraph at lines 70--71
 []$[]$\OT1/cmr/m/n/10 : in a two di-men-sional space this is equiv-a-lent to $\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) == []$,
  []
 
 
-Overfull \hbox (27.0702pt too wide) in paragraph at lines 72--74
+Overfull \hbox (2.07018pt too wide) in paragraph at lines 74--76
 []$[]$\OT1/cmr/m/n/10 : the dis-tance be-tween $\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = (2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2)$ and $\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = (1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4)$ is $\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = [] =
  []
 
-<./Pictures/pic1.png, id=17, 301.125pt x 231.11343pt>
+<./Pictures/pic1.png, id=20, 301.125pt x 231.11343pt>
 File: ./Pictures/pic1.png Graphic file (type png)
 <use ./Pictures/pic1.png>
-Package pdftex.def Info: ./Pictures/pic1.png  used on input line 74.
+Package pdftex.def Info: ./Pictures/pic1.png  used on input line 76.
 (pdftex.def)             Requested size: 142.26852pt x 85.359pt.
-[2 <./Pictures/pic1.png>]
-<./Pictures/pic2.png, id=31, 329.73187pt x 82.80937pt>
+[3]
+<./Pictures/pic2.png, id=33, 329.73187pt x 82.80937pt>
 File: ./Pictures/pic2.png Graphic file (type png)
 <use ./Pictures/pic2.png>
-Package pdftex.def Info: ./Pictures/pic2.png  used on input line 86.
+Package pdftex.def Info: ./Pictures/pic2.png  used on input line 89.
 (pdftex.def)             Requested size: 142.26494pt x 85.36282pt.
-<./Pictures/pic3.png, id=32, 150.5625pt x 139.27031pt>
+
+Overfull \hbox (5.02579pt too wide) in paragraph at lines 92--94
+[]$[]$\OT1/cmr/m/n/10 : for $\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = (2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2)$ and $\OML/cmm/m/it/10 " \OT1/cmr/m/n/10 = 1$, the open ball $\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 ((2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2)) = []$ 
+ []
+
+<./Pictures/pic3.png, id=34, 150.5625pt x 139.27031pt>
 File: ./Pictures/pic3.png Graphic file (type png)
 <use ./Pictures/pic3.png>
-Package pdftex.def Info: ./Pictures/pic3.png  used on input line 90.
+Package pdftex.def Info: ./Pictures/pic3.png  used on input line 94.
 (pdftex.def)             Requested size: 142.27771pt x 85.36064pt.
- [3 <./Pictures/pic2.png> <./Pictures/pic3.png>]
-<./Pictures/pic4.png, id=39, 160.34906pt x 138.5175pt>
+[4 <./Pictures/pic1.png> <./Pictures/pic2.png> <./Pictures/pic3.png>] [5]
+Overfull \hbox (24.73741pt too wide) in paragraph at lines 129--131
+\OT1/cmr/m/n/10 For-mally, this is the en-tire pos-i-tive quad-rant ex-clud-ing the yel-low open ball, $\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = []$ 
+ []
+
+<./Pictures/pic4.png, id=47, 160.34906pt x 138.5175pt>
 File: ./Pictures/pic4.png Graphic file (type png)
 <use ./Pictures/pic4.png>
-Package pdftex.def Info: ./Pictures/pic4.png  used on input line 124.
+Package pdftex.def Info: ./Pictures/pic4.png  used on input line 131.
 (pdftex.def)             Requested size: 142.26735pt x 85.3579pt.
- [4]
-<./Pictures/pic5.png, id=45, 478.03593pt x 208.52907pt>
+<./Pictures/pic5.png, id=48, 478.03593pt x 208.52907pt>
 File: ./Pictures/pic5.png Graphic file (type png)
 <use ./Pictures/pic5.png>
-Package pdftex.def Info: ./Pictures/pic5.png  used on input line 142.
+Package pdftex.def Info: ./Pictures/pic5.png  used on input line 149.
 (pdftex.def)             Requested size: 142.25938pt x 85.35745pt.
- [5 <./Pictures/pic4.png> <./Pictures/pic5.png>]
-<./Pictures/pic8.png, id=52, 499.11469pt x 133.24782pt>
+[6 <./Pictures/pic4.png>]
+<./Pictures/pic8.png, id=54, 499.11469pt x 133.24782pt>
 File: ./Pictures/pic8.png Graphic file (type png)
 <use ./Pictures/pic8.png>
-Package pdftex.def Info: ./Pictures/pic8.png  used on input line 155.
+Package pdftex.def Info: ./Pictures/pic8.png  used on input line 164.
 (pdftex.def)             Requested size: 142.26439pt x 85.35963pt.
- [6 <./Pictures/pic8.png>]
-<./Pictures/pic6.png, id=57, 278.54062pt x 159.59625pt>
+ [7 <./Pictures/pic5.png> <./Pictures/pic8.png>]
+<./Pictures/pic6.png, id=61, 278.54062pt x 159.59625pt>
 File: ./Pictures/pic6.png Graphic file (type png)
 <use ./Pictures/pic6.png>
-Package pdftex.def Info: ./Pictures/pic6.png  used on input line 171.
+Package pdftex.def Info: ./Pictures/pic6.png  used on input line 183.
 (pdftex.def)             Requested size: 142.26634pt x 85.35756pt.
-<./Pictures/pic7.png, id=58, 316.93407pt x 124.21407pt>
+<./Pictures/pic7.png, id=62, 316.93407pt x 124.21407pt>
 File: ./Pictures/pic7.png Graphic file (type png)
 <use ./Pictures/pic7.png>
-Package pdftex.def Info: ./Pictures/pic7.png  used on input line 175.
+Package pdftex.def Info: ./Pictures/pic7.png  used on input line 188.
 (pdftex.def)             Requested size: 142.26598pt x 85.35904pt.
- [7 <./Pictures/pic6.png> <./Pictures/pic7.png>]
-<./Pictures/pic12.png, id=65, 374.14781pt x 426.09187pt>
+ [8 <./Pictures/pic6.png> <./Pictures/pic7.png>] [9]
+<./Pictures/pic12.png, id=71, 374.14781pt x 426.09187pt>
 File: ./Pictures/pic12.png Graphic file (type png)
 <use ./Pictures/pic12.png>
-Package pdftex.def Info: ./Pictures/pic12.png  used on input line 196.
+Package pdftex.def Info: ./Pictures/pic12.png  used on input line 214.
 (pdftex.def)             Requested size: 113.80948pt x 85.3534pt.
- [8 <./Pictures/pic12.png>]
-<./Pictures/pic11.png, id=70, 456.95718pt x 406.51875pt>
+ [10 <./Pictures/pic12.png>] [11]
+<./Pictures/pic11.png, id=79, 456.95718pt x 406.51875pt>
 File: ./Pictures/pic11.png Graphic file (type png)
 <use ./Pictures/pic11.png>
-Package pdftex.def Info: ./Pictures/pic11.png  used on input line 226.
+Package pdftex.def Info: ./Pictures/pic11.png  used on input line 246.
 (pdftex.def)             Requested size: 113.8067pt x 85.35284pt.
- [9 <./Pictures/pic11.png>] [10]
-<./Pictures/pic9.png, id=78, 282.30469pt x 201.00093pt>
+ [12 <./Pictures/pic11.png>] [13]
+<./Pictures/pic9.png, id=88, 282.30469pt x 201.00093pt>
 File: ./Pictures/pic9.png Graphic file (type png)
 <use ./Pictures/pic9.png>
-Package pdftex.def Info: ./Pictures/pic9.png  used on input line 275.
+Package pdftex.def Info: ./Pictures/pic9.png  used on input line 313.
 (pdftex.def)             Requested size: 113.81154pt x 85.3583pt.
- [11 <./Pictures/pic9.png>]
-<./Pictures/pic10.png, id=83, 304.13625pt x 202.50656pt>
+ [14 <./Pictures/pic9.png>]
+<./Pictures/pic10.png, id=93, 304.13625pt x 202.50656pt>
 File: ./Pictures/pic10.png Graphic file (type png)
 <use ./Pictures/pic10.png>
-Package pdftex.def Info: ./Pictures/pic10.png  used on input line 289.
+Package pdftex.def Info: ./Pictures/pic10.png  used on input line 327.
 (pdftex.def)             Requested size: 113.80948pt x 85.35806pt.
- [12 <./Pictures/pic10.png>] [13] (./Microeconomics A Notes.aux) ) 
+ [15 <./Pictures/pic10.png>] [16]
+Overfull \hbox (47.80421pt too wide) in paragraph at lines 361--363
+[]$[]$\OT1/cmr/m/n/10 : the af-ford-able bun-dles in a con-sumer's bud-get set are de-fined as $\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p; I\OT1/cmr/m/n/10 ) = []$ 
+ []
+
+[17] [18] (./Microeconomics A Notes.aux) ) 
 Here is how much of TeX's memory you used:
  15404 strings out of 481242
  291098 string characters out of 5921879
- 528405 words of memory out of 5000000
+ 528325 words of memory out of 5000000
  30350 multiletter control sequences out of 15000+600000
  542656 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,60p,1288b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "Microeconomics A Notes.pdf" (13 pages, 1002980 bytes).
+ 60i,11n,60p,1303b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "Microeconomics A Notes.pdf" (18 pages, 1009444 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 172 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
