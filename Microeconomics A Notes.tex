@@ -102,7 +102,7 @@ A set $A \subseteq \mathbb{R}_{+}^{n}$ is open if and only if for each point $x 
   \underline{Theorem 1}: every open ball $A = B_{\varepsilon}(x)$ is an open set
   \begin{itemize}
     \item  \underline{Proof Outline}: take an arbitrary point $y$ in $B_{\varepsilon}(x)$ and prove that any arbitrary point $z$ contained in $B_{\varepsilon'}(y)$ is also contained in $B_{\varepsilon}(x)$
-    \item  \underline{Proof}: take an arbitrary point $y$ in $B_{\varepsilon}(x)$. We need to show that there is an open ball $B_{\varepsilon'}(y)$ around $y$ that is contained in $B_{\varepsilon}(x)$. To do this, we prove that taking an arbitrary point $y$ in $B_{\varepsilon}(x)$ implies that $d(x,y) < \varepsilon$. Since $\varepsilon' = \varepsilon - d(x,y) > 0$, we have that $d(x,y) = \varepsilon - \varepsilon'$. Using $d(x,y) = \varepsilon - \varepsilon'$ and picking an arbitrary $z \in B_{\varepsilon'}(y)$ we can show that $d(x,z) < \varepsilon$. By triangular inequality, $d(x,z) \leq d(x,y) + d(y,z)$ and plugging $d(x,y) = \varepsilon - \varepsilon'$ into this yields $d(x,z) \leq \varepsilon - \varepsilon' + d(y,z)$. Since $z$ is contained in $B_{\varepsilon'}(y)$, it must be that $d(y,z) < \varepsilon'$. Using $d(y,z) < \varepsilon'$ yields $d(x,z) \leq \varepsilon - \varepsilon' + d(y,z) < \varepsilon$ (since $d(y,z)$ is counteracted by $\varepsilon'$ it cannot be the cause of the RHS being greater than the LHS) and therefore $d(x,z) < \varepsilon$. Since every point $z$ is contained in $B_{\varepsilon'}(y)$, $d(x,z) < \varepsilon$ implies that $d(x,y) < \varepsilon$. Therefore, $B_{\varepsilon'}(y) \subseteq B_{\varepsilon}(x)$.
+    \item  \underline{Proof}: take an arbitrary point $y$ in $B_{\varepsilon}(x)$. We need to show that there is an open ball $B_{\varepsilon'}(y)$ around $y$ that is contained in $B_{\varepsilon}(x)$. To do this, we prove that taking an arbitrary point $y$ in $B_{\varepsilon}(x)$ implies that $d(x,y) < \varepsilon$. Let $\varepsilon' = \varepsilon - d(x,y) > 0$, we have that $d(x,y) = \varepsilon - \varepsilon'$. Using $d(x,y) = \varepsilon - \varepsilon'$ and picking an arbitrary $z \in B_{\varepsilon'}(y)$ we can show that $d(x,z) < \varepsilon$. By triangular inequality, $d(x,z) \leq d(x,y) + d(y,z)$ and plugging $d(x,y) = \varepsilon - \varepsilon'$ into this yields $d(x,z) \leq \varepsilon - \varepsilon' + d(y,z)$. Since $z$ is contained in $B_{\varepsilon'}(y)$, it must be that $d(y,z) < \varepsilon'$. Using $d(y,z) < \varepsilon'$ yields $d(x,z) \leq \varepsilon - \varepsilon' + d(y,z) < \varepsilon - \varepsilon' + \varepsilon' = \varepsilon$. Since every point $z$ is contained in $B_{\varepsilon'}(y)$, $d(x,z) < \varepsilon$ implies that $d(x,y) < \varepsilon$. Therefore, $B_{\varepsilon'}(y) \subseteq B_{\varepsilon}(x)$.
     \item  \underline{Logic}: since $\varepsilon$ can be infinitismal, the infinitismal open ball $B_{\varepsilon}(y)$ contained in the open ball $B_{\varepsilon}(x)$ does not contain the boundary points of $B_{\varepsilon}(x)$
   \end{itemize}
   \par
@@ -188,7 +188,7 @@ A function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is continuous if and o
     \item  \includegraphics[width=5cm, height=3cm]{pic7}
   \end{itemize}
   \par
-  \underline{Using original definition}: the image of $f(x)$ consists of all the elements of $y$ that an element of $x$ is mapped to. If $f(x) = \left\{x \ \text{if} \ x < 10, x + 10 \ \text{if} \ x \geq 10 \right\}$ and we set the inverse image open ball $B = (15, 25)$, then  we have that $f^{-1}(15,25) = \left\{ x \in \mathbb{R}: \ f(x) \in (15, 25) \right\} = [10, 15)$. \begingroup\color{magenta} The set $[10, 15)$ is not open in the domain \endgroup
+  \underline{Using original definition}: the image of $f(x)$ consists of all the elements of $y$ that an element of $x$ is mapped to. If $f(x) = \left\{x \ \text{if} \ x < 10, x + 10 \ \text{if} \ x \geq 10 \right\}$ and we set the inverse image open ball $B = (15, 25)$, then  we have that $f^{-1}(15,25) = \left\{ x \in \mathbb{R}: \ f(x) \in (15, 25) \right\} = [10, 15)$. This is as $x \geq 10$ is not open in the domain for the open ball in the range $f^{-1}(15,25)$
   \par
 
 \newpage
@@ -199,9 +199,9 @@ In this section the concepts of preference relations will be explored. In additi
 \vspace{6mm}
 \subsubsection{Preference Relation}
 Preferences are defined for each consumer over bundles of goods, with the notation $\succeq$ meaning \textit{at least as good as} \par \vspace{0.3em}
-  \underline{Preferences Definition}: preferences of a consumer on the set of bundles in $\mathbb{R}_{+}^{n}$ (i.e. a single bundle) is a subset $\succeq$ of $\mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$ (i.e. all possible bundles available). In mathematics, this subset is referred to as a \textit{binary relation} on the set $\mathbb{R}_{+}^{n}$
+  \underline{Preferences Definition}: preferences of a consumer on the set of bundles in $\mathbb{R}_{+}^{n}$ is a subset $\succeq$ of $\mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$. In mathematics, this subset is referred to as a \textit{binary relation} on the set $\mathbb{R}_{+}^{n}$
   \begin{itemize}
-    \item  \underline{Note}: there are many preferences that are allowed as there are many subsets of $\mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$
+    \item  \underline{Note}: $\mathbb{R}_{+}^{n}$ is the set of all bundles in the universe, while $\mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$ is the set of all pairs of bundles in the universe. For instance, if we $A = \left\{a, b, c\right\}$ then  $A \times A = \left\{(a,a), (a,b), (a,c), (b,a), (b,b), (b,c), (c,a), (c,b), (c,c) \right\}$
   \end{itemize}
   \par
   \underline{Examples}
