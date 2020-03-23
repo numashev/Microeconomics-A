@@ -159,11 +159,25 @@ A set $A \subseteq \mathbb{R}_{+}^{n}$ is bounded if and only if it is both clos
 A set $A \subseteq \mathbb{R}_{+}^{n}$ is a convex set if and only if for all $x, y \in A$, and each $\alpha \in [0,1]$, the point $\alpha x + (1- \alpha)y$ is also in A \par \vspace{0.3em}
   \underline{Alternative Definition}: a set $S \subseteq \mathbb{R}^{n}$ is convex if and only if for every two points of the set the line segment between the two points also belongs to the set
   \par
-  \underline{Example}: parts (a) and (b) are convex sets since all points between any two points are contained in the set, parts (c) and (d) are not convex sets since they contain two points where points between them are not contained in the set
+  \underline{Example 1}: parts (a) and (b) are convex sets since all points between any two points are contained in the set, parts (c) and (d) are not convex sets since they contain two points where points between them are not contained in the set
   \begin{itemize}
     \item  \includegraphics[width=5cm, height=3cm]{pic8}
   \end{itemize}
   \par
+  \underline{Example 2}: suppose we have two bundles $x = (2,3)$ and $y = (4,7)$ for goods $x_{1}$ and $x_{2}$. Using $\alpha = \tfrac{1}{3}$, is the set $x, y \in A$ convex?
+  \begin{itemize}
+    \item  \underline{Answer}: $\alpha (2,3) + (1- \alpha)(4,7) = \tfrac{1}{3}(2,3) + \tfrac{2}{3}(4,7)$. This yields $(\tfrac{1}{3}(2) + \tfrac{2}{3}(4), \tfrac{1}{3}(3) + \tfrac{2}{3}(7)) = (\tfrac{10}{3}, \tfrac{17}{3}) = (x_{1}', x_{2}')$ which is contained in $A$ and therefore convex.
+  \end{itemize}
+  \par
+  \underline{Example 3}: the below figure is convex though not closed
+  \begin{itemize}
+    \item  \includegraphics[width=4cm, height=3cm]{pic14}
+  \end{itemize}
+  \par
+  \underline{Example 3}: the below budget sets are not convex
+  \begin{itemize}
+    \item  \includegraphics[width=4cm, height=7cm]{pic15}
+  \end{itemize}
 \vspace{6mm}
 \subsubsection{Convergent Sequences}
 Occurs when for all $\varepsilon > 0$ there exists a $\mathbb{N}$ such that for all values of $n$ greater than $\mathbb{N}$ the $n^{th}$ \textit{elements value in the sequence minus the limit's value} will be less than $\varepsilon$ \par \vspace{0.3em}
@@ -267,6 +281,20 @@ Preferences $\succeq$ are convex if and only if for each $x \in \mathbb{R}_{+}^{
   \par
   \underline{Utility Representation}: the utility representation of convex preferences is quasi-concavity
   \par
+  \underline{Example 1}: the below figure has convex preferences
+  \begin{itemize}
+    \item  \includegraphics[width=4cm, height=3cm]{pic16}
+  \end{itemize}
+  \par
+  \underline{Example 2}: the below figure, though is not closed, has convex preferences
+  \begin{itemize}
+    \item  \includegraphics[width=8cm, height=6cm]{pic17}
+  \end{itemize}
+  \par
+  \underline{Example 3}: $u(x_{1},x_{2}) = x_{1}^{2} + x_{2}$ is not a convex set since the better than set is not convex (i.e. drawing a line between two bundles in the better than set would result in points being in the worse than set). Note that in this case averages are not better than extremes in this case, the line in the figure represents an indifference curve. 
+  \begin{itemize}
+    \item  \includegraphics[width=8cm, height=6cm]{pic18}
+  \end{itemize}
 \vspace{6mm}
 \subsubsection{Consumer Choice Axioms}
 All bundles in the subset can be compared (completeness), choices are consistent (transitivity), the consumer can choose all bundles in the subset (continuity), and more is always better (strict monotonicity). These four axioms must hold for preferences to be considered 'rational' \par \vspace{0.3em}
@@ -358,16 +386,20 @@ In this section we will be focusing on the consumer problem, which is to find an
 \subsubsection{Consumer Problem}
 For the standard consumer problem, we will take the consumer to have a budget, $I \in \mathbb{R}_{++}$, and to be able to buy as much of each good as he can afford with his income at fixed positive per unit prices $p = (p_{1}, p_{2}, \dots, p_{n}) \in \mathbb{R}_{++}^{n}$ \par \vspace{0.3em}
 \underline{The Consumer's Problem}: to find a bundle $x \in B(p, I)$ such that $x \succeq y$ for all $y \in B(p, I)$, referred to as the optimal bundle \par
-\underline{Affordable Bundles}: the affordable bundles in a consumer's budget set are defined as $B(p, I) = \left\{ x \in \mathbb{R}_{+}^{n}: \ p \cdot \leq I \right\}$
+\underline{Affordable Bundles}: the consumer's problem allows us to define affordable bundles as those that are in the consumer's budget set where $B(p, I) = \left\{ x \in \mathbb{R}_{+}^{n}: \ p \cdot x \leq I \right\}$
 \begin{itemize}
   \item  \underline{Note}: $p \cdot x = \sum_{i=1}^{n}p_{i}x_{i}$
+  \item  \includegraphics[width=4cm, height=3cm]{pic13}
 \end{itemize}
 \par
 \vspace{6mm}
 \subsubsection{Existence of an Optimal Bundle (Weierstrass Theorem)}
 Every continuous real-valued function $f$ on a non-empty compact subset $B$ of $\mathbb{R}^{n}$ obtains a maximum on $B$. In otherwords, there is an $x \in B$ such that $f(x) \geq f(y)$ for all $y \in B$ \par \vspace{0.3em}
   \underline{Implication}: therefore, all we need to do is assume the preferences are represented by a continuous utility function and show that the budget set is compact and non-empty to solve the consumer problem \par
-  \underline{Requirements}: the budget set is a closed, bounded, and non-empty subset of $\mathbb{R}$ \par
+  \underline{Requirements}: the budget set is a closed, bounded, and non-empty subset of $\mathbb{R}$
+  \begin{itemize}
+    \item  \underline{Example}: the budget set figure above is closed, bounded, and non-empty and therefore when alying a continuious real value function to it we will find a maximum
+  \end{itemize}
 \vspace{6mm}
 \subsubsection{Quasi-Concavity}
 A real valued function $f$ on $R_{+}^{n}$ is quasi-concave if and only if for all $x, y \in \mathbb{R}_{+}^{n}$ and all $t \in [0,1]$: \\ if $u(x) \geq u(y)$ then $u(tx + (1-t)y) \geq u(y)$ \par \vspace{0.3em}
@@ -395,9 +427,12 @@ If the utility function is continuously differentiable, that is, the partial der
   \underline{Sufficiency of the Lagrangian Method}: if $u(x)$ is continuously differentiable, stricty monotonic, and quasi-concave, then any solution to the Lagrangian approach is a solution to the consumer's problem
   \begin{itemize}
     \item  \underline{Logic}: system equation (1) implies \textit{equalization of bang for buck} where for any two goods $i$ and $j$ we have $$\frac{\tfrac{\partial u(x^{*})}{\partial x_{i}}}{p_{i}} = \frac{\tfrac{\partial u(x^{*})}{\partial x_{j}}}{p_{j}}$$ System equation (2) implies budget exhausted, i.e. that the optimal bundle is on the budget line
+    \begin{itemize}
+      \item  \underline{Bang for Buck across Goods}: this is a multi-dimensional version of do it until the \textit{marginal benefit equals marginal cost} (i.e. marginal gain equals marginal pain)
+    \end{itemize}
   \end{itemize}
   \par
-  \underline{Uniqueness of Solution}: if $u(x)$ is strictly quasi-concave, then there is at most one solution to the consumer's problem
+  \underline{Uniqueness of Solution}: if $u(x)$ is strictly quasi-concave, then there is at most one solution to the consumer's problem. Note that for cases of non-strictly quasi-concave preferences, we can have more than one solution (i.e. if you have perfect substitutes)
 
 
 \end{document}

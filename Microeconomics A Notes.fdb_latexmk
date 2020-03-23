@@ -1,12 +1,13 @@
 # Fdb version 3
-["pdflatex"] 1584759028 "Microeconomics A Notes.tex" "Microeconomics A Notes.pdf" "Microeconomics A Notes" 1584759031
-  "Microeconomics A Notes.aux" 1584759031 3282 deec7a497140eff05a007150f38ef538 "pdflatex"
-  "Microeconomics A Notes.tex" 1584758963 43062 9ef11d46b107aae9437268dcd89c3034 ""
-  "Microeconomics A Notes.toc" 1584759031 2126 6f26105eb3b25f63c814c2d82c30b63a "pdflatex"
+["pdflatex"] 1584933504 "Microeconomics A Notes.tex" "Microeconomics A Notes.pdf" "Microeconomics A Notes" 1584933509
+  "Microeconomics A Notes.aux" 1584933508 3282 deec7a497140eff05a007150f38ef538 "pdflatex"
+  "Microeconomics A Notes.tex" 1584933114 43762 cf5a75c3570aee23acaf8a9e29dda8ce ""
+  "Microeconomics A Notes.toc" 1584933508 2126 6f26105eb3b25f63c814c2d82c30b63a "pdflatex"
   "Pictures/pic1.png" 1584076449 7147 61cd7530f4f7f369a1ec0ac8c3c67856 ""
   "Pictures/pic10.png" 1584612574 11685 aaf2f493294c5d5f5307aac572a5f029 ""
   "Pictures/pic11.png" 1584625000 376865 10b00df7f08e32b2f4ed26e1407268b2 ""
   "Pictures/pic12.png" 1584626257 361981 4e5322d434d75c947d7306881c855183 ""
+  "Pictures/pic13.png" 1584778959 116515 caf42a1e1daad366e89aeba3c8d98626 ""
   "Pictures/pic2.png" 1584080755 11880 8699afa4990f1a0266075684035271a6 ""
   "Pictures/pic3.png" 1584081188 5061 83512b8fb05ebe6574a8a65f56ebb2b8 ""
   "Pictures/pic4.png" 1584082263 4251 ba105275f04bafc6bd805556fb87cb08 ""
@@ -181,7 +182,7 @@
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1581706591 8252894 11042e5af9d352adbc7d0bddb9b881b4 ""
   "c:/texlive/2019/texmf.cnf" 1581706254 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   (generated)
-  "Microeconomics A Notes.toc"
   "Microeconomics A Notes.pdf"
-  "Microeconomics A Notes.aux"
   "Microeconomics A Notes.log"
+  "Microeconomics A Notes.toc"
+  "Microeconomics A Notes.aux"
