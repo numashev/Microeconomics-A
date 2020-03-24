@@ -143,7 +143,7 @@ A set $A \subset \mathbb{R}_{+}^{n}$ is closed if and only if the complement $A^
 \vspace{6mm}
 \subsubsection{Bounded Set}
 A set $A \subseteq \mathbb{R}_{+}^{n}$ is bounded if and only if we can put an open ball in $\mathbb{R}^{n}$ around the set $A$ \par \vspace{0.3em}
-  \underline{Alternative Definition}: a set is bounded if there is an open ball that contains it, i.e. $S \subseteq R^{m}$ is bounded if $\exists K > 0: \ ||x|| < K, \ \forall x \in S $ \par
+  \underline{Alternative Definition}: a set is bounded if there is an open ball that contains it, i.e. $S \subseteq R^{m}$ is bounded if $\exists K > 0: \ ||x|| < K, \ \forall x \in S$ \par
   \underline{Example}: the left image is bounded, the right is not bounded
   \begin{itemize}
     \item  \includegraphics[width=5cm, height=3cm]{pic5}
@@ -178,6 +178,7 @@ A set $A \subseteq \mathbb{R}_{+}^{n}$ is a convex set if and only if for all $x
   \begin{itemize}
     \item  \includegraphics[width=4cm, height=7cm]{pic15}
   \end{itemize}
+  \par
 \vspace{6mm}
 \subsubsection{Convergent Sequences}
 Occurs when for all $\varepsilon > 0$ there exists a $\mathbb{N}$ such that for all values of $n$ greater than $\mathbb{N}$ the $n^{th}$ \textit{elements value in the sequence minus the limit's value} will be less than $\varepsilon$ \par \vspace{0.3em}
@@ -248,7 +249,7 @@ To define instances where a consumer is indifferent between a set of bundles or 
     \item  \underline{Implication 1}: from $\succeq = \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$ we have that $\sim = \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$ and therefore all bundles are indifferent
     \item  \underline{Implication 2}: from $\succeq = \varnothing$ we get $\sim = \varnothing$
     \item  \underline{Implication 3}: from $\succeq = \left\{ (x,y) \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}: \ x_{i} \geq y_{i} \ \text{for all} \ i = 1, \dots, n \right\}$ we get that $$\sim= \left\{ (x,y) \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}: \ x = y \right\}$$Therefore, each bundle is indifferent only to itself
-    \item  \underline{Implication 4}: from $\succeq = \left\{ (x,y) \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}: \ \prod_{i=1}^{n} x_{i} \geq \prod_{i=1}^{n} y_{i} \right\}$ we get that $$\sim = \left\{ (x,y) \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}: \ \prod_{i=1}^{n} x_{i} = \prod_{i=1}^{n} y_{i} \right\}$$Therefore, indifference when the product of the quantities is the same
+    \item  \underline{Implication 4}: from $\succeq = \left\{ (x,y) \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}: \ \prod_{i=1}^{n} x_{i} \geq \prod_{i=1}^{n} y_{i} \right\}$ we get that $$\sim = \left\{ (x,y) \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}: \ \prod_{i=1}^{n} x_{i} = \prod_{i=1}^{n} y_{i} \right\}$$ Therefore, indifference when the product of the quantities is the same
   \end{itemize}
   \par
   \underline{Combining Implications of Indifference and Strict Preference}: from implications 2 we have that both indifference and strict preferences require that "one is atleast as good as the other". The combination of the strict preference implication $i$ and indifference implication $i$ yields example $i$ from the preference relation section \par
@@ -324,20 +325,24 @@ All bundles in the subset can be compared (completeness), choices are consistent
     \begin{itemize}
       \item  \underline{Note}: by completeness of preferences, the alternative definition implies the first definition
     \end{itemize}
+    \item  \underline{Exercise 1}: prove that the alternative definition implies the first definition given the requirement that preferences are complete
+    \begin{itemize}
+      \item  \underline{Answer}: the first part of the definition states that if $x \geq y$ then $x \succeq y$, which gives us case (a) where $x = y$ and case (b) where $x \neq y$. For (a) we have that by completeness $x \succeq y$, for (b) x has atleast more of some good which by completness implies that $x \succ y$. Thus the two cases, (a) and (b), given by the first part of the definition imply the alternative definition. The second part of the definition states that if $x > y$ then $x \succ y$, by completeness this implies that \textit{x has atleast as much of good as y and strictly more of some good} which demonstrates equivalency to the alternative definition. Without completeness, these implications would not hold because it could mean that comparisons can only be made in the case where $x$ has \textit{strictly more of some good} and not \textit{strictly more of all goods}.
+    \end{itemize}
   \end{itemize}
   \par
 \vspace{6mm}
 \subsubsection{Intermediate Value Version of Continuity}
-If the preferences are continuous and complete, then for any $x, y, z \in \mathbb{R}_{+}^{n}$, if $x \succ y$ and $y \succ x$, then there is some $\alpha \in (0,1)$ such that the convex combination $\alpha x + (1- \alpha)z$ is indifferent to y. This resembles the \textit{intermediate value theorem} \par \vspace{0.3em}
+If the preferences are continuous and complete, then for any $x, y, z \in \mathbb{R}_{+}^{n}$, if $x \succ y$ and $y \succ z$, then there is some $\alpha \in (0,1)$ such that the convex combination $\alpha x + (1- \alpha)z$ is indifferent to y. This resembles the \textit{intermediate value theorem} \par \vspace{0.3em}
   \underline{Proof}: this can be proved using completeness and continuity together with the least upper bound property (i.e. that every non-empty set of reals that is bounded above, has a least upper bound). We know that $x \succ y$ and $y \succ z$ and that the preferences are continuous. We need to show that there is some point on the line between $x$ and $z$ that is indifferent to $y$. Consider the set $A = \left\{ \alpha \in [0,1]: \ y \succ \alpha x + (1- \alpha)z \right\}$. It stands that $\alpha = 0$ is an element of $A$ since $0x + (1 - 0)z = z$ and $y \succ z$, therefore $A$ is a set of reals. It also stands that $\alpha = 1$ is not an element of $A$ since $1x + (1-1)z = x$ and $x \succ y$, therefore $A$ is bounded above by $1$ and must have a least upper bound. Call the least upper bound $\alpha^{*}$, we can show that $\alpha^{*}x + (1 - \alpha_{*})z \sim y$ using the following steps:
   \begin{itemize}
-    \item  \underline{Step 1}: show that $0 < \alpha^{*} < 1$ using completness and continuity around $x$ and around $z$. For $0 < \alpha^{*}$ we have that by continuity theorem 1, since $y \succ z$, there is an open ball $B_{\varepsilon}(z)$ around $z$ such that every $z'$ in that ball that can be compared to $y$ satisfies $y \succ z'$. By completeness, all the stuff in the ball can be compared to $y$, in particular the stuff that is also on the line between $x$ and $z$. Therefore, it must be that $0 < \alpha^{*}$. For $\alpha_{*} < 1$ we have that by continuity theorem 1, since $x \succ y$, there is an open ball $B_{\varepsilon}(y)$ around $y$ such that every $y'$ in that ball that can be compared to $x$ satisfies $x \succ y$. Likewise, by completeness, it must be that $\alpha^{*} < 1$
-    \item  \underline{Step 2}: show that $\alpha^{*}x + (1 - \alpha_{*})z \sim y$ using completeness and continuity. By completeness either (1) $\alpha^{*}x + (1-\alpha^{*})z \succ y$, (2) $y \succ \alpha^{*}x + (1-\alpha^{*})z$, or (3) $\alpha^{*}x + (1-\alpha^{*})z \sim y$. Options (1) and (2) cannot be the case because \begingroup\color{blue} tutorial question \endgroup. Therefore, we are left with option (3), $\alpha^{*}x + (1-\alpha^{*})z \sim y$.
+    \item  \underline{Step 1}: show that $0 < \alpha^{*} < 1$ using completness and continuity around $x$ and around $z$. \\ For $0 < \alpha^{*}$ we have that by continuity theorem 1, since $y \succ z$, there is an open ball $B_{\varepsilon}(z)$ around $z$ such that every $z'$ in that ball that can be compared to $y$ satisfies $y \succ z'$. By completeness, all the stuff in the ball can be compared to $y$, in particular the stuff that is also on the line between $x$ and $z$. Note that if we have $\alpha < 0$ then there would be $z'$s in the open ball around $B_{\varepsilon}(z)$ that do not satisfy and contradict $y \succ z'$. Therefore, it must be that $0 < \alpha^{*}$. \\ For $\alpha_{*} < 1$ we have that by continuity theorem 1, since $x \succ y$, there is an open ball $B_{\varepsilon}(y)$ around $y$ such that every $y'$ in that ball that can be compared to $x$ satisfies $x \succ y$. Likewise, by completeness, it must be that $\alpha^{*} < 1$.
+    \item  \underline{Step 2}: show that $\alpha^{*}x + (1 - \alpha_{*})z \sim y$ using completeness and continuity. By completeness either (1) $\alpha^{*}x + (1-\alpha^{*})z \succ y$, (2) $y \succ \alpha^{*}x + (1-\alpha^{*})z$, or (3) $\alpha^{*}x + (1-\alpha^{*})z \sim y$. \\ Option 1 cannot be the case as for $\alpha^{*}x + (1-\alpha^{*})z \succ y$ to hold we cannot have $\alpha^{*}$ as our upper bound \\ Option 2 cannot be the case since the least upper bound $1 \in \alpha^{*}$ the relationship $y \succ \alpha^{*}x + (1-\alpha^{*})z$ does not hold and so $\alpha^{*}$ is not an upper bound since an open ball around the point of our least upper bound would include points where $$y \nsucc \alpha^{*}x + (1-\alpha^{*})z$$ \\ Therefore, we are left with option (3), $\alpha^{*}x + (1-\alpha^{*})z \sim y$.
   \end{itemize}
   \par
   \underline{Usefulness}: this means that something on the line connecting $x$ and $z$ is indifferent to $y$
   \begin{itemize}
-    \item  \includegraphics[width=4cm, height=3cm]{pic9}
+    \item  \includegraphics[width=6cm, height=4.5cm]{pic9}
   \end{itemize}
   \par
 \vspace{6mm}
@@ -365,7 +370,11 @@ A utility representation of preferences $\succeq$ is a real valued function $u: 
   \par
   \underline{Finite Sets}: if the set of alternatives is finite or countably infinite, then we get a utility representation with only complete and transitive preferences \par
   \underline{Huge Spaces}: for the huge space $\mathbb{R}^{n}_{+}$, we can get a utility representation without monotonicity \par
-  \underline{Properties}: preferences represented by a utility function will always be complete and transitive, preferences represented by a continuous utility function will always be continuous \par
+  \underline{Properties}: (1) preferences represented by a utility function will always be complete and transitive, (2) preferences represented by a continuous utility function will always be continuous
+  \begin{itemize}
+    \item  \underline{Proof for (2)}: for $x \in \mathbb{R}^{n}_{+}$ we want to show $SG(x)$ is open. Suppose we have $x: \ (u(x), + \infty)$ which is open in $\mathbb{R}^{n}_{+}$. The inverse image of $x$ we have that $u^{-1}(u(x), + \infty) = \left\{y \in \mathbb{R}_{+}^{n}: u(y) \geq u(x) \right\} = SG(x)$ which by continuity is open. Therefore, since the inverse image is open, we have that the preferences represented by the continuous utility function are continuous.
+  \end{itemize}
+  \par
 \vspace{6mm}
 \subsubsection{Exercise 1}
 Which are transitive, complete, and continuous? \begingroup\color{blue} do homework \endgroup

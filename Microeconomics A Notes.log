@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.15)  23 MAR 2020 13:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  24 MAR 2020 22:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **"Microeconomics A Notes.tex"
 (./Microeconomics A Notes.tex
-LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-11> (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25> (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 (c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
@@ -24,8 +24,8 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \bibindent=\dimen134
 ) (c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 ) (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
@@ -35,7 +35,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
  (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
+\@emptytoks=\toks17
 \ex@=\dimen135
 )) (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -63,21 +63,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count182
 \dspbrk@lvl=\count183
-\tag@help=\toks17
+\tag@help=\toks18
 \row@=\count184
 \column@=\count185
 \maxfields@=\count186
-\andhelp@=\toks18
+\andhelp@=\toks19
 \eqnshift@=\dimen138
 \alignsep@=\dimen139
 \tagshift@=\dimen140
 \tagwidth@=\dimen141
 \totwidth@=\dimen142
 \lineht@=\dimen143
-\@envbody=\toks19
+\@envbody=\toks20
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 ) (c:/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
@@ -86,7 +86,7 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
  (c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
+\KV@toks@=\toks22
 ) (c:/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count187
@@ -168,9 +168,9 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ) (c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count194
-\float@exts=\toks22
+\float@exts=\toks23
 \float@box=\box47
-\@float@everytoks=\toks23
+\@float@everytoks=\toks24
 \@floatcapt=\box48
 ) (c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -190,7 +190,7 @@ Package: iftex 2019/11/07 v1.0c TeX engine tests
 \Gm@layoutheight=\dimen160
 \Gm@layouthoffset=\dimen161
 \Gm@layoutvoffset=\dimen162
-\Gm@dimlist=\toks24
+\Gm@dimlist=\toks25
 ) (c:/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
@@ -198,7 +198,7 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip56
 \enit@outerparindent=\dimen163
-\enit@toks=\toks25
+\enit@toks=\toks26
 \enit@inbox=\box49
 \enit@count@id=\count198
 \enitdp@description=\count199
@@ -224,14 +224,14 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \aftertitleunit=\skip58
 \ttl@plus=\dimen164
 \ttl@minus=\dimen165
-\ttl@toksa=\toks26
+\ttl@toksa=\toks27
 \titlewidth=\dimen166
 \titlewidthlast=\dimen167
 \titlewidthfirst=\dimen168
 )
    defining Unicode char U+2212 (decimal 8722)
  (c:/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks27
+\pgfutil@everybye=\toks28
 \pgfutil@tempdima=\dimen169
 \pgfutil@tempdimb=\dimen170
  (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -246,10 +246,10 @@ Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
 (c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
  (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks28
-\pgfkeys@temptoks=\toks29
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
  (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks30
+\pgfkeys@tmptoks=\toks31
 ))
 \pgf@x=\dimen171
 \pgf@y=\dimen172
@@ -267,9 +267,9 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 \c@pgf@countb=\count267
 \c@pgf@countc=\count268
 \c@pgf@countd=\count269
-\t@pgf@toka=\toks31
-\t@pgf@tokb=\toks32
-\t@pgf@tokc=\toks33
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
 \pgf@sys@id@count=\count270
  (c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
@@ -291,9 +291,9 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 \pgfmath@dimen=\dimen181
 \pgfmath@count=\count273
 \pgfmath@box=\box52
-\pgfmath@toks=\toks34
-\pgfmath@stack@operand=\toks35
-\pgfmath@stack@operation=\toks36
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
 )
 (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count274
@@ -381,8 +381,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
  (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen264
 \pgffor@skip=\dimen265
-\pgffor@stack=\toks37
-\pgffor@toks=\toks38
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
 )) (c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
  (c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
@@ -421,7 +421,7 @@ File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \UL@box=\box62
 \UL@hyphenbox=\box63
 \UL@skip=\skip59
-\UL@hook=\toks39
+\UL@hook=\toks40
 \UL@height=\dimen275
 \UL@pe=\count287
 \UL@pixel=\dimen276
@@ -431,7 +431,7 @@ Package: ulem 2019/11/18
 ) (c:/texlive/2019/texmf-dist/tex/latex/calrsfs/calrsfs.sty
 \symrsfscript=\mathgroup6
 ) (c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count288
 \l__pdf_internal_box=\box65
 ) (./Microeconomics A Notes.aux)
@@ -458,12 +458,12 @@ LaTeX Font Info:    ... okay on input line 41.
 \scratchbox=\box66
 \nofMPsegments=\count290
 \nofMParguments=\count291
-\everyMPshowfont=\toks40
+\everyMPshowfont=\toks41
 \MPscratchCnt=\count292
 \MPscratchDim=\dimen279
 \MPnumerator=\count293
 \makeMPintoPDFobject=\count294
-\everyMPtoPDFconversion=\toks41
+\everyMPtoPDFconversion=\toks42
 ) (c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -572,66 +572,97 @@ File: ./Pictures/pic8.png Graphic file (type png)
 <use ./Pictures/pic8.png>
 Package pdftex.def Info: ./Pictures/pic8.png  used on input line 164.
 (pdftex.def)             Requested size: 142.26439pt x 85.35963pt.
- [7 <./Pictures/pic8.png>]
-<./Pictures/pic6.png, id=61, 278.54062pt x 159.59625pt>
+<./Pictures/pic14.png, id=56, 207.02344pt x 183.68625pt>
+File: ./Pictures/pic14.png Graphic file (type png)
+<use ./Pictures/pic14.png>
+Package pdftex.def Info: ./Pictures/pic14.png  used on input line 174.
+(pdftex.def)             Requested size: 113.81268pt x 85.35995pt.
+<./Pictures/pic15.png, id=57, 435.12563pt x 527.72156pt>
+File: ./Pictures/pic15.png Graphic file (type png)
+<use ./Pictures/pic15.png>
+Package pdftex.def Info: ./Pictures/pic15.png  used on input line 179.
+(pdftex.def)             Requested size: 113.80722pt x 199.16737pt.
+ [7 <./Pictures/pic8.png> <./Pictures/pic14.png>] [8 <./Pictures/pic15.png>]
+<./Pictures/pic6.png, id=68, 278.54062pt x 159.59625pt>
 File: ./Pictures/pic6.png Graphic file (type png)
 <use ./Pictures/pic6.png>
-Package pdftex.def Info: ./Pictures/pic6.png  used on input line 183.
+Package pdftex.def Info: ./Pictures/pic6.png  used on input line 197.
 (pdftex.def)             Requested size: 142.26634pt x 85.35756pt.
-<./Pictures/pic7.png, id=62, 316.93407pt x 124.21407pt>
+<./Pictures/pic7.png, id=69, 316.93407pt x 124.21407pt>
 File: ./Pictures/pic7.png Graphic file (type png)
 <use ./Pictures/pic7.png>
-Package pdftex.def Info: ./Pictures/pic7.png  used on input line 188.
+Package pdftex.def Info: ./Pictures/pic7.png  used on input line 202.
 (pdftex.def)             Requested size: 142.26598pt x 85.35904pt.
- [8 <./Pictures/pic6.png> <./Pictures/pic7.png>]
-Overfull \hbox (29.68231pt too wide) in paragraph at lines 204--205
+ [9 <./Pictures/pic6.png> <./Pictures/pic7.png>]
+Overfull \hbox (29.68231pt too wide) in paragraph at lines 221--222
 \OT1/cmr/m/n/10 uni-verse. For in-stance, if we $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$ then $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^^B \OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$ 
  []
 
-<./Pictures/pic12.png, id=68, 374.14781pt x 426.09187pt>
+<./Pictures/pic12.png, id=75, 374.14781pt x 426.09187pt>
 File: ./Pictures/pic12.png Graphic file (type png)
 <use ./Pictures/pic12.png>
-Package pdftex.def Info: ./Pictures/pic12.png  used on input line 214.
+Package pdftex.def Info: ./Pictures/pic12.png  used on input line 231.
 (pdftex.def)             Requested size: 113.80948pt x 85.3534pt.
-[9 <./Pictures/pic12.png>] [10]
-<./Pictures/pic11.png, id=76, 456.95718pt x 406.51875pt>
+[10 <./Pictures/pic12.png>] [11]
+<./Pictures/pic11.png, id=83, 456.95718pt x 406.51875pt>
 File: ./Pictures/pic11.png Graphic file (type png)
 <use ./Pictures/pic11.png>
-Package pdftex.def Info: ./Pictures/pic11.png  used on input line 246.
+Package pdftex.def Info: ./Pictures/pic11.png  used on input line 263.
 (pdftex.def)             Requested size: 113.8067pt x 85.35284pt.
- [11 <./Pictures/pic11.png>] [12]
-<./Pictures/pic9.png, id=84, 282.30469pt x 201.00093pt>
+ [12 <./Pictures/pic11.png>]
+<./Pictures/pic16.png, id=88, 397.485pt x 307.90031pt>
+File: ./Pictures/pic16.png Graphic file (type png)
+<use ./Pictures/pic16.png>
+Package pdftex.def Info: ./Pictures/pic16.png  used on input line 289.
+(pdftex.def)             Requested size: 113.81206pt x 85.35643pt.
+<./Pictures/pic17.png, id=89, 334.24875pt x 241.65282pt>
+File: ./Pictures/pic17.png Graphic file (type png)
+<use ./Pictures/pic17.png>
+Package pdftex.def Info: ./Pictures/pic17.png  used on input line 294.
+(pdftex.def)             Requested size: 227.62785pt x 170.72292pt.
+ [13 <./Pictures/pic16.png> <./Pictures/pic17.png>] [14]
+<./Pictures/pic9.png, id=99, 282.30469pt x 201.00093pt>
 File: ./Pictures/pic9.png Graphic file (type png)
 <use ./Pictures/pic9.png>
-Package pdftex.def Info: ./Pictures/pic9.png  used on input line 313.
+Package pdftex.def Info: ./Pictures/pic9.png  used on input line 340.
 (pdftex.def)             Requested size: 113.81154pt x 85.3583pt.
- [13 <./Pictures/pic9.png>]
-<./Pictures/pic10.png, id=90, 304.13625pt x 202.50656pt>
+<./Pictures/pic10.png, id=100, 304.13625pt x 202.50656pt>
 File: ./Pictures/pic10.png Graphic file (type png)
 <use ./Pictures/pic10.png>
-Package pdftex.def Info: ./Pictures/pic10.png  used on input line 327.
+Package pdftex.def Info: ./Pictures/pic10.png  used on input line 354.
 (pdftex.def)             Requested size: 113.80948pt x 85.35806pt.
- [14 <./Pictures/pic10.png>] [15]
-<./Pictures/pic13.png, id=98, 363.60844pt x 425.33907pt>
+ [15 <./Pictures/pic9.png>] [16 <./Pictures/pic10.png>]
+<./Pictures/pic13.png, id=109, 363.60844pt x 425.33907pt>
 File: ./Pictures/pic13.png Graphic file (type png)
 <use ./Pictures/pic13.png>
-Package pdftex.def Info: ./Pictures/pic13.png  used on input line 364.
+Package pdftex.def Info: ./Pictures/pic13.png  used on input line 391.
 (pdftex.def)             Requested size: 113.81044pt x 85.35835pt.
- [16 <./Pictures/pic13.png>] [17] (./Microeconomics A Notes.aux) ) 
+ [17 <./Pictures/pic13.png>]
+<./Pictures/pic19.png, id=114, 510.40688pt x 322.20375pt>
+File: ./Pictures/pic19.png Graphic file (type png)
+<use ./Pictures/pic19.png>
+Package pdftex.def Info: ./Pictures/pic19.png  used on input line 417.
+(pdftex.def)             Requested size: 227.6249pt x 170.72292pt.
+<./Pictures/pic18.png, id=115, 450.18187pt x 380.92313pt>
+File: ./Pictures/pic18.png Graphic file (type png)
+<use ./Pictures/pic18.png>
+Package pdftex.def Info: ./Pictures/pic18.png  used on input line 421.
+(pdftex.def)             Requested size: 227.62512pt x 170.71632pt.
+ [18 <./Pictures/pic19.png> <./Pictures/pic18.png>] [19] (./Microeconomics A Notes.aux) ) 
 Here is how much of TeX's memory you used:
- 15411 strings out of 481242
- 291224 string characters out of 5921879
- 528325 words of memory out of 5000000
- 30357 multiletter control sequences out of 15000+600000
+ 15455 strings out of 480994
+ 291999 string characters out of 5916032
+ 528848 words of memory out of 5000000
+ 30649 multiletter control sequences out of 15000+600000
  542656 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,11n,60p,1213b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "Microeconomics A Notes.pdf" (17 pages, 1111697 bytes).
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "Microeconomics A Notes.pdf" (19 pages, 1485643 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
+ 190 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
