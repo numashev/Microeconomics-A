@@ -377,12 +377,107 @@ A utility representation of preferences $\succeq$ is a real valued function $u: 
   \par
 \vspace{6mm}
 \subsubsection{Exercise 1}
-Which are transitive, complete, and continuous? \begingroup\color{blue} do homework \endgroup
+Answer if the below preferences are are complete, transitive, continuous, and strongly monotonic? \par \vspace{0.3em}
   \begin{itemize}
-    \item  \underline{question 1}: $x \succeq y$ if and only if $x_{1}x_{2} \geq y_{1}y_{2}$
-    \item  \underline{question 2}: $x \succeq y$ if and only if $(x_{1})^{2} + x_{2} \geq (y_{1})^{2} + y_{2}$
-    \item  \underline{question 3}: $x \succeq y$ if and only if (a) $x_{1} > y_{1}$ or (b) $x_{1} = y_{1}$ and $x_{2} \geq y_{2}$
-    \item  \underline{question 4}: $x \succeq y$ if and only if $(x_{1} - 3)^{2} + (x_{2} - 4)^{2} \geq (y_{1} - 3)^{2} + (y_{2}-4)^{2}$
+    \item  \underline{Question 1}: $x \succeq y$ if and only if $(x_{1})^{2} + x_{2} \geq (y_{1})^{2} + y_{2}$
+    \begin{itemize}
+      \item  \underline{Complete}: take $x,y$, we have that either $x_{1}^{2} + x_{2} \geq y_{1}^{2} + y_{2}$ or $y_{1}^{2} + y_{2} > x_{1}^{2} + x_{2}$. Therefore, it is complete.
+      \item  \underline{Transitive}: take $x,y,z$. Suppose $x \succeq y$ and $y \succeq z$. From the $\Rightarrow$ implication we have that $x_{1}^{2} + x_{2} \geq y_{1}^{2} + y_{2}$ and $y_{1}^{2} + y_{2} \geq z_{1}^{2} + z_{2}$, therefore $x_{1}^{2} + x_{2} \geq z_{1}^{2} + z_{2}$. From the $\Leftarrow$ implication we have that $x \succeq z$
+      \item  \underline{Continuous}: since the preferences have a utility representation they must be continuous. Also, by drawing the indifference curves, it is clear that $G(x)$ and $W(x)$ is closed. Note that the complements $G(x) \rightarrow SG(x)$ and $W(x) \rightarrow SW(x)$ are open which implies that the preferences are continuous. \\
+      \includegraphics[width=4cm, height=3cm]{pic20}
+      \item  \underline{Strongly Monotonic}: suppose we have two bundles $x = (x_{1}, x_{2})$ and $y = (y_{1}, y_{2})$. If $x_{1}^{2} + x_{2} = y_{1}^{2} + y_{2} \ \therefore \ x \sim y$. In this case, by adding 1 unit to either $x_{1}$ or $x_{2}$ we would have $x_{1}^{2*} + x_{2*} > y_{1}^{2} + y_{2} \ \therefore \ x^{*} \succ y$
+    \end{itemize}
+    \item  \underline{Question 2}: $x \succeq y$ if and only if $(x_{1} - 3)^{2} + (x_{2} - 4)^{2} \geq (y_{1} - 3)^{2} + (y_{2}-4)^{2}$
+    \begin{itemize}
+      \item  \underline{Complete}: take $x,y$, we have that either $(x_{1} - 3)^{2} + (x_{2} - 4)^{2} \geq (y_{1} - 3)^{2} + (y_{2}-4)^{2}$ or $(y_{1} - 3)^{2} + (y_{2}-4)^{2} > (x_{1} - 3)^{2} + (x_{2} - 4)^{2}$. Therefore, it is complete.
+      \item  \underline{Transitive}: take $x,y,z$. Suppose $x \succeq y$ and $y \succeq z$. From the $\Rightarrow$ implication we have that $(x_{1} - 3)^{2} + (x_{2} - 4)^{2} \geq (y_{1} - 3)^{2} + (y_{2}-4)^{2}$ and $(y_{1} - 3)^{2} + (y_{2}-4)^{2} \geq (z_{1} - 3)^{2} + (z_{2} - 4)^{2}$, therefore $(x_{1} - 3)^{2} + (x_{2}-4)^{2} \geq (z_{1} - 3)^{2} + (z_{2} - 4)^{2}$. From the $\Leftarrow$ implication we have that $x \succeq z$
+      \item  \underline{Continuous}: since the preferences have a utility representation they must be continuous
+      \item  \underline{Strongly Monotonic}: suppose $x=(3,5)$ and $y=(2,5)$, this yields:
+      \begin{gather*}
+        (3-3)^{2} + (5-4)^{2} = 1 \ \ \text{for} \ x \\
+        (2-3)^{2} + (5-4)^{2} = 2 \ \ \text{for} \ y
+      \end{gather*}
+      Therefore, though $x > y$ we have that $(x_{1}-3)^{2} + (x_{2}-4)^{2} < (y_{1}-3)^{2} + (y_{2}-4)^{2}$. Therefore, the $\Leftarrow$ implication we have that $y \succ x$ and monotonicity is violated. The violation can also be seen in the below figure, where if you move from the south-west to the north-east you could move from the $G(x)$ to the $W(x)$ area of the donut. \\
+      \includegraphics[width=4cm, height=3cm]{pic21}
+    \end{itemize}
+  \end{itemize}
+  \par
+\vspace{6mm}
+\subsubsection{Exercise 2}
+Larry has the utility function $u(x,y)=x^{4}y^{2}$ over two goods whose quantities are denoted by $x \geq 0$ and $y \geq 0$. \par \vspace{0.3em}
+  \underline{Are Larry's Preferences complete, transitive, and continuous}?
+  \begin{itemize}
+    \item  \underline{Answer}: if there is a utility representation of the preferences then the preferences must be complete and transitive (as is the case). Since the utility function is continuous, this implies that the preferences are continuous.
+  \end{itemize}
+  \par
+  \underline{If the price of each good is $1$ per unit and income is $30$, solve for the optimal bundle using the three methods below}?
+  \begin{itemize}
+    \item  \underline{Indifference and Budget Line Tangency}: Note that since the utility function is smooth (ie twice continuously differentiable), the indifference curves are convex, and monotonicity holds, it follows that interior solutions occur only where the indifference curve of the bundle is tangent to the budget line. This interior solution is captured by the following equations:
+    \begin{gather*}
+      \frac{MU_{x}}{p_{x}} = \frac{MU_{y}}{p_{y}} \Rightarrow tfrac{4x^{3}y^{2}}{1} = \frac{2x^{4}y}{1} \ \tag{1} \\
+      p_{x}x + p_{y}y = I \Rightarrow x + y = 30 \ \tag{2}
+    \end{gather*}
+    Note that equation (2) puts us on the budget line and equation (1) ensures that trading $x$ for $y$ (and vice versa) will not increase utility. Solving equation (1) yields $2y = x$. By substituting $2y = x$ into equation (2) we get $3y = 30 \ \therefore \ y = 10$. Since $y=10$ we have from equation (2) that $x + 10 = 30$ and therefore $x = 20$. Our optimal bundle is $(x,y) = (20, 10)$
+    \item  \underline{Lagrangian}: setting up the lagrangian we have $L = x^{4}y^{2} + \lambda (x + y - 30)$. The partial derivatives of the lagrangian are therefore:
+    \begin{gather*}
+      \frac{\partial L}{\partial x} = 0 \Rightarrow 4x^{3}y^{2} = \lambda \ \tag{1} \\
+      \frac{\partial L}{\partial y} = 0 \Rightarrow 2x^{4}y = \lambda \ \tag{2} \\
+      \frac{\partial L}{\partial \lambda} = 0 \Rightarrow x + y - 30 = 0 \ \tag{3}
+    \end{gather*}
+    From equations (1) and (2) we have:
+    \begin{gather*}
+      4x^{3}y^{2} = \lambda = 2x^{4}y \\
+      \therefore \ y = 0.5x
+    \end{gather*}
+    Plugging $y = 0.5x$ into equation (3) yields $0.5x + x = 30 \ \therefore \ x = 20$. Substituting $x$ into the budget line yields $y + 20 = 30 \ \therefore \ y = 10$. Our optimal bundle is $(x,y) = (20, 10)$
+    \item  \underline{Cobb-Douglass Formula}: the Cobb-Douglas utility function has the general form $u(x,y) = x^{a}y^{b}$. Since our equation mimics this, we have that $a=4$ and $b=2$. This is known to have a solution for all $a,b > 0$ which is given by:
+    \begin{gather*}
+      x = tfrac{aI}{(a+b)p_{x}} = \tfrac{4(30)}{(2+4)} = 20 \\
+      y = tfrac{bI}{(a+b)p_{y}} = \tfrac{2(30)}{(2+4)} = 10
+    \end{gather*}
+    Thus, our optimal bundle is $(x,y) = (20, 10)$
+  \end{itemize}
+  \par
+\vspace{6mm}
+\subsubsection{Exercise 3}
+Demand in a market is given by $D(p) = \tfrac{100}{p^{2}}$ for $p > 0$ and the cost of production is $C(Q) = 6 \sqrt{Q} + Q$ \par \vspace{0.3em}
+  \underline{Monopoly Market}: suppose we have a monopoly seller. Invert the demand curve and find the monopoly output level $Q$ and the corresponding price level $p$, or argue that one does not exist.
+  \begin{itemize}
+    \item  \underline{Answer}: inverting the demand function gives $P(Q) = \tfrac{10}{\sqrt{Q}}$. For a monopolist seller the optimal output is given by setting $\text{MR} \ = \ \text{MC}$, so we must first find $MR$ and $MC$:
+    \begin{align*}
+      &\text{MC} = \frac{\partial C}{\partial Q} = 3Q^{-0.5} + 1 \\
+      &\text{MR} = \frac{\partial Q \times P}{\partial Q} = \frac{\partial 10Q^{0.5}}{\partial Q} = 5Q^{-0.5}
+    \end{align*}
+    Setting $MR = MC$ yields:
+    \begin{align*}
+      5Q^{-0.5} &= 3Q^{-0.5} + 1 \\
+      1 &= Q^{-0.5}(5-3) \\
+      Q &= 4
+    \end{align*}
+    The optimal output $Q = 4$ results in a price of $P = \tfrac{10}{\sqrt{4}} = 5$. Note that this method is valid as the function is concave and allows us to find all interior solutions. As $p$ is restricted to be above zero, and thus $Q$ is restricted to be above zero, we are only dealing with interior points as possible solutions.
+    \item  \underline{Alternative Method}: note that we can also insert $P(Q) = \tfrac{10}{\sqrt{Q}}$ into the profit function $\pi = P(Q)Q - C(Q)$, which yields:
+    \begin{gather*}
+      \pi = \bigg(\frac{10}{\sqrt{Q}} \bigg)Q - (6\sqrt{Q} + Q) = 4\sqrt{Q} - Q
+    \end{gather*}
+    Taking first order conditions, with respect to $Q$, for profit maximization at an interior point gives us:
+    \begin{gather*}
+      tfrac{\partial \pi}{\partial Q} = 0 \Rightarrow 2Q^{-0.5} - 1 = 0 \ \therefore \ Q = 4
+    \end{gather*}
+  \end{itemize}
+  \par
+  \underline{Competitive Market}: suppose we have sellers in a competitive market. Eithere find a competitive equilibrium or argue that one does not exist.
+  \begin{itemize}
+    \item  \underline{Answer}: Note that since we have a perfectly competitive market, we take each price as given so $P(Q) = p$ and choose $Q$ to maximize profit. Profit in this case is:
+    \begin{gather*}
+      \pi = pQ - (6\sqrt{Q} + Q) = Q(p-1) - 6\sqrt{Q}
+    \end{gather*}
+    While this function is twice continuously differentiable, it is not concave since $\tfrac{\partial^{2}\pi}{\partial Q^{2}} > 0$ making it a strictly convex function. Also note that marginal cost is a decreasing function of output since $\tfrac{\partial^{2}\pi}{\partial Q^{2}} = \tfrac{\partial^{2}C}{\partial Q^{2}} < 0$ (note that the two double derivative are equal due to $P=MC$ in perfect competition). Unlike the case with the monopolist seller, who is able to restrict quantity to increase prices, in a competitive market this is not. Therefore, at $P = MC$ profit will increase with each in output and sellers would never stop producing. As a result there is no competitive equilibrium. To break this down we have the following:
+    \begin{itemize}
+      \item  \underline{Case (1)}: if $0 < p \leq 1$, then profit is diminishing with quantity. Therefore, each seller would like to supply as little as possible and so market supply is $S(p) = 0$. However, demand would be $D(p) = \tfrac{100}{p^{2}} \geq 100 > 0 = S(p)$. Overall, we would have a case where demand is high but production is nonexistent.
+      \item  \underline{Case (2)}: if $p > 1$, then each seller would like to move toward infinite output. This would cause supply to be greater than demand since $D(p) = \tfrac{100}{p^{2}} < 100 < S(p) = +\infty$.
+    \end{itemize}
+    Overall, in boths case (1) and (2) we do not have a competitive equilibrium.
+    \item  \underline{Note}: if trying to solve this at $P=MC$ this will result in $Q=49$ and $P = 1.428$. This yields negative profit where $\pi = Q(p-1) - 6\sqrt{Q} = 49(1.428 - 1) - 6\sqrt{49} = -21.028$. Profit at the competitive equilibrium cannot be equal to zero.
   \end{itemize}
 
 \newpage
@@ -411,7 +506,7 @@ Every continuous real-valued function $f$ on a non-empty compact subset $B$ of $
 \vspace{6mm}
 \subsubsection{Quasi-Concavity}
 A real valued function $f$ on $R_{+}^{n}$ is quasi-concave if and only if for all $x, y \in \mathbb{R}_{+}^{n}$ and all $t \in [0,1]$: \\ if $u(x) \geq u(y)$ then $u(tx + (1-t)y) \geq u(y)$ \par \vspace{0.3em}
-  \underline{Relationship to Convex Preferences}: quasi-concavity is the translation of convex preferences into a utility representation \par
+  \underline{Relationship to Convex Preferences}: quasi-concavity is the translation of convex preferences into a utility representation, if you have convex preferences then the utility function will be quasi-concave \par
   \underline{Strictly Quasi-Concave}: a real-valued function $f$ on $\mathbb{R}_{+}^{n}$ is strictly quasi-concave if and only if for all distinct $x, y \in \mathbb{R}^{+}_{n}$ and all $t \in (0,1)$: if $u(x) \geq u(y)$ then $u(tx + (1-t)y) > u(y)$
   \par
   \underline{Theorem 1}: every concave function is quasi-concave and every strictly concave function is strictly quasi-concave
@@ -435,18 +530,34 @@ A real valued function $f$ on $R_{+}^{n}$ is quasi-concave if and only if for al
 \subsubsection{Lagrangian Approach to Bundle Optimality}
 If the utility function is continuously differentiable, that is, the partial derivatives are all continuous functions then we can use the Lagrangian Approach to find a solution to the consumer's problem \par \vspace{0.3em}
   \underline{Lagrangian Approach}: set up the Lagrangian where $L(x, \lambda) = u(x) + \lambda (p \cdot x - I)$ and look for solutions $(x^{*}, \lambda^{*})$, where $x_{i}^{*} > 0$ for each good $i$ and $\lambda^{*} > 0$, to the system: \\
-  (1) $\tfrac{\partial L}{\partial x_{i}} = \tfrac{\partial u(x^{*})}{\partial x_{i}} - \lambda^{*}p_{i}$ \quad for each $i = 1, \dots, n$ where you have $n$ equations \\
-  (2) $\tfrac{\partial L}{\partial x_{i}} = p \cdot x - I = 0$
+  \quad (1) $\tfrac{\partial L}{\partial x_{i}} = \tfrac{\partial u(x^{*})}{\partial x_{i}} - \lambda^{*}p_{i}$ \quad for each $i = 1, \dots, n$ where you have $n$ equations \\
+  \quad (2) $\tfrac{\partial L}{\partial \lambda} = p \cdot x - I = 0$
   \par
   \underline{Sufficiency of the Lagrangian Method}: if $u(x)$ is continuously differentiable, stricty monotonic, and quasi-concave, then any solution to the Lagrangian approach is a solution to the consumer's problem
   \begin{itemize}
     \item  \underline{Logic}: system equation (1) implies \textit{equalization of bang for buck} where for any two goods $i$ and $j$ we have $$\frac{\tfrac{\partial u(x^{*})}{\partial x_{i}}}{p_{i}} = \frac{\tfrac{\partial u(x^{*})}{\partial x_{j}}}{p_{j}}$$ System equation (2) implies budget exhausted, i.e. that the optimal bundle is on the budget line
     \begin{itemize}
-      \item  \underline{Bang for Buck across Goods}: this is a multi-dimensional version of do it until the \textit{marginal benefit equals marginal cost} (i.e. marginal gain equals marginal pain)
+      \item  \underline{Bang for Buck across Goods}: this is a multi-dimensional version of do it until the \textit{marginal benefit equals marginal cost} (i.e. marginal gain equals marginal pain). This is your point of tangency between the budget set and the indifference curve
     \end{itemize}
   \end{itemize}
   \par
   \underline{Uniqueness of Solution}: if $u(x)$ is strictly quasi-concave, then there is at most one solution to the consumer's problem. Note that for cases of non-strictly quasi-concave preferences, we can have more than one solution (i.e. if you have perfect substitutes)
-
+  \par
+  \underline{Example}: for $u(x_{1},x_{2}) = x_{1}x_{2}$ where $p_{1} = 10$, $p_{2} = 5$, and $I = 50$ we set up the lagrangian as $L = x_{1}\cdot x_{2} - \lambda(10x_{1} + 5x_{2} - 50)$. The system of equations is given by:
+  \begin{align*}
+    &\frac{\partial L}{\partial x_{1}} = 0 \Rightarrow x_{2} - 10\lambda = 0 \ \therefore \ \lambda = \frac{x_{2}}{10} \ \tag{1} \\
+    &\frac{\partial L}{\partial x_{2}} = 0 \Rightarrow x_{1} - 5\lambda = 0 \ \therefore \ \lambda = \frac{x_{1}}{5} \ \tag{2} \\
+    &\frac{\partial L}{\partial \lambda} = 0 \Rightarrow 10x_{1} + 5x_{2} - 50 = 0 \ \tag{3}
+  \end{align*}
+  Setting equations (1) and (2) equal to eachother yields:
+  \begin{gather*}
+    \frac{x_{2}}{10} = \lambda = \frac{x_{1}}{5} \\
+    x_{2} = 2x_{1}
+  \end{gather*}
+  Subtituting $x_{2} = 2x_{1}$ into equation (3) gives us $10x_{1} + 5(2x_{1}) = 50 \ \therefore \ x_{1} = 2.5$. Since $x_{1} = 2.5$ we have that $x_{2} = 2x_{1} = 5$. Note that $\lambda > 0$ since $\lambda = \tfrac{x_{2}}{10} = 0.5$, making the solution valid. Our optimal bundle is therefore $(x_{1}, x_{2}) = (2.5, 5)$
+  \par
+\vspace{6mm}
+\subsubsection{Exercise 1}
+Consider the preferences \par \vspace{0.3em}
 
 \end{document}
