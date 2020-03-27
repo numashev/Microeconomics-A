@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  26 MAR 2020 00:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  27 MAR 2020 22:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -594,58 +594,58 @@ File: ./Pictures/pic7.png Graphic file (type png)
 Package pdftex.def Info: ./Pictures/pic7.png  used on input line 203.
 (pdftex.def)             Requested size: 142.26598pt x 85.35904pt.
  [9 <./Pictures/pic6.png> <./Pictures/pic7.png>]
-Overfull \hbox (29.68231pt too wide) in paragraph at lines 222--223
+Overfull \hbox (29.68231pt too wide) in paragraph at lines 224--225
 \OT1/cmr/m/n/10 uni-verse. For in-stance, if we $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$ then $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^^B \OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$ 
  []
 
 <./Pictures/pic12.png, id=75, 374.14781pt x 426.09187pt>
 File: ./Pictures/pic12.png Graphic file (type png)
 <use ./Pictures/pic12.png>
-Package pdftex.def Info: ./Pictures/pic12.png  used on input line 232.
+Package pdftex.def Info: ./Pictures/pic12.png  used on input line 234.
 (pdftex.def)             Requested size: 113.80948pt x 85.3534pt.
 [10 <./Pictures/pic12.png>] [11]
 <./Pictures/pic11.png, id=83, 456.95718pt x 406.51875pt>
 File: ./Pictures/pic11.png Graphic file (type png)
 <use ./Pictures/pic11.png>
-Package pdftex.def Info: ./Pictures/pic11.png  used on input line 264.
+Package pdftex.def Info: ./Pictures/pic11.png  used on input line 266.
 (pdftex.def)             Requested size: 113.8067pt x 85.35284pt.
  [12 <./Pictures/pic11.png>]
 <./Pictures/pic16.png, id=88, 397.485pt x 307.90031pt>
 File: ./Pictures/pic16.png Graphic file (type png)
 <use ./Pictures/pic16.png>
-Package pdftex.def Info: ./Pictures/pic16.png  used on input line 290.
+Package pdftex.def Info: ./Pictures/pic16.png  used on input line 292.
 (pdftex.def)             Requested size: 113.81206pt x 85.35643pt.
 <./Pictures/pic17.png, id=89, 334.24875pt x 241.65282pt>
 File: ./Pictures/pic17.png Graphic file (type png)
 <use ./Pictures/pic17.png>
-Package pdftex.def Info: ./Pictures/pic17.png  used on input line 295.
+Package pdftex.def Info: ./Pictures/pic17.png  used on input line 297.
 (pdftex.def)             Requested size: 227.62785pt x 170.72292pt.
  [13 <./Pictures/pic16.png> <./Pictures/pic17.png>] [14]
 <./Pictures/pic9.png, id=99, 282.30469pt x 201.00093pt>
 File: ./Pictures/pic9.png Graphic file (type png)
 <use ./Pictures/pic9.png>
-Package pdftex.def Info: ./Pictures/pic9.png  used on input line 345.
+Package pdftex.def Info: ./Pictures/pic9.png  used on input line 347.
 (pdftex.def)             Requested size: 170.71947pt x 128.03593pt.
  [15 <./Pictures/pic9.png>]
 <./Pictures/pic10.png, id=104, 304.13625pt x 202.50656pt>
 File: ./Pictures/pic10.png Graphic file (type png)
 <use ./Pictures/pic10.png>
-Package pdftex.def Info: ./Pictures/pic10.png  used on input line 359.
+Package pdftex.def Info: ./Pictures/pic10.png  used on input line 361.
 (pdftex.def)             Requested size: 113.80948pt x 85.35806pt.
  [16 <./Pictures/pic10.png>]
 <./Pictures/pic20.png, id=109, 359.84438pt x 289.83281pt>
 File: ./Pictures/pic20.png Graphic file (type png)
 <use ./Pictures/pic20.png>
-Package pdftex.def Info: ./Pictures/pic20.png  used on input line 387.
+Package pdftex.def Info: ./Pictures/pic20.png  used on input line 389.
 (pdftex.def)             Requested size: 113.81279pt x 85.35841pt.
  [17 <./Pictures/pic20.png>]
 <./Pictures/pic21.png, id=115, 242.40562pt x 220.57407pt>
 File: ./Pictures/pic21.png Graphic file (type png)
 <use ./Pictures/pic21.png>
-Package pdftex.def Info: ./Pictures/pic21.png  used on input line 401.
+Package pdftex.def Info: ./Pictures/pic21.png  used on input line 403.
 (pdftex.def)             Requested size: 113.81229pt x 85.35712pt.
 
-Overfull \hbox (72.30142pt too wide) in paragraph at lines 413--415
+Overfull \hbox (72.30142pt too wide) in paragraph at lines 415--417
 []$[]$\OT1/cmr/m/n/10 ? 
  []
 
@@ -653,34 +653,47 @@ Overfull \hbox (72.30142pt too wide) in paragraph at lines 413--415
 <./Pictures/pic13.png, id=131, 363.60844pt x 425.33907pt>
 File: ./Pictures/pic13.png Graphic file (type png)
 <use ./Pictures/pic13.png>
-Package pdftex.def Info: ./Pictures/pic13.png  used on input line 495.
+Package pdftex.def Info: ./Pictures/pic13.png  used on input line 497.
 (pdftex.def)             Requested size: 113.81044pt x 85.35835pt.
  [22 <./Pictures/pic13.png>]
 <./Pictures/pic19.png, id=136, 510.40688pt x 322.20375pt>
 File: ./Pictures/pic19.png Graphic file (type png)
 <use ./Pictures/pic19.png>
-Package pdftex.def Info: ./Pictures/pic19.png  used on input line 521.
+Package pdftex.def Info: ./Pictures/pic19.png  used on input line 523.
 (pdftex.def)             Requested size: 227.6249pt x 170.72292pt.
 <./Pictures/pic18.png, id=137, 450.18187pt x 380.92313pt>
 File: ./Pictures/pic18.png Graphic file (type png)
 <use ./Pictures/pic18.png>
-Package pdftex.def Info: ./Pictures/pic18.png  used on input line 525.
+Package pdftex.def Info: ./Pictures/pic18.png  used on input line 527.
 (pdftex.def)             Requested size: 227.62512pt x 170.71632pt.
- [23 <./Pictures/pic19.png> <./Pictures/pic18.png>] [24] [25] (./Microeconomics A Notes.aux) ) 
+ [23 <./Pictures/pic19.png>] [24 <./Pictures/pic18.png>] [25] [26] [27]
+
+./Microeconomics A Notes.tex:647: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.647   \end{itemize}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[28] (./Microeconomics A Notes.aux) ) 
 Here is how much of TeX's memory you used:
  15469 strings out of 480994
  292251 string characters out of 5916032
- 528846 words of memory out of 5000000
+ 528848 words of memory out of 5000000
  30663 multiletter control sequences out of 15000+600000
  542656 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,60p,1213b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "Microeconomics A Notes.pdf" (25 pages, 1847164 bytes).
+ 60i,16n,60p,1213b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "Microeconomics A Notes.pdf" (28 pages, 1860538 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
+ 230 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
