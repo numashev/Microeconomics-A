@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1585313388 "Microeconomics A Notes.tex" "Microeconomics A Notes.pdf" "Microeconomics A Notes" 1585313393
-  "Microeconomics A Notes.aux" 1585313393 4282 414ac2c3ce5a76b09b40b89769e21763 "pdflatex"
-  "Microeconomics A Notes.tex" 1585313365 67030 4126ce9c04dca02ed01e482ca854b4e1 ""
-  "Microeconomics A Notes.toc" 1585313393 2757 ed64883d336ae91c165e9c1e392e6b2f "pdflatex"
+["pdflatex"] 1585540965 "Microeconomics A Notes.tex" "Microeconomics A Notes.pdf" "Microeconomics A Notes" 1585540969
+  "Microeconomics A Notes.aux" 1585540968 4415 4f9c4469900445474dca4464a321f14e "pdflatex"
+  "Microeconomics A Notes.tex" 1585540963 74594 d0dda2b5c665e00d61c318c08d510637 ""
+  "Microeconomics A Notes.toc" 1585540968 2849 71e27ec10094f8ca965f0cd202c84e9d "pdflatex"
   "Pictures/pic1.png" 1584076450 7147 61cd7530f4f7f369a1ec0ac8c3c67856 ""
   "Pictures/pic10.png" 1584612576 11685 aaf2f493294c5d5f5307aac572a5f029 ""
   "Pictures/pic11.png" 1584625002 376865 10b00df7f08e32b2f4ed26e1407268b2 ""
@@ -17,6 +17,8 @@
   "Pictures/pic2.png" 1584080756 11880 8699afa4990f1a0266075684035271a6 ""
   "Pictures/pic20.png" 1585143879 180541 ff3c18f578c8cdf404ff4d7a9550aa0f ""
   "Pictures/pic21.png" 1585145351 198814 f98ea6c427d254dc0089604e97a947b2 ""
+  "Pictures/pic22.png" 1585314825 9020 19b98ec1f234435098e6debe8a1a3008 ""
+  "Pictures/pic23.png" 1585459093 157836 2cf57ef2408b9b61bcd18253deb7cd3a ""
   "Pictures/pic3.png" 1584081190 5061 83512b8fb05ebe6574a8a65f56ebb2b8 ""
   "Pictures/pic4.png" 1584082264 4251 ba105275f04bafc6bd805556fb87cb08 ""
   "Pictures/pic5.png" 1584086646 27135 188c9716c691b180d7e3c69a4f98e4ba ""
@@ -192,7 +194,7 @@
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1585020706 8274593 c3c29c1c9f3a24a40a548a4d2dc48f0c ""
   "c:/texlive/2019/texmf.cnf" 1585020510 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   (generated)
-  "Microeconomics A Notes.aux"
+  "Microeconomics A Notes.toc"
   "Microeconomics A Notes.pdf"
   "Microeconomics A Notes.log"
-  "Microeconomics A Notes.toc"
+  "Microeconomics A Notes.aux"

@@ -210,6 +210,7 @@ A function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is continuous if and o
 $f$ is concave if and only if $\forall x,y$ and all $t \in [0,1]$ we have that $f(\alpha x + (1-\alpha)y) \geq \alpha f(x) + (1-\alpha)f(y) $\par \vspace{0.3em}
 \subsubsection{Homogeneous of Degree k}
 A real value function $f$ defined on a subset $X$ of $\mathbb{R}^{n}$ is \textit{homogeneous of degree k} if and only if $f(tx) = t^{k}f(x)$ for all $t \in \mathbb{R}_{++}$ and all $x \in X$ \par \vspace{0.3em}
+  \underline{Properties}: if you mutliply all inputs by a constant ($t > 0$) then you will generate an output equal to $t^{k}$ times the function, for instance if $k=1$ and you multiply all inputs by $t=2$ then you will get twice the output
 
 \newpage
 
@@ -526,6 +527,7 @@ A real valued function $f$ on $R_{+}^{n}$ is quasi-concave if and only if for al
     \begin{itemize}
       \item  \includegraphics[width=8cm, height=6cm]{pic18}
     \end{itemize}
+    You can also demonstrate that this set is not quasi-concave setting bundle 1 such that $2^{2} + 14 = 18$ and bundle 2 such that $4^2 + 1 = 17$, in which case bundle 1 $\succ$ bundle 2. However, if we take $t=0.5$ to form a new bundle, bundle 3, we have $3^{2} + 7.5 = 16.5$. In this case, bundle 2 $succ$ bundle 3 and therefore quasi-concavity is violated.
   \end{itemize}
   \par
 \vspace{6mm}
@@ -570,7 +572,7 @@ Demand of each good depends on potentially all prices and income. We write $x(p,
   \begin{itemize}
     \item  \underline{Conditions for Uniqueness}: if utility is strictly quasi-concave, therefore making the budget set convex, we get a unique demanded bundle for each budget that allows us to derive a demand function
     \begin{itemize}
-      \item  \underline{Note}: we will not have a unique demanded bundle if we have perfect substitutes (in this case utility won't be strictly quasi-concave) or other functions like $u(x) = x^{2} and y^{2}$ where price is $1$ for both. In this case, while demand cannot be a function, we can still analyze demand and properties of it
+      \item  \underline{Note}: we will not have a unique demanded bundle if we have perfect substitutes (in this case utility won't be strictly quasi-concave) or other functions like $u(x) = x^{2} + y^{2}$ where price is $1$ for both. In this case, while demand cannot be a function, we can still analyze demand and properties of it
     \end{itemize}
     \item  \underline{Relationship with Utility Functions}: if utility functions are differentiable and strictly convex, the demand functions will often be as well. In such cases, we can use partial derivatives to determine how prices and income affect demand for each good
   \end{itemize}
@@ -579,6 +581,10 @@ Demand of each good depends on potentially all prices and income. We write $x(p,
   \begin{gather*}
     x_{i}(p,I) = \frac{\alpha_{i} I}{(\sum_{j=1}^{n}\alpha_{j})p_{i}}
   \end{gather*}
+  \par
+  \begin{itemize}
+    \item  \underline{Properties}: is strictly quasi-concave, since it is the product of the quantities you will never have a quantity equal to zero so you will always consume on the interior, the function is differentiable so we can use lagrange techniques (which yields the above)
+  \end{itemize}
   \par
   \underline{Perfect Substitutes Example}: suppose $u(x) = \sum_{j=1}^{n}  x_{j}$, the demands are:
   \begin{gather*}
@@ -591,6 +597,10 @@ Demand of each good depends on potentially all prices and income. We write $x(p,
   \end{gather*}
   \par
   \begin{itemize}
+    \item  \underline{Properties}: preferences are not strictly convex, you can have solutions if there are two or more goods with the same lowest price (i.e. goods are extremely price elastic), utility is quasi-concave
+  \end{itemize}
+  \par
+  \begin{itemize}
     \item  \underline{Note}: this is as the consumer will exhaust all his income one the cheapest good since all good are of equal value to him (i.e. they are perfect substitutes)
   \end{itemize}
   \par
@@ -599,17 +609,30 @@ Demand of each good depends on potentially all prices and income. We write $x(p,
     x_{i}(p,I) = \frac{I}{\sum_{j=1}^{n}p_{j}}
   \end{gather*}
   \par
+  \begin{itemize}
+    \item  \underline{Properties}: given that only the minimum amount of a good counts towards your utility then you will want to have an equal amount of each good - yielding the above demand function
+  \end{itemize}
+  \underline{Graphic Representation of Examples}: the below figure shows the indifference curves for the above demand function examples \\
+  \includegraphics[width=5cm, height=5 cm]{pic23}
+  \par
   \underline{Quasi-linear Utility Functions}: suppose $x(x) = v(x_{1}) + x_{2}$ where $v(x_{1})$ does not depend on $x_{n}$. In this case, the demand for good 1 will not depend on income (provided income is sufficiently large and the solution is not a corner)
   \begin{itemize}
-    \item  \underline{Logic}: good 1 is said to have \textit{no-income effects} while good 2 is taken to be \textit{everything else} with a price of \$1 per unit
+    \item  \underline{Logic}: good 1 is said to have \textit{no-income effects} while good 2 is often taken to be \textit{everything else} with a price of \$1 per unit
     \item  \underline{Advantage}: this makes consumer welfare easy to estimate as now it is just the area under the demand curve
-    \item  \underline{Linear Demand}: %what function vx1 would generate a linear demand for x
-    \item  \underline{Note}: for a quasi-linear utility function to also be quasi-concave, it is necessary and sufficient that $v$ be strictly concave
+    \item  \underline{Linear Demand}: a quadratic function for $v(x_{1})$ would generate a linear demand for $x_{1}$ (i.e. $v(x_{1}) = ax_{1} - bx_{1}^{2}$)
+    \item  \underline{Note}: for a quasi-linear utility function to also be strictly quasi-concave, it is necessary and sufficient that $v$ be quasi-concave
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Indirect Utility}
+\subsubsection{Indirect Utility Function}
 Given that utility is a function of bundles of goods, if a consumer is presumed to choose a bundle that maximizes utility, then we can plug the maximizing bundle $x(p,I)$ into the utility function to get what we call an indirect utility function $v(p,I)$ \par \vspace{0.3em}
+  \underline{Mathematic Definition}: $v(p,I) = \max \left\{U(x) | px \leq I \right\}$
+  \begin{itemize}
+    \item  \underline{Note}: in other words, the indirect utility function is a function/formula that solves the utility function given the utility functions constraints
+  \end{itemize}
+  \par
+  \underline{Non-Unique Bundles}: we do not need to have a unique bundle as a solution since all the best bundles will generate the same utility
+  \par
   \underline{Theorem 1}: if $u(x)$ is a continuous and strongly monotonic real valued utility function on $\mathbb{R}_{+}^{n}$, then the indirect utility function $v(p, I)$ is:
   \begin{itemize}
     \item  \underline{(1)}: continuous
@@ -622,6 +645,14 @@ Given that utility is a function of bundles of goods, if a consumer is presumed 
   \begin{gather*}
     x_{i}(p', y') = -\frac{\tfrac{\partial v(p',I')}{\partial p_{i}}}{\tfrac{\partial v(p',I')}{\partial I}}
   \end{gather*}
+  \par
+  \underline{Relationship to the Expenditure Function}: the expenditure function is the inverse of the indirect utility function
+  \par
+  \underline{Example}: the indirect utility function for Cobb-Douglas, $u = x_{1}x_{2}$ where demand is $x_{1} = \tfrac{I}{2p_{1}}$ and $x_{2} = \tfrac{I}{2p_{2}}$, is $V(p,I) = \tfrac{I^{2}}{4p_{1}p_{2}}$
+  \begin{itemize}
+    \item  \underline{Logic}: this comes from substituting the demand for $x_{1}$ and $x_{2}$ into the utility function, giving us an indirect utility function that yield maximum utility
+    \item  \underline{Properties}: the indirect utility function is continuous, strictly increasing in $I$, strictly decreasing in $p$, and strictly monotonic
+  \end{itemize}
   \par
 \vspace{6mm}
 \subsubsection{Dual Problem}
@@ -643,7 +674,7 @@ A solution to the utility maximization problem also solves the expenditure minim
   \par
   \underline{Conversion from u-max to e-min}: if a bundle $x$ solves u-max given budget $(p, I)$, then $x$ also solves e-min of obtaining $\overline{u} = u(x)$ given the same prices
   \begin{itemize}
-    \underline{Note}: $e(p, v(p, I)) = I$
+    \item  \underline{Note}: $e(p, v(p, I)) = I$
   \end{itemize}
   \par
   \underline{Conversion from e-min to u-max}: if a bundle $x$ solves the e-min given $(p, \overline{u})$, then $x$ also solves the u-max given budget $(p, \sum_{i=1}^{n}p_{i}x_{i})$, where the income is the cost of the bundle $x$
@@ -658,9 +689,57 @@ Welfare refers to consumer surplus, typically the \textit{area under the demand 
   \par
   \underline{Basis}: in general, welfare is based on the question of \textit{how much are you willing to pay to change from situation A to situation B?}
   \par
-  \underline{Example 1}: $u(x_{1}, x_{2}) = \ln(x_{1}) + x_{2}$
-
-
+  \underline{Example 1}: we want to focus on the change in the price of good 1 and its effect on consumer welfare given that $u(x_{1}, x_{2}) = \ln(x_{1}) + x_{2}$
+  \begin{itemize}
+    \item \underline{Part 1}: we first find demand for goods 1 and 2 as a function of $p_{1}, p_{2}, I > 0$. From this we get:
+    \begin{gather*}
+      x_{1} =
+      \begin{cases}
+         & \tfrac{p_{2}}{p_{1}} \text{ if } I \geq p_{2} \\
+         & \tfrac{I}{p_{1}} \text{ if } I <  p_{2}
+      \end{cases}
+    \end{gather*}
+    \begin{gather*}
+      x_{2} =
+      \begin{cases}
+         & \tfrac{I}{p_{2}} - 1 \text{ if } I \geq p_{2} \\
+         & 0 \text{ if } I < p_{2}
+       \end{cases}
+    \end{gather*}
+    Notice that if income is high enough, your demand for the first good will not depend on income. Thus, we regard quasi-linear utility functions as representing a situation where the good in question (good 1) does not have income effects
+    \item  \underline{Part 2}: we want to fix income $I$ and $p_{2}$ as the demand curve is defined only for the price of the good in question, with all other things fixed we can focus on welfare changes from the price of good 1. Setting $I = 80$ and $p_{2} = 40$ means that as $I \geq P_{2}$ we have that $x_{1} = \tfrac{40}{p_{1}}$ and $x_{2} = 1$.
+    \\
+    \includegraphics[width=6cm, height=4cm]{pic22}
+    \\
+    In this case, the area $A$ on the above figure represents the change in consumer surplus (CS) for a price drop from $p_{1} = 40$ to $p_{1}' = 20$. This equals
+    \begin{gather*}
+      \Delta CS = \int_{20}^{40} \frac{40}{p_{1}} \ dp_{1} = 40[\ln(40) - \ln(20)] = 40 \ln(2) = 27.73
+    \end{gather*}
+    \item  \underline{Part 3}: Note that at the high price of $p_{1} = 40$, $p_{2} = 40$, and $I = 80$, the optimal bundle is $(x_{1}, x_{2}) = (1, 1)$. When the price drops to $p_{1}' = 20$, the optimal bundle changes to $(x_{1}', x_{2}') = (2, 1)$. We must now examine \textit{how much are you willing to pay at the new prices to have the price drop} by considering how much income we can take away at the new prices($p_{1}'$) to leave the consumer at the same level of utility as before the price change($p_{1}$). \\
+    Note that demand for the first good does not depend on income (no income effects), we can take money away from the consumer at the new prices without changing their demand for good 1. At the old prices utility was $u(1,1) = \ln(1) + 1 = 1$. At the new prices, if we take away $m$ from income, then demand for good 1 will remain at $x_{1}' = 2$ and demand for good 2 will drop to:
+    \begin{gather*}
+      x_{2}' = \frac{80 - m}{40} - 1 = 1 - \frac{m}{40}
+    \end{gather*}
+    Therefore, utility after we take away $m$ from income will be $u' = \ln(2) + 1 - \tfrac{m}{40}$. We want to know when the utilities from the price drop scenario and the income drop scenario are equal, that is the $m$ that solves $\ln(2) + 1 - \tfrac{m}{40} = 1$. This gives us the change in consumer surplus as:
+    \begin{gather*}
+      m = 40 \ln(2) = \Delta CS
+    \end{gather*}
+  \end{itemize}
+  \par
+\vspace{6mm}
+\subsubsection{Compensating Variation (CV)}
+Example 1 of the welfare subsection is a demonstration of the \textit{compensating variation} method of computing a welfare change. The compensating variation resulting from a change from $(p, I)$ to $(p', I')$ measures \textit{how much the consumer is willing to pay} to move from $(p, I)$ to $(p', I')$ \par \vspace{0.3em}
+  \underline{Measurement of CV}: we can measure CV using the expenditure function such that $CV = e(p', u) - I$, where $u$ is the utility obtained at the initial solution $(p, I)$
+  \par
+  \underline{Translation}: CV measures how much income can be taken away from the person in the new situation, to make that person just as well off as in the initial situation
+  \begin{itemize}
+    \item  \underline{Note}: CV will be negative when the new situation makes the person worse off
+  \end{itemize}
+  \par
+  \underline{Difference between CV and $\Delta$CS}: the use of CV is regarded as the correct measure of welfare change, since if income effects are not small then the change in consumer surplus will over or under state welfare changes. However in the case where income effects are negligible (i.e. when we have quasi-linear $u$) then the change in consumer surplus can be used instead.
+  \begin{itemize}
+    \item  \underline{Note}: the change in consumer surplus is based on the idea that how much you pay for the first few units does not affect your marginal willingness to pay for additional units \begingroup\color{magenta} how? \endgroup. If this is not true, then the change in CS will be biased
+  \end{itemize}
 
 
 
