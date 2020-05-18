@@ -1,4 +1,4 @@
-PWD C:/Users/umash/Documents/Git Repositry/Microeconomics A
+PWD C:/Users/umash/Documents/University/Note Sheets/Microeconomics A
 INPUT c:/texlive/2019/texmf.cnf
 INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -301,12 +301,28 @@ INPUT ./Pictures/pic19.png
 INPUT ./Pictures/pic18.png
 INPUT ./Pictures/pic18.png
 INPUT ./Pictures/pic18.png
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT ./Pictures/pic23.png
 INPUT ./Pictures/pic23.png
 INPUT ./Pictures/pic23.png
+INPUT ./Pictures/pic25.png
+INPUT ./Pictures/pic25.png
+INPUT ./Pictures/pic25.png
+INPUT ./Pictures/pic24.png
+INPUT ./Pictures/pic24.png
+INPUT ./Pictures/pic24.png
 INPUT ./Pictures/pic22.png
 INPUT ./Pictures/pic22.png
 INPUT ./Pictures/pic22.png
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT ./Pictures/pic26.png
+INPUT ./Pictures/pic26.png
+INPUT ./Pictures/pic26.png
+INPUT ./Pictures/pic27.png
+INPUT ./Pictures/pic27.png
+INPUT ./Pictures/pic27.png
 INPUT Microeconomics A Notes.aux
 INPUT c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -328,6 +344,8 @@ INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs7.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
