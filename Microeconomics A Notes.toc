@@ -30,54 +30,54 @@
 \contentsline {subsection}{\numberline {3.2}Existence of an Optimal Bundle (Weierstrass Theorem)}{25}%
 \contentsline {subsection}{\numberline {3.3}Quasi-Concavity}{26}%
 \contentsline {subsection}{\numberline {3.4}Lagrangian Approach to Bundle Optimality}{27}%
-\contentsline {subsection}{\numberline {3.5}Exercise 1}{28}%
-\contentsline {subsection}{\numberline {3.6}Exercise 2}{29}%
-\contentsline {subsection}{\numberline {3.7}Exercise 3}{30}%
+\contentsline {subsection}{\numberline {3.5}Exercise 1}{29}%
+\contentsline {subsection}{\numberline {3.6}Exercise 2}{30}%
+\contentsline {subsection}{\numberline {3.7}Exercise 3}{31}%
 \contentsline {subsection}{\numberline {3.8}Exercise 4}{31}%
-\contentsline {subsection}{\numberline {3.9}Exercise 5}{31}%
+\contentsline {subsection}{\numberline {3.9}Exercise 5}{32}%
 \contentsline {subsection}{\numberline {3.10}Exercise 6}{33}%
-\contentsline {section}{\numberline {4}Demand and Consumer Welfare}{34}%
-\contentsline {subsection}{\numberline {4.1}Demand}{34}%
-\contentsline {subsection}{\numberline {4.2}Quasi-Linear Utility Functions}{35}%
-\contentsline {subsection}{\numberline {4.3}Indirect Utility Function}{36}%
-\contentsline {subsection}{\numberline {4.4}Expenditure Minimization Problem}{39}%
-\contentsline {subsection}{\numberline {4.5}Dual Problem}{41}%
-\contentsline {subsection}{\numberline {4.6}Welfare}{41}%
-\contentsline {subsection}{\numberline {4.7}Compensating Variation (CV)}{43}%
-\contentsline {subsection}{\numberline {4.8}Exercise 1}{44}%
-\contentsline {subsection}{\numberline {4.9}Exercise 2}{46}%
-\contentsline {subsection}{\numberline {4.10}Exercise 3}{48}%
-\contentsline {subsection}{\numberline {4.11}Exercise 3}{51}%
-\contentsline {subsection}{\numberline {4.12}Exercise 4}{52}%
-\contentsline {section}{\numberline {5}Uncertainty}{57}%
-\contentsline {subsection}{\numberline {5.1}Set of Alternatives/Lotteries}{57}%
-\contentsline {subsection}{\numberline {5.2}Subjective Uncertainty}{57}%
-\contentsline {subsection}{\numberline {5.3}St Petersburg Paradox}{57}%
-\contentsline {subsection}{\numberline {5.4}Expected Value Criterion}{58}%
-\contentsline {subsection}{\numberline {5.5}Expected Utility Criterion}{58}%
-\contentsline {subsection}{\numberline {5.6}Expected Utility Theory}{59}%
-\contentsline {subsection}{\numberline {5.7}Expected Utility Maximizer (EUMs)}{60}%
-\contentsline {subsection}{\numberline {5.8}Lottery Illustration}{61}%
-\contentsline {subsection}{\numberline {5.9}Risk Attitudes and Lotteries over Money}{62}%
-\contentsline {subsection}{\numberline {5.10}Exercise 1}{62}%
-\contentsline {subsection}{\numberline {5.11}Exercise 2}{65}%
-\contentsline {subsection}{\numberline {5.12}Exercise 3}{66}%
-\contentsline {section}{\numberline {6}Cost and Production}{68}%
-\contentsline {subsection}{\numberline {6.1}Production}{68}%
-\contentsline {subsection}{\numberline {6.2}Cost}{69}%
-\contentsline {subsection}{\numberline {6.3}Duality in Production}{73}%
-\contentsline {section}{\numberline {7}Profit Maximization and Perfect Competition}{74}%
-\contentsline {subsection}{\numberline {7.1}The Competitive Firm Problem}{74}%
+\contentsline {section}{\numberline {4}Demand and Consumer Welfare}{35}%
+\contentsline {subsection}{\numberline {4.1}Demand}{35}%
+\contentsline {subsection}{\numberline {4.2}Quasi-Linear Utility Functions}{36}%
+\contentsline {subsection}{\numberline {4.3}Indirect Utility Function}{37}%
+\contentsline {subsection}{\numberline {4.4}Expenditure Minimization Problem}{40}%
+\contentsline {subsection}{\numberline {4.5}Dual Problem}{42}%
+\contentsline {subsection}{\numberline {4.6}Welfare}{42}%
+\contentsline {subsection}{\numberline {4.7}Compensating Variation (CV)}{44}%
+\contentsline {subsection}{\numberline {4.8}Exercise 1}{45}%
+\contentsline {subsection}{\numberline {4.9}Exercise 2}{47}%
+\contentsline {subsection}{\numberline {4.10}Exercise 3}{49}%
+\contentsline {subsection}{\numberline {4.11}Exercise 3}{52}%
+\contentsline {subsection}{\numberline {4.12}Exercise 4}{53}%
+\contentsline {section}{\numberline {5}Uncertainty}{58}%
+\contentsline {subsection}{\numberline {5.1}Set of Alternatives/Lotteries}{58}%
+\contentsline {subsection}{\numberline {5.2}Subjective Uncertainty}{58}%
+\contentsline {subsection}{\numberline {5.3}St Petersburg Paradox}{58}%
+\contentsline {subsection}{\numberline {5.4}Expected Value Criterion}{59}%
+\contentsline {subsection}{\numberline {5.5}Expected Utility Criterion}{59}%
+\contentsline {subsection}{\numberline {5.6}Expected Utility Theory}{60}%
+\contentsline {subsection}{\numberline {5.7}Expected Utility Maximizer (EUMs)}{61}%
+\contentsline {subsection}{\numberline {5.8}Lottery Illustration}{62}%
+\contentsline {subsection}{\numberline {5.9}Risk Attitudes and Lotteries over Money}{63}%
+\contentsline {subsection}{\numberline {5.10}Exercise 1}{63}%
+\contentsline {subsection}{\numberline {5.11}Exercise 2}{66}%
+\contentsline {subsection}{\numberline {5.12}Exercise 3}{67}%
+\contentsline {section}{\numberline {6}Cost and Production}{69}%
+\contentsline {subsection}{\numberline {6.1}Production}{69}%
+\contentsline {subsection}{\numberline {6.2}Cost}{70}%
+\contentsline {subsection}{\numberline {6.3}Duality in Production}{74}%
+\contentsline {section}{\numberline {7}Profit Maximization and Perfect Competition}{75}%
+\contentsline {subsection}{\numberline {7.1}The Competitive Firm Problem}{75}%
 \contentsline {subsection}{\numberline {7.2}Profit Function Maximization}{75}%
-\contentsline {subsection}{\numberline {7.3}Cobb Douglas Example}{76}%
-\contentsline {subsection}{\numberline {7.4}Short Run (or Restricted) Profit Function}{79}%
-\contentsline {section}{\numberline {8}Perfect and Imperfect Competition}{81}%
-\contentsline {subsection}{\numberline {8.1}Perfectly Competitive Markets}{81}%
-\contentsline {subsection}{\numberline {8.2}Imperfect Competition - Monopoly}{84}%
-\contentsline {subsection}{\numberline {8.3}Imperfect Competition - Oligopoly}{85}%
-\contentsline {section}{\numberline {9}Pure Exchange General Equilibrium}{88}%
-\contentsline {subsection}{\numberline {9.1}Pure Exchange Economy}{88}%
-\contentsline {subsection}{\numberline {9.2}Autarky Example}{90}%
-\contentsline {subsection}{\numberline {9.3}Two Person Example}{92}%
-\contentsline {subsection}{\numberline {9.4}No Equilibrium Example}{93}%
-\contentsline {subsection}{\numberline {9.5}Multiple Equilibria Example}{94}%
+\contentsline {subsection}{\numberline {7.3}Cobb Douglas Example}{78}%
+\contentsline {subsection}{\numberline {7.4}Short Run (or Restricted) Profit Function}{80}%
+\contentsline {section}{\numberline {8}Perfect and Imperfect Competition}{82}%
+\contentsline {subsection}{\numberline {8.1}Perfectly Competitive Markets}{82}%
+\contentsline {subsection}{\numberline {8.2}Imperfect Competition - Monopoly}{85}%
+\contentsline {subsection}{\numberline {8.3}Imperfect Competition - Oligopoly}{86}%
+\contentsline {section}{\numberline {9}Pure Exchange General Equilibrium}{89}%
+\contentsline {subsection}{\numberline {9.1}Pure Exchange Economy}{89}%
+\contentsline {subsection}{\numberline {9.2}Autarky Example}{91}%
+\contentsline {subsection}{\numberline {9.3}Two Person Example}{93}%
+\contentsline {subsection}{\numberline {9.4}No Equilibrium Example}{94}%
+\contentsline {subsection}{\numberline {9.5}Multiple Equilibria Example}{95}%

@@ -206,6 +206,7 @@ A function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is continuous if and o
 \vspace{6mm}
 \subsection{Concave Functions}
 $f$ is concave if and only if $\forall x,y$ and all $t \in [0,1]$ we have that $f(\alpha x + (1-\alpha)y) \geq \alpha f(x) + (1-\alpha)f(y) $\par \vspace{0.3em}
+  \underline{Sum of Concave Functions}: the sum of concave functions is a concave function
 \subsection{Homogeneous of Degree k}
 A real value function $f$ defined on a subset $X$ of $\mathbb{R}^{n}$ is \textit{homogeneous of degree k} if and only if $f(tx) = t^{k}f(x)$ for all $t \in \mathbb{R}_{++}$ and all $x \in X$ \par \vspace{0.3em}
   \underline{Properties}: if you mutliply all inputs by a constant ($t > 0$) then you will generate an output equal to $t^{k}$ times the function, for instance if $k=1$ and you multiply all inputs by $t=2$ then you will get twice the output while if $k = 2$ you will get four times the output
@@ -317,11 +318,6 @@ All bundles in the subset can be compared (completeness), choices are consistent
       \item  \underline{3}: for all $x, y, z \in \mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$ if $x \succeq y$ and $y \succeq z$ (with at least one strict), then $x \succ y$
     \end{itemize}
   \end{itemize}
-  \underline{Theorem 1}: preferences $\succeq$ are complete and transitive if and only if preferences $\succ$ are negative transitive and asymmetric
-  \begin{itemize}
-    \item  \underline{Negative Transitivity}: occurs when $x \nsucc y$ and $y \succ z$ implies that $x \nsucc z$
-    \item  \underline{Asymmetic}: $x \succ y$ implies that $y \nsucc x$
-  \end{itemize}
   \par
   \underline{Axiom 3 - Continuity}: for all $x \in \mathbb{R}_{+}^{n}$, the "at least as good as set" $\succeq (x)$ and the "no better than" set $\preceq (x)$ are closed in $\mathbb{R}_{+}^{n}$
   \begin{itemize}
@@ -343,6 +339,12 @@ All bundles in the subset can be compared (completeness), choices are consistent
     \begin{itemize}
       \item  \underline{Answer}: the first part of the definition states that if $x \geq y$ then $x \succeq y$, which gives us case (a) where $x = y$ and case (b) where $x \neq y$. For (a) we have that by completeness $x \succeq y$, for (b) x has atleast more of some good which by completness implies that $x \succ y$. Thus the two cases, (a) and (b), given by the first part of the definition imply the alternative definition. The second part of the definition states that if $x > y$ then $x \succ y$, by completeness this implies that \textit{x has atleast as much of good as y and strictly more of some good} which demonstrates equivalency to the alternative definition. Without completeness, these implications would not hold because it could mean that comparisons can only be made in the case where $x$ has \textit{strictly more of some good} and not \textit{strictly more of all goods}.
     \end{itemize}
+  \end{itemize}
+  \par
+  \underline{Theorem 1}: preferences $\succeq$ are complete and transitive if and only if preferences $\succ$ are negative transitive and asymmetric
+  \begin{itemize}
+    \item  \underline{Negative Transitivity}: occurs when $x \nsucc y$ and $y \succ z$ implies that $x \nsucc z$
+    \item  \underline{Asymmetic}: $x \succ y$ implies that $y \nsucc x$
   \end{itemize}
   \par
 \vspace{6mm}
@@ -552,7 +554,7 @@ Every continuous real-valued function $f$ on a non-empty compact subset $B$ of $
   \end{itemize}
 \vspace{6mm}
 \subsection{Quasi-Concavity}
-A real valued function $f$ on $R_{+}^{n}$ is quasi-concave if and only if for all $x, y \in \mathbb{R}_{+}^{n}$ and all $t \in [0,1]$: \\ if $u(x) \geq u(y)$ then $u(tx + (1-t)y) \geq u(y)$ \par \vspace{0.3em}
+A real valued function $f$ on $R_{+}^{n}$ is quasi-concave if and only if for all $x, y \in \mathbb{R}_{+}^{n}$ and all $t \in [0,1]$: \\ \null\quad $u(x) \geq u(y) \ \Rightarrow \ u(tx + (1-t)y) \geq u(y)$ \par \vspace{0.3em}
   \underline{Relationship to Convex Preferences}: quasi-concavity is the translation of convex preferences into a utility representation, if you (don't) have convex preferences then the utility function will (not) be quasi-concave
   \begin{itemize}
     \item  \underline{Logic}: this result stems from the representation of convex preferences as indifference curves, note that if you draw indifference curves for a quasi-concave function then the indifference curves will be convex. Likewise, drawing a line through a series of convex indifference curves will yield a concave curve (supposing this to be a function in infinitum indifference curves drawn)
@@ -561,6 +563,9 @@ A real valued function $f$ on $R_{+}^{n}$ is quasi-concave if and only if for al
   \underline{Strictly Quasi-Concave}: a real-valued function $f$ on $\mathbb{R}_{+}^{n}$ is strictly quasi-concave if and only if for all distinct $x, y \in \mathbb{R}^{+}_{n}$ and all $t \in (0,1)$: if $u(x) \geq u(y)$ then $u(tx + (1-t)y) > u(y)$
   \par
   \underline{Theorem 1}: every concave function is quasi-concave and every strictly concave function is strictly quasi-concave, though this is a sufficient and not necessary condition
+  \begin{itemize}
+    \item  \underline{Note}: $f$ is concave if and only if $\forall x,y$ and all $t \in [0,1]$ we have that $f(\alpha x + (1-\alpha)y) \geq \alpha f(x) + (1-\alpha)f(y)$
+  \end{itemize}
   \par
   \underline{Quasi-Concavity Graphic}: for every $x$ between $z$ and $y$, the point $(x, f(x))$ on the graph of $f$ is above the minimum of $\left\{ f(z), f(y) \right\}$
   \begin{center}
@@ -1881,7 +1886,7 @@ This involves a firm acquiring inputs and combining them to produce an output wi
   \par
   \underline{Examples of 2 Inputs}: perfect complements where $f(x_{1}, x_{2}) = \min \left\{ x_{1}, x_{2} \right\}$, perfect substitutes where $f(x_{1}, x_{2}) = x_{1} + x_{2}$, cobb-douglas where $f(x_{1}, x_{2}) = x_{1}^{\alpha}x_{2}^{\beta}$ with $\alpha + \beta \leq 1$ (to make the function concave)
   \par
-  \underline{Returns to Scale}: a production function has \textit{constant returns to scale} iff $f(tx) = tf(x) \ \forall t > 0$, \textit{decreasing returns to scale} iff $f(tx) < tf(x) \ \forall t > 1$, and \textit{increasing returns to scale} iff $f(tx) > tf(x) \ \forall t > 1$
+  \underline{Returns to Scale}: a production function has \textit{constant returns to scale} iff $f(tx) - tf(x) = 0 \ \forall t > 0$, \textit{decreasing returns to scale} iff $f(tx) - tf(x) < 0 \ \forall t > 1$, and \textit{increasing returns to scale} iff $f(tx) - tf(x) > 0 \ \forall t > 1$
   \begin{itemize}
     \item  \underline{Cobb-Douglas Note}: if $\alpha + \beta > 1$ we have increasing returns to scale, if $\alpha + \beta = 1$ we have constant returns, and if $\alpha + \beta < 1$ we have decreasing returns to scale
   \end{itemize}
@@ -2041,16 +2046,6 @@ where $f(x)$ is a continuous, strictly increasing, and strictly concave producti
   \end{gather*}
   \par
   \underline{Uniqueness of Solution}: when f continuous, strictly increasing, and strictly concave, solutions to the firm's maximization problem are unique for each price vector $(p, \mathbf{w})$
-  \begin{itemize}
-    \item  \underline{Output Supply Function}: this is the optimal choice of output given by $y^{*} \equiv y(p, \mathbf{w})$
-    \begin{itemize}
-      \item  \underline{Properties}: suppose the production function is strictly concave, satisfies assumptions 3.1, and the associate production function $\pi (\mathbf{p},y)$ is twice continuously differentiable. Then for all $p > 0$ and $w >> 0$, where it is well defined, the output supply function is homogeneous of degree zero where $y(tp, t\mathbf{w}) = y(p,\mathbf{w}) \ \ \forall t>0$ and its own price effect is $\tfrac{\partial y(p,\mathbf{w})}{\partial p} \geq 0$
-    \end{itemize}
-    \item  \underline{Input Demand Function}: this is the optimal choice of input given by $\mathbf{x}^{*} \equiv \mathbf{x}(p,\mathbf{w})$. Note that unlike conditional input demands that depend on output, these input demands only depend on prices and in doing so maximize the firm's profit
-    \begin{itemize}
-      \item  \underline{Properties}: suppose the production function is strictly concave, satisfies assumptions 3.1, and the associate production function $\pi (\mathbf{p},y)$ is twice continuously differentiable. Then for all $p > 0$ and $w >> 0$, where it is well defined, the output supply function is homogeneous of degree zero where $x_{i}(tp, t\mathbf{w}) = x_{i}(p,\mathbf{w}) \ \ \forall t>0 \ \text{and} \ i=1, \dots, n$ and its own price effect is $\tfrac{\partial x_{i}(p,\mathbf{w})}{\partial p} \leq 0 \ \ \forall i = 1, \dots, n$
-    \end{itemize}
-  \end{itemize}
   \par
 \vspace{6mm}
 \subsection{Profit Function Maximization}
@@ -2060,6 +2055,18 @@ The firm's profit function depends only on input and output prices and is define
   &\text{subject to:} \ f(\mathbf{x}) \geq y
 \end{align*}
 \par \vspace{0.3em}
+  \underline{Profit Function}: the profit function yields the optimal level of profit given price $p$ and input costs $\mathbf{w}$, it can also be written as $\pi(p,w) = py(p,w) - w_{1}x_{1}(p,w) - w_{2}x_{2}(p,w)$
+  \begin{itemize}
+    \item  \underline{Properties of the Profit Function}: if the production function is continuous, strictly increasing, strictly concave, and $f(0) = 0$, then for all non-negative $(p,w)$ the profit function $\pi(p,w)$ is continuous, increasing in $p$, decreasing in $w$, homogeneous of degree 1 in $(p,w)$, and convex in $(p,w)$
+    \item  \underline{Concavity Illustration}: suppose we have $y = x_{1}x_{2}$, meaning that $\alpha + \beta = 2 > 1$, and that our cost function is $c(y) = 4y^{0.5}$. Also suppose that we have a linear demand of $P = 100 - 2y$. This yields the following profit function and maximization solution:
+    \begin{align*}
+      \pi &= (100 - 2y)y - 4y^{0.5} \\
+      0 &= \frac{\partial \pi}{\partial y} = 100 - 4y - 2y^{-0.5} \\
+      \therefore y \approx 24.9
+    \end{align*}
+    Note that the second derivative is $\tfrac{\partial^{2} \pi}{\partial y} = -4 + y^{-\tfrac{3}{2}}$. Therefore, the function is only strictly concave, i.e. $\tfrac{\partial^{2} \pi}{\partial y} < 0$, when $y^{-\tfrac{3}{2}} < 4 \Rightarrow y > (\tfrac{1}{4})^{\tfrac{2}{3}}$
+  \end{itemize}
+  \par
   \underline{Profit Maximization and Marginal Revenue Product}: the marginal revenue product of input $i$ at the optimum must eqaul the unit input cost $w_{i}$.
   \par
   \underline{Profit Maximization and MRTS}: the marginal rate of technological substitution between any two inputs equals the ratio of their prices (i.e. identitical to the necessary condition for cost-minimizing input choice). This can be shown where, if all the $w_{i}$ are positive, the first order conditions of the firm problem yields:
@@ -2067,36 +2074,44 @@ The firm's profit function depends only on input and output prices and is define
     \frac{\partial f(\mathbf{x}^{*} / \partial x_{i})}{\partial f (\mathbf{x}^{*} / \partial x_{j})} = \frac{w_{i}}{w_{j}} \ \ \forall i, j
   \end{gather*}
   \par
-  \underline{Profit Maximization Method given Cost Function}: the profit maximization can be restated as
+  \underline{Profit Maximization Method given Profit Formula}: the profit maximization problem can be stated as
   \begin{gather*}
-    \max_{y \geq 0} py - c(\mathbf{w}, y)
+    \pi (p,\mathbf{w}) = \max_{x \in \mathbb{R}_{+}^{n}} pf(\mathbf{x}) - \mathbf{w} \cdot \mathbf{x}
   \end{gather*}
-  To solve the above we first calculate the minimum cost of producing each output $y$ (given by the cost function $c(\mathbf{w}, y)$) and then solve for the the output that maximizes the difference between revenue and cost as a function of just $y$ instead of $x$
+  To solve the above, we find the input that  maximizes the difference between revenue and the cost function, via using FOCs or $p = MC$, to yield the optimal input demands $x(p,w)$. To then yield the optimal supply function $y(p,w)$, we substitute $x(p,w)$ into the production function. Finally, to derive the profit function, substitute the optimal supply function $y(p,w)$ and optimal input demands $x(p,w)$ into $\pi = py - \mathbf{w}x$ to yield $\pi(p,w)$
+  \begin{itemize}
+    \item  \underline{Output Supply Function}: this is the optimal choice of output given by $y^{*} \equiv y(p, \mathbf{w})$
+    \begin{itemize}
+      \item  \underline{Properties}: suppose the production function is strictly concave, satisfies production function properties, and the associate profit function $\pi (\mathbf{p},y)$ is twice continuously differentiable. Then for all $p > 0$ and $w >> 0$, where it is well defined, the output supply function is homogeneous of degree zero where $y(tp, t\mathbf{w}) = y(p,\mathbf{w}) \ \ \forall t>0$ and its own price effect is $\tfrac{\partial y(p,\mathbf{w})}{\partial p} \geq 0$
+      \item  \underline{Derivation}: this can often be found by setting $p = MC$ in the case of perfectly competitive markets, where $MC$ is the derivative of the cost function
+      \item  \underline{Optimal Output FOC}: note that if $y^{*}$ is the optimal output then it satisfies the first order condition that price equals marginal cost
+      \begin{gather*}
+        p - \frac{\partial c(\mathbf{w}, y^{*})}{\partial y} = 0
+      \end{gather*}
+      Note that the second order conditions require that marginal cost be non-decreasing at the optimum such that
+      \begin{gather*}
+        \frac{\partial^{2} c(y^{*})}{\partial y^{2}} \geq 0
+      \end{gather*}
+    \end{itemize}
+    \item  \underline{Input Demand Function}: this is the optimal choice of input given by $\mathbf{x}^{*} \equiv \mathbf{x}(p,\mathbf{w})$. Note that unlike conditional input demands that depend on output, these input demands only depend on prices and in doing so maximize the firm's profit
+    \begin{itemize}
+      \item  \underline{Properties}: suppose the production function is strictly concave, satisfies production function properties, and the associate profit function $\pi (\mathbf{p},y)$ is twice continuously differentiable. Then for all $p > 0$ and $w >> 0$, where it is well defined, the output supply function is homogeneous of degree zero where $x_{i}(tp, t\mathbf{w}) = x_{i}(p,\mathbf{w}) \ \ \forall t>0 \ \text{and} \ i=1, \dots, n$ and its own price effect is $\tfrac{\partial x_{i}(p,\mathbf{w})}{\partial p} \leq 0 \ \ \forall i = 1, \dots, n$
+    \end{itemize}
+  \end{itemize}
+  \par
+  \underline{Profit Maximization Method given Cost Function}: the profit maximization problem can be restated as
+  \begin{gather*}
+    \pi (p,\mathbf{w}) = \max_{y \geq 0} py - c(\mathbf{w}, y)
+  \end{gather*}
+  To solve the above, we find the output that maximizes the difference between revenue and the cost function, via using FOCs or $p = MC$, to yield the optimal supply function $y(p,w)$. Finally, to derive the profit function, substitute the optimal supply function $y(p,w)$ into $\pi = py - c(\mathbf{w}, y)$ to yield $\pi(p,w)$
   \begin{itemize}
     \item  \underline{Equivalency to Competitive Firm Problem}: note that the above profit maximization cost function problem is equivalent to the competitive firm problem where
     \begin{gather*}
       \max_{x \in \mathbb{R}_{+}^{n}} pf(\mathbf{x}) - \mathbf{w} \cdot \mathbf{x}
     \end{gather*}
-    since $\mathbf{w} \cdot \mathbf{x}$ is the same as $c(\mathbf{w}, y)$, both being the costs of production
-    \item  \underline{Optimal Output FOC}: note that if $y^{*}$ is the optimal output then it satisfies the first order condition that price equals marginal cost
-    \begin{gather*}
-      p - \frac{\partial c(\mathbf{w}, y^{*})}{\partial y} = 0
-    \end{gather*}
-    Note that the second order conditions require that marginal cost be non-decreasing at the optimum such that
-    \begin{gather*}
-      \frac{\partial^{2} c(y^{*})}{\partial y^{2}} \geq 0
-    \end{gather*}
+    since $\mathbf{w} \cdot \mathbf{x}$ is the same as $c(\mathbf{w}, y)$, both being the costs of production. The only difference here is that we use the cost function in this case instead of optimal input demands
   \end{itemize}
   \par
-  \underline{Properties of the Profit Function}: if the production function is continuous, strictly increasing, strictly concave, and $f(0) = 0$, then for all non-negative $(p,w)$ the profit function $\pi(p,w)$ is continuous, increasing in $p$, decreasing in $w$, homogeneous of degree 1 in $(p,w)$, and convex in $(p,w)$
-  \par
-  \underline{Concavity Illustration}: suppose we have $y = x_{1}x_{2}$, meaning that $\alpha + \beta = 2 > 1$, and that our cost function is $c(y) = 4y^{0.5}$. Also suppose that we have a linear demand of $P = 100 - 2y$. This yields the following profit function and maximization solution:
-  \begin{align*}
-    \pi &= (100 - 2y)y - 4y^{0.5} \\
-    0 &= \frac{\partial \pi}{\partial y} = 100 - 4y - 2y^{-0.5} \\
-    \therefore y \approx 24.9
-  \end{align*}
-  Note that the second derivative is $\tfrac{\partial^{2} \pi}{\partial y} = -4 + y^{-\tfrac{3}{2}}$. Therefore, the function is only strictly concave, i.e. $\tfrac{\partial^{2} \pi}{\partial y} < 0$, when $y^{-\tfrac{3}{2}} < 4 \Rightarrow y > (\tfrac{1}{4})^{\tfrac{2}{3}}$
 \vspace{6mm}
 \subsection{Cobb Douglas Example}
 we have that $y = f(x) = x_{1}^{\alpha} x_{2}^{\beta}$ with $\alpha, \beta > 0$ and $\alpha + \beta < 1$ (to make the function strictly concave). Substituting $f(x)$ for $y$ in the profit formula $\pi(y, x) = py - (w_{1}x_{1} + w_{2}x_{2})$ yields
