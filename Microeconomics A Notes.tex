@@ -31,7 +31,7 @@
 \usepackage{calrsfs}
 \renewcommand{\labelitemiv}{$\circledast$}
 \renewcommand{\labelitemii}{$\circ$}
-\titlespacing*{\subsubsection}{0pt}{0ex}{0ex}
+\titlespacing*{\subsection}{0pt}{0ex}{0ex}
 \setlength{\parskip}{0.6em}
 
 \title{Microeconomics A Notes}
@@ -46,24 +46,22 @@
 
 \newpage
 
-\section{Mathematical Concepts}
-
 \vspace{2.5mm}
-\subsection{Concepts for Consumer Theory}
+\section{Concepts for Consumer Theory}
 In this section, the concepts of consumption sets, open balls, and the properties of different types of sets will be explored. The section will also briefly provie an overview of convergence and continuous functions. \par
 \vspace{6mm}
-\subsubsection{Consumption/Choice Set X}
+\subsection{Consumption/Choice Set X}
 The set of all alternative, or complete consumption plans, that the consumer can conceive - whether achievable or not \par \vspace{0.3em}
   \underline{Alternative Definition}: the consumpsion set is the entire non-negative orthan, $X = \mathbb{R}^{n}_{+}$ \par
   \underline{Consumption Bundle}: a consumption bundle of $n$ goods is defined as a vector $x == (x_{1}, \dots, x_{n}) \in \mathbb{R}_{+}^{n}$, specifying the quantities of the $n$ available commodities \par
   \underline{Properties of Consumption Set}: (1) $X \subseteq \mathbb{R}_{+}^{n}$, (2) $X$ is closed, (3) $X$ is convex, (4) $0 \in X$ \par
 \vspace{6mm}
-\subsubsection{Complements of Sets}
+\subsection{Complements of Sets}
 For a given subset $A \subseteq X$, we define the complement of $A$ in $X$ to be the set $A^{c} = \left\{ x \in X: x \notin A \right\}$ \par \vspace{0.3em}
   \underline{Alternative Definition}: the complement set of set $A$ in $X$ is all the stuff in the universe $X$ that is not in $A$ \par
   \underline{Application}: typically we define either \textit{open sets} or \textit{closed sets} and the other (\textit{closed} or \textit{open}) as the complement of the first \par
 \vspace{6mm}
-\subsubsection{Metric Distance}
+\subsection{Metric Distance}
 In huge space $\mathbb{R}_{+}^{n}$, open balls (neighbourhoods) are determined using a metric distance function \par \vspace{0.3em}
   \underline{Euclidean Metric}: measures the distance between two points $x, y \in \mathbb{R}_{+}^{n}$ as $d(x,y) = \sqrt{\sum_{i=1}^{n}(x_{i}-y_{i})^{2}}$
   \begin{itemize}
@@ -77,7 +75,7 @@ In huge space $\mathbb{R}_{+}^{n}$, open balls (neighbourhoods) are determined u
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Open Balls (neighborhoods)}
+\subsection{Open Balls (neighborhoods)}
 An open ball $B_{\varepsilon}(x) = \left\{ y \in \mathbb{R}_{+}^{n}: d(x,y) < \varepsilon \right\}$ is the set of points that are closer in Euclidean distance to $x \in \mathbb{R}_{+}^{n}$ than some real number $\varepsilon > 0$ \par \vspace{0.3em}
   \underline{Alternative Definition}: the open ball $B_{\varepsilon}(x)$ with radius $\varepsilon > 0$ and center $x \in \mathbb{R}^{m}$ is the set of points $y \in \mathbb{R}^{m}$ with distance less than $r$ from $x$, i.e. $B_{\varepsilon}(x) = \left\{ y \in \mathbb{R}^{m}: \ ||y - x|| < \varepsilon \right\}$
   \begin{itemize}
@@ -95,7 +93,7 @@ An open ball $B_{\varepsilon}(x) = \left\{ y \in \mathbb{R}_{+}^{n}: d(x,y) < \v
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Open Set}
+\subsection{Open Set}
 A set $A \subseteq \mathbb{R}_{+}^{n}$ is open if and only if for each point $x \in A$ there is a radius $\varepsilon_{x} > 0$ such that the open ball $B_{\varepsilon}(x) \subseteq A$ \par \vspace{0.3em}
   \underline{Alternative Definition}: a set $S \in \mathbb{R}^{m}$ is open if and only if for each $x \in S$ there exists an open ball around $x$ that is completely contained in $S$ \par
   \underline{Boundary Points}: open sets cannot contain their boundary points, in other words the limit is not in the set since there is no open ball around $limit_{x}$ that is entirely in S. This distinguishes open sets from closed sets \par
@@ -122,7 +120,7 @@ A set $A \subseteq \mathbb{R}_{+}^{n}$ is open if and only if for each point $x 
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Closed Set}
+\subsection{Closed Set}
 A set $A \subset \mathbb{R}_{+}^{n}$ is closed if and only if the complement $A^{c} = \left\{ x \in \mathbb{R}_{+}^{n}: \ x \notin A \right\}$ of A is an open set \par \vspace{0.3em}
   \underline{Alternative Definition}: a set $S \in \mathbb{R}^{m}$ is closed if, whenever $\left\{ x_{n} \right\}_{n=1}^{\infty}$ is a convergent sequence completely contained in $S$, its limit is also contained in $S$ - in other words, a set $S \subseteq \mathbb{R}^{m}$ is closed if it contains all of its boundary points
   \par
@@ -132,7 +130,7 @@ A set $A \subset \mathbb{R}_{+}^{n}$ is closed if and only if the complement $A^
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{DeMoran's Laws}
+\subsection{DeMoran's Laws}
 (Law 1) the complement of the union of any family of sets is equal to the intersection of the complements of the family \\ (Law 2) the complement of the intersection of any family of sets is equal to the union of the complements of the family \par \vspace{0.3em}
   \underline{Implications}: (1) the empty set $\varnothing$ and universal set $\mathbb{R}_{+}^{n}$ are both closed and open, (2) the union of any finite family of closed(open) sets is closed(open), (3) the intersection of any family of closed(open) sets is closed(open)
   \begin{itemize}
@@ -141,7 +139,7 @@ A set $A \subset \mathbb{R}_{+}^{n}$ is closed if and only if the complement $A^
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Bounded Set}
+\subsection{Bounded Set}
 A set $A \subseteq \mathbb{R}_{+}^{n}$ is bounded if and only if we can put an open ball in $\mathbb{R}^{n}$ around the set $A$ \par \vspace{0.3em}
   \underline{Alternative Definition}: a set is bounded if there is an open ball that contains it, i.e. $S \subseteq R^{m}$ is bounded if $\exists K > 0: \ ||x|| < K, \ \forall x \in S$ \par
   \underline{Example}: the left image is bounded, the right is not bounded
@@ -150,12 +148,12 @@ A set $A \subseteq \mathbb{R}_{+}^{n}$ is bounded if and only if we can put an o
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Compact Set}
+\subsection{Compact Set}
 A set $A \subseteq \mathbb{R}_{+}^{n}$ is bounded if and only if it is both closed and bounded \par \vspace{0.3em}
   \underline{Example}: $B_{1} = \left\{ (x_{1},x_{2}) \in mathbb{R}^{2}: p_{1}x_{1} + p_{2}x_{2} \leq w \right\}$ is closed but not bounded. However, $B_{2} = \left\{ (x_{1},x_{2}) \in \mathbb{R}^{2}: p_{1}x_{1} + p_{2}x_{2} \leq w, x_{1} \geq 0, x_{2} \geq 0 \right\}$ is closed and bounded and therefore compact.
   \par
 \vspace{6mm}
-\subsubsection{Convex Set}
+\subsection{Convex Set}
 A set $A \subseteq \mathbb{R}_{+}^{n}$ is a convex set if and only if for all $x, y \in A$, and each $\alpha \in [0,1]$, the point $\alpha x + (1- \alpha)y$ is also in A \par \vspace{0.3em}
   \underline{Alternative Definition}: a set $S \subseteq \mathbb{R}^{n}$ is convex if and only if for every two points of the set the line segment between the two points also belongs to the set
   \par
@@ -180,7 +178,7 @@ A set $A \subseteq \mathbb{R}_{+}^{n}$ is a convex set if and only if for all $x
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Convergent Sequences}
+\subsection{Convergent Sequences}
 Occurs when for all $\varepsilon > 0$ there exists a $\mathbb{N}$ such that for all values of $n$ greater than $\mathbb{N}$ the $n^{th}$ \textit{elements value in the sequence minus the limit's value} will be less than $\varepsilon$ \par \vspace{0.3em}
   \underline{Mathemtical Definition}: let $(x_{n})_{n \in \mathbb{N}}$ be a sequence with codomain $\mathbb{R}$. We say that $(x_{n})$ converges to $x^{*}$ or that $x^{*}$ is the limit of $(x_{n})_{n \in \mathbb{N}}$ if: $\forall \varepsilon > 0 \exists N \in \mathbb{N} \forall n \geq N: \ |x_{n} - x^{*}| < \varepsilon$ \par
   \underline{Sequence}: a sequence of real numbers is an assignment of a real number to each natural number. In other words, $f: N \rightarrow X$ is a function that matches a set of natural numbers, $n$, to a set of numbers, $x$. A sequence with a limit is called convergent
@@ -189,7 +187,7 @@ Occurs when for all $\varepsilon > 0$ there exists a $\mathbb{N}$ such that for 
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Continuous Functions}
+\subsection{Continuous Functions}
 A function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is continuous if and only if the inverse image $f^{-1} (B) = \left\{ x \in \mathbb{R}_{+}^{n}: f(x) \in B \right\}$ of each open ball $B$ in the range $\mathbb{R}$ is also open in the doman $\mathbb{R}_{+}^{n}$ \par \vspace{0.3em}
   \underline{Alternative Definition 1}: let $D \subseteq \mathbb{R}^{k}$. A function $f: D \rightarrow \mathbb{R}^{m}$ is continuous at $x = (x_{1}, x_{2}, \dots, x_{k}) \in D$ if for every sequence $(x_{n})_{n \in \mathbb{N}} \in D$ that converges to x, the sequence $(f(x_{n}))_{n\in \mathbb{N}} \in \mathbb{R}$ converges to $f(x)$. The function is continuous if it is continuous at $x$ for all $x \in D$ \par
   \underline{Explanation}: a function that maps nearby points into nearby points - i.e. you can draw the graph of the function without lifting your pencil from the paper. In other words, if we want to get all the $f(x)$ values to stay in some small neighborhood around $f(x_{0})$ we simply need to choose a small enough neighborhood for the $x$ values around $x_{0}$. If we can do that no matter how small the $f(x)$ neighborhood is, then $f$ is continuous at $x_{0}$ \par
@@ -206,9 +204,9 @@ A function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is continuous if and o
   \underline{Using original definition}: the image of $f(x)$ consists of all the elements of $y$ that an element of $x$ is mapped to. If $f(x) = \left\{x \ \text{if} \ x < 10, x + 10 \ \text{if} \ x \geq 10 \right\}$ and we set the inverse image open ball $B = (15, 25)$, then  we have that $f^{-1}(15,25) = \left\{ x \in \mathbb{R}: \ f(x) \in (15, 25) \right\} = [10, 15)$. This is as $x \geq 10$ is not open in the domain for the open ball in the range $f^{-1}(15,25)$
   \par
 \vspace{6mm}
-\subsubsection{Concave Functions}
+\subsection{Concave Functions}
 $f$ is concave if and only if $\forall x,y$ and all $t \in [0,1]$ we have that $f(\alpha x + (1-\alpha)y) \geq \alpha f(x) + (1-\alpha)f(y) $\par \vspace{0.3em}
-\subsubsection{Homogeneous of Degree k}
+\subsection{Homogeneous of Degree k}
 A real value function $f$ defined on a subset $X$ of $\mathbb{R}^{n}$ is \textit{homogeneous of degree k} if and only if $f(tx) = t^{k}f(x)$ for all $t \in \mathbb{R}_{++}$ and all $x \in X$ \par \vspace{0.3em}
   \underline{Properties}: if you mutliply all inputs by a constant ($t > 0$) then you will generate an output equal to $t^{k}$ times the function, for instance if $k=1$ and you multiply all inputs by $t=2$ then you will get twice the output while if $k = 2$ you will get four times the output
   \par
@@ -221,13 +219,11 @@ A real value function $f$ defined on a subset $X$ of $\mathbb{R}^{n}$ is \textit
 
 \newpage
 
-\section{Consumer Theory}
-
 \vspace{2.5mm}
-\subsection{Preferences}
+\section{Preferences}
 In this section the concepts of preference relations will be explored. In addition to this, the consumer choice axioms will be outlined to provide a framework for proving and understanding utility representations \par
 \vspace{6mm}
-\subsubsection{Preference Relation}
+\subsection{Preference Relation}
 Preferences are defined for each consumer over bundles of goods, with the notation $\succeq$ meaning \textit{at least as good as} \par \vspace{0.3em}
   \underline{Preferences Definition}: preferences of a consumer on the set of bundles in $\mathbb{R}_{+}^{n}$ is a subset $\succeq$ of $\mathbb{R}_{+}^{n} \times \mathbb{R}_{+}^{n}$. In mathematics, this subset is referred to as a \textit{binary relation} on the set $\mathbb{R}_{+}^{n}$
   \begin{itemize}
@@ -246,7 +242,7 @@ Preferences are defined for each consumer over bundles of goods, with the notati
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Strict and Indifferent Preference Relations}
+\subsection{Strict and Indifferent Preference Relations}
 To define instances where a consumer is indifferent between a set of bundles or strictly prefers a given bundle over another, we use indifferent and strict preference relations \par \vspace{0.3em}
   \underline{Strict Preference Relation}: when the binary relation $\succ$ on the consumption set $X$ is defined as follows; $x_{1} \succ x_{2}$ if and only if $x_{2} \nsucceq x_{1}$. This is read $x_{1}$ is strictly preferred to $x_{2}$
   \begin{itemize}
@@ -266,7 +262,7 @@ To define instances where a consumer is indifferent between a set of bundles or 
   \par
   \underline{Combining Implications of Indifference and Strict Preference}: from implications 2 we have that both indifference and strict preferences require that "one is atleast as good as the other". The combination of the strict preference implication $i$ and indifference implication $i$ yields example $i$ from the preference relation section \par
 \vspace{6mm}
-\subsubsection{Lexicographic Preferences}
+\subsection{Lexicographic Preferences}
 Describe preferences where an agent prefers any amount of one good (X) to any amount of another (Y), therefore if offered several bundles then the agent will choose the bundle that offers the most $X$ no matter how much $Y$ there is \par \vspace{0.3em}
   \underline{Idea}: first compare two bundles $x$ and $y$ according to the quantity of the the first good. If one bundle has more than the other of that good, then the one having more is strictly preferred. If neither has more of that good, go to the next good and compare in the same way. Repeat this until one bundle has more of good $z$ than the other bundle, where $z$ is the most recently compared good (i.e. the good with the lowest rank of those compared so far). If there is no bundle with more of good $z$, then the bundles are deemed to be indifferent to each other as they are the same bundle \par
   \underline{Example for Two Goods}: $\mathbb{R}_{+}^{2}: \ x \succeq y$ if and only if (a) $x_{1} > y_{1}$ or (b) $x_{1} = y_{1}$ and $x_{2} \geq y_{2}$
@@ -283,7 +279,7 @@ Describe preferences where an agent prefers any amount of one good (X) to any am
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Convex Preferences}
+\subsection{Convex Preferences}
 Preferences $\succeq$ are convex if and only if for each $x \in \mathbb{R}_{+}^{n}$ the least as good as set $G(x)$ is a convex set \par \vspace{0.3em}
   \underline{Alternative Definition}: preferences are convex if and if for all $x, y \in \mathbb{R}_{n}^{+}$ and all $t \in [0,1]$: if $x \succeq y$ then $tx + (1-t)y \succeq y$
   \begin{itemize}
@@ -308,7 +304,7 @@ Preferences $\succeq$ are convex if and only if for each $x \in \mathbb{R}_{+}^{
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Consumer Choice Axioms}
+\subsection{Consumer Choice Axioms}
 All bundles in the subset can be compared (completeness), choices are consistent (transitivity), the consumer can choose all bundles in the subset (continuity), and more is always better (strict monotonicity). These four axioms must hold for preferences to be considered 'rational' \par \vspace{0.3em}
   \underline{Axiom 1 - Completeness}: for all $x_{1}$ and $x_{2}$ in $X$, either $x_{1} \succeq x_{2}$ or $x_{2} \succeq x_{1}$ \par
   \underline{Axion 2 - Transitivity}: for any three elements $x_{1}, x_{2}, x_{3}$ in $X$, if $x_{1} \succeq x_{2}$ and $x_{2} \succeq x_{3}$ then $x_{1} \succeq x_{3}$
@@ -350,7 +346,7 @@ All bundles in the subset can be compared (completeness), choices are consistent
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Intermediate Value Version of Continuity}
+\subsection{Intermediate Value Version of Continuity}
 If the preferences are continuous and complete, then for any $x, y, z \in \mathbb{R}_{+}^{n}$, if $x \succ y$ and $y \succ z$, then there is some $\alpha \in (0,1)$ such that the convex combination $\alpha x + (1- \alpha)z$ is indifferent to y. This resembles the \textit{intermediate value theorem} \par \vspace{0.3em}
   \underline{Proof}: this can be proved using completeness and continuity together with the least upper bound property (i.e. that every non-empty set of reals that is bounded above, has a least upper bound). We know that $x \succ y$ and $y \succ z$ and that the preferences are continuous. We need to show that there is some point on the line between $x$ and $z$ that is indifferent to $y$. Consider the set $A = \left\{ \alpha \in [0,1]: \ y \succ \alpha x + (1- \alpha)z \right\}$. It stands that $\alpha = 0$ is an element of $A$ since $0x + (1 - 0)z = z$ and $y \succ z$, therefore $A$ is a set of reals. It also stands that $\alpha = 1$ is not an element of $A$ since $1x + (1-1)z = x$ and $x \succ y$ meaning that, at $\alpha = 1,$ $\alpha x + (1- \alpha)z$ is not indifferent to $y$, therefore $A$ is bounded above by $1$ and must have a least upper bound equal to or less than $1$. Call the least upper bound $\alpha^{*}$, we can show that $\alpha^{*}x + (1 - \alpha_{*})z \sim y$ using the following steps:
   \begin{itemize}
@@ -364,7 +360,7 @@ If the preferences are continuous and complete, then for any $x, y, z \in \mathb
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Utility Representation}
+\subsection{Utility Representation}
 A utility representation of preferences $\succeq$ is a real valued function $u: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ over the set of bundless such that for all bundles $x,y \in R_{+}$: \\ (a) if $x \succeq y$ then $u(x) \geq u(y)$ \\ (b) if $u(x) \geq u(y)$ then $x \succeq y$ \par \vspace{0.3em}
   \underline{Alternative Definition}: a real values function $u: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is called a utility function representing the relation $\succeq$ if for all $x_{0}, x_{1} \in \mathbb{R}_{+}^{n}, u(x_{0}) \geq u(x_{1}) \Longleftrightarrow x_{0} \succeq x_{1}$ \par
   \underline{Strict Preferences}: $u: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ is a utility representation of preferences $\succeq$ if and only if for all bundles $x, y \in \mathbb{R}_{+}^{n}$: (a) if $x \succ y$ then $u(x) > u(y)$, (b) if $u(x) > u(y)$ then $x \succ y$ \par
@@ -394,7 +390,7 @@ A utility representation of preferences $\succeq$ is a real valued function $u: 
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Exercise 1}
+\subsection{Exercise 1}
 Answer if the below preferences are are complete, transitive, continuous, and strongly monotonic? \par \vspace{0.3em}
   \begin{itemize}
     \item  \underline{Question 1}: $x \succeq y$ if and only if $(x_{1})^{2} + x_{2} \geq (y_{1})^{2} + y_{2}$
@@ -421,7 +417,7 @@ Answer if the below preferences are are complete, transitive, continuous, and st
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Exercise 2}
+\subsection{Exercise 2}
 Larry has the utility function $u(x,y)=x^{4}y^{2}$ over two goods whose quantities are denoted by $x \geq 0$ and $y \geq 0$. \par \vspace{0.3em}
   \underline{Are Larry's Preferences complete, transitive, and continuous}?
   \begin{itemize}
@@ -432,7 +428,7 @@ Larry has the utility function $u(x,y)=x^{4}y^{2}$ over two goods whose quantiti
   \begin{itemize}
     \item  \underline{Indifference and Budget Line Tangency}: Note that since the utility function is smooth (ie twice continuously differentiable), the indifference curves are convex, and monotonicity holds, it follows that interior solutions occur only where the indifference curve of the bundle is tangent to the budget line. This interior solution is captured by the following equations:
     \begin{gather*}
-      \frac{MU_{x}}{p_{x}} = \frac{MU_{y}}{p_{y}} \Rightarrow tfrac{4x^{3}y^{2}}{1} = \frac{2x^{4}y}{1} \ \tag{1} \\
+      \frac{MU_{x}}{p_{x}} = \frac{MU_{y}}{p_{y}} \Rightarrow \frac{4x^{3}y^{2}}{1} = \frac{2x^{4}y}{1} \ \tag{1} \\
       p_{x}x + p_{y}y = I \Rightarrow x + y = 30 \ \tag{2}
     \end{gather*}
     Note that equation (2) puts us on the budget line and equation (1) ensures that trading $x$ for $y$ (and vice versa) will not increase utility. Solving equation (1) yields $2y = x$. By substituting $2y = x$ into equation (2) we get $3y = 30 \ \therefore \ y = 10$. Since $y=10$ we have from equation (2) that $x + 10 = 30$ and therefore $x = 20$. Our optimal bundle is $(x,y) = (20, 10)$
@@ -457,7 +453,7 @@ Larry has the utility function $u(x,y)=x^{4}y^{2}$ over two goods whose quantiti
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Exercise 3}
+\subsection{Exercise 3}
 Demand in a market is given by $D(p) = \tfrac{100}{p^{2}}$ for $p > 0$ and the cost of production is $C(Q) = 6 \sqrt{Q} + Q$ \par \vspace{0.3em}
   \underline{Monopoly Market}: suppose we have a monopoly seller. Invert the demand curve and find the monopoly output level $Q$ and the corresponding price level $p$, or argue that one does not exist.
   \begin{itemize}
@@ -499,7 +495,7 @@ Demand in a market is given by $D(p) = \tfrac{100}{p^{2}}$ for $p > 0$ and the c
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Exercise 3}
+\subsection{Exercise 3}
 Let preferences on a set $X$ be described by a binary relation $\succeq$ which is assumed to be complete and transitive. Let $\sim$ be defined in the standrad way from $\succeq$, that is, $x \sim y$ if and only if $x \succeq y$ and $y \succeq x$. You are goint to help prove that $\sim$ satisfied the following property:
 \begin{gather*}
   \forall x,y,z \in X, \ x \sim y \ \text{and} \ y \sim z \ \text{implies} \ x \sim y
@@ -534,10 +530,10 @@ In your answer, put the completed statement filling in the missing parts
 \newpage
 
 \vspace{2.5mm}
-\subsection{Quasi-Concavity and Utility Maximization}
+\section{Quasi-Concavity and Utility Maximization}
 In this section we will be focusing on the consumer problem, which is to find an optimal bundle within the consumer's budget. We will first look at conditions that ensure an optimal bundle exists and add the assumption of quasi-concavity of a utility function. This will allow us to use math techniques to solve consumer problems. \par
 \vspace{6mm}
-\subsubsection{Consumer Problem}
+\subsection{Consumer Problem}
 For the standard consumer problem, we will take the consumer to have a budget, $I \in \mathbb{R}_{++}$, and to be able to buy as much of each good as he can afford with his income at fixed positive per unit prices $p = (p_{1}, p_{2}, \dots, p_{n}) \in \mathbb{R}_{++}^{n}$ \par \vspace{0.3em}
 \underline{The Consumer's Problem}: to find a bundle $x \in B(p, I)$ such that $x \succeq y$ for all $y \in B(p, I)$, referred to as the optimal bundle \par
 \underline{Affordable Bundles}: the consumer's problem allows us to define affordable bundles as those that are in the consumer's budget set where $B(p, I) = \left\{ x \in \mathbb{R}_{+}^{n}: \ p \cdot x \leq I \right\}$
@@ -547,7 +543,7 @@ For the standard consumer problem, we will take the consumer to have a budget, $
 \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Existence of an Optimal Bundle (Weierstrass Theorem)}
+\subsection{Existence of an Optimal Bundle (Weierstrass Theorem)}
 Every continuous real-valued function $f$ on a non-empty compact subset $B$ of $\mathbb{R}^{n}$ obtains a maximum on $B$. In otherwords, there is an $x \in B$ such that $f(x) \geq f(y)$ for all $y \in B$ \par \vspace{0.3em}
   \underline{Implication}: therefore, all we need to do is assume the preferences are represented by a continuous utility function and show that the budget set is compact and non-empty to solve the consumer problem \par
   \underline{Requirements}: the budget set is a closed, bounded, and non-empty subset of $\mathbb{R}$
@@ -555,15 +551,21 @@ Every continuous real-valued function $f$ on a non-empty compact subset $B$ of $
     \item  \underline{Example}: the budget set figure above is closed, bounded, and non-empty and therefore when alying a continuious real value function to it we will find a maximum
   \end{itemize}
 \vspace{6mm}
-\subsubsection{Quasi-Concavity}
+\subsection{Quasi-Concavity}
 A real valued function $f$ on $R_{+}^{n}$ is quasi-concave if and only if for all $x, y \in \mathbb{R}_{+}^{n}$ and all $t \in [0,1]$: \\ if $u(x) \geq u(y)$ then $u(tx + (1-t)y) \geq u(y)$ \par \vspace{0.3em}
-  \underline{Relationship to Convex Preferences}: quasi-concavity is the translation of convex preferences into a utility representation, if you (don't) have convex preferences then the utility function will (not) be quasi-concave \par
+  \underline{Relationship to Convex Preferences}: quasi-concavity is the translation of convex preferences into a utility representation, if you (don't) have convex preferences then the utility function will (not) be quasi-concave
+  \begin{itemize}
+    \item  \underline{Logic}: this result stems from the representation of convex preferences as indifference curves, note that if you draw indifference curves for a quasi-concave function then the indifference curves will be convex. Likewise, drawing a line through a series of convex indifference curves will yield a concave curve (supposing this to be a function in infinitum indifference curves drawn)
+  \end{itemize}
+  \par
   \underline{Strictly Quasi-Concave}: a real-valued function $f$ on $\mathbb{R}_{+}^{n}$ is strictly quasi-concave if and only if for all distinct $x, y \in \mathbb{R}^{+}_{n}$ and all $t \in (0,1)$: if $u(x) \geq u(y)$ then $u(tx + (1-t)y) > u(y)$
   \par
-  \underline{Theorem 1}: every concave function is quasi-concave and every strictly concave function is strictly quasi-concave
-  \begin{itemize}
-    \item  \underline{Logic}: this result stems from the representation of convex preferences as indifference curves, note that if you draw indifference curves for a quasi-concave function then the indifference curve will be convex
-  \end{itemize}
+  \underline{Theorem 1}: every concave function is quasi-concave and every strictly concave function is strictly quasi-concave, though this is a sufficient and not necessary condition
+  \par
+  \underline{Quasi-Concavity Graphic}: for every $x$ between $z$ and $y$, the point $(x, f(x))$ on the graph of $f$ is above the minimum of $\left\{ f(z), f(y) \right\}$
+  \begin{center}
+    \includegraphics[width=8cm, height=6cm]{pic30}
+  \end{center}
   \par
   \underline{Examples}: (1) is $u(x) = x^{2}$ (strictly) quasi-concave? (2) is $u(x,y) = x^{2} + y$ (strictly) quasi-concave?
   \begin{itemize}
@@ -579,7 +581,7 @@ A real valued function $f$ on $R_{+}^{n}$ is quasi-concave if and only if for al
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Lagrangian Approach to Bundle Optimality}
+\subsection{Lagrangian Approach to Bundle Optimality}
 If the utility function is continuously differentiable, that is, the partial derivatives are all continuous functions then we can use the Lagrangian Approach to find a solution to the consumer's problem \par \vspace{0.3em}
   \underline{Lagrangian Approach}: set up the Lagrangian where $L(x, \lambda) = u(x) + \lambda (p \cdot x - I)$ and look for solutions $(x^{*}, \lambda^{*})$, where $x_{i}^{*} > 0$ for each good $i$ and $\lambda^{*} > 0$, to the system: \\
   \null\quad (1) $\tfrac{\partial L}{\partial x_{i}} = \tfrac{\partial u(x^{*})}{\partial x_{i}} - \lambda^{*}p_{i}$ \quad for each $i = 1, \dots, n$ where you have $n$ equations \\
@@ -611,7 +613,7 @@ If the utility function is continuously differentiable, that is, the partial der
   Subtituting $x_{2} = 2x_{1}$ into equation (3) gives us $10x_{1} + 5(2x_{1}) = 50 \ \therefore \ x_{1} = 2.5$. Since $x_{1} = 2.5$ we have that $x_{2} = 2x_{1} = 5$. Note that $\lambda > 0$ since $\lambda = \tfrac{x_{2}}{10} = 0.5$, making the solution valid. Our optimal bundle is therefore $(x_{1}, x_{2}) = (2.5, 5)$
   \par
 \vspace{6mm}
-\subsubsection{Exercise 1}
+\subsection{Exercise 1}
 Let Jane have the utility function $u(x,y) = 2x + \ln y$ \par \vspace{0.3em}
 \begin{itemize}
   \item  \underline{Question 1}: find the optimal demands for Jane using the Lagrangian method if income $I = 10$ and prices are $p_{x} = 1$ and $p_{y} = 2$
@@ -665,7 +667,7 @@ Let Jane have the utility function $u(x,y) = 2x + \ln y$ \par \vspace{0.3em}
 \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 2}
+\subsection{Exercise 2}
 Let $u(x,y) = x^{2} + y^{2}$ \par \vspace{0.3em}
 \begin{itemize}
   \item  \underline{Question 1}: use the bundles $(5,0)$ and $(0,4)$ to show that these preferences are not strictly convex
@@ -699,7 +701,7 @@ Let $u(x,y) = x^{2} + y^{2}$ \par \vspace{0.3em}
 \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 3}
+\subsection{Exercise 3}
 Consider a utility representation $u(x,y) = v(x) + y$ where $v$ is a function that does not depend on $y$/ Argue that this utility function is quasi-concave if $v(x)$ is concave\par \vspace{0.3em}
 \begin{itemize}
   \item  \underline{Answer}: for a quasi-linear utility function $u(x,y) = v(x) + y$ to be quasi-concave we need that both $v(x)$ and $y$ are concave.\\ Supposing that $v(x)$ is concave we must show that $y$ is concave, $y$ must be concave since it is strictly monotonic and therefore for all $t \in [0,1]$ and $\forall y_{1},y_{2} \in \mathbb{R}$ we have that $u(ty_{1} + (1-t)y_{2}) \geq tu(y_{1}) + (1-t)u(y_{2})$.\\ Since the sum of concave functions is concave this means that $u(x,y) = v(x) + y$ is concave, Since a concave function is quasi-concave, we have that $u(x,y)$ is quasi-concave
@@ -715,7 +717,7 @@ Consider a utility representation $u(x,y) = v(x) + y$ where $v$ is a function th
 \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 4}
+\subsection{Exercise 4}
 Argue formally that the budget set defined as a subset of $\mathbb{R}_{+}^{n}$ is convex for positive prices and income \par \vspace{0.3em}
 \begin{itemize}
   \item  \underline{Answer}: suppose $p > 0$ and $I > 0$, we need to show that the budget set $B(p,I) = \left\{ x \in R^{+}_{n}: px \leq I \right\}$ is convex.\\ We have that $B(p, I)$ is convex if for all $x,y \in B(p,I)$ for all $t \in [0,1]$:
@@ -739,7 +741,7 @@ Argue formally that the budget set defined as a subset of $\mathbb{R}_{+}^{n}$ i
 \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 5}
+\subsection{Exercise 5}
 Let $X$ be a convex subset of $\mathbb{R}_{+}^{n}$. We say that $x \in X$ \textit{maximizes u over $X$ if and only if $u(x) \geq u(y)$ for all $y \in X$}. \par \vspace{0.3em}
 \begin{itemize}
   \item  \underline{Question 1}: prove that if $u$ is quasi-concave, then the set $M(X) = \left\{ x \in X: x \ \textit{maximizes} \ u \ \textit{over} \ X \right\}$ is a convex set
@@ -778,7 +780,7 @@ Let $X$ be a convex subset of $\mathbb{R}_{+}^{n}$. We say that $x \in X$ \texti
 \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 6}
+\subsection{Exercise 6}
 Rick has the following utility function:
 \begin{gather*}
   u(x,y) =
@@ -821,10 +823,10 @@ Rick has the following utility function:
 \newpage
 
 \vspace{2.5mm}
-\subsection{Demand and Consumer Welfare}
+\section{Demand and Consumer Welfare}
 Unlike previous sections, this section will be focusing on the total demand and consumer welfare instead of the demand of an individual consumer. \par
 \vspace{6mm}
-\subsubsection{Demand}
+\subsection{Demand}
 Demand of each good depends on potentially all prices and income. We write $x(p,I)$ to denote a bundle that maximizes utility subject to the budget constraint. This bundle $x(p,I)$ (or bundles) is called the demand at prices and income $(p, I)$  \par \vspace{0.3em}
   \underline{Demand Function}: a demand function assigns a bundle/s $x(p, I)$ to each budget $(p,I)$
   \begin{itemize}
@@ -878,7 +880,7 @@ Demand of each good depends on potentially all prices and income. We write $x(p,
   \includegraphics[width=5cm, height=5 cm]{pic23}
   \par
 \vspace{6mm}
-\subsubsection{Quasi-Linear Utility Functions}
+\subsection{Quasi-Linear Utility Functions}
  suppose $u(x) = v(x_{1}) + x_{2}$ where $v(x_{1})$ does not depend on $x_{n}$. In this case, the demand for good 1 will not depend on income (provided income is sufficiently large and the solution is not a corner) \par \vspace{0.3em}
   \underline{Logic}: good 1 is said to have \textit{no-income effects} while good 2 is often taken to be \textit{everything else} with a price of \$1 per unit
   \par
@@ -889,7 +891,7 @@ Demand of each good depends on potentially all prices and income. We write $x(p,
   \underline{Note}: for a quasi-linear utility function to also be strictly quasi-concave, it is necessary and sufficient that $v$ be quasi-concave. For utility that has a quasi-linear form, so long as $v(x)$ is concave then the preferences will be convex
   \par
 \vspace{6mm}
-\subsubsection{Indirect Utility Function}
+\subsection{Indirect Utility Function}
 Given that utility is a function of bundles of goods, if a consumer is presumed to choose a bundle that maximizes utility, then we can plug the maximizing bundle $x(p,I)$ into the utility function to get what we call an indirect utility function $v(p,I)$ \par \vspace{0.3em}
   \underline{Mathematic Definition}: $v(p,I) = \max \left\{U(x) | px \leq I \right\}$
   \begin{itemize}
@@ -923,7 +925,7 @@ Given that utility is a function of bundles of goods, if a consumer is presumed 
   \par
   \underline{Example - Cobb Douglas $n=2$}: the indirect utility function for Cobb-Douglas, $u = x_{1}x_{2}$ where demand is $x_{1} = \tfrac{I}{2p_{1}}$ and $x_{2} = \tfrac{I}{2p_{2}}$, is $V(p,I) = \tfrac{I^{2}}{4p_{1}p_{2}}$
   \begin{itemize}
-    \item  \underline{Logic}: this comes from substituting the demand for $x_{1}$ and $x_{2}$ into the utility function, giving us an indirect utility function that yield maximum utility
+    \item  \underline{Logic}: this comes from substituting the demand for $x_{1}$ and $x_{2}$ into the utility function, giving us an indirect utility function that yields maximum utility
     \item  \underline{Properties}: the indirect utility function is continuous, strictly increasing in $I$, strictly decreasing in $p$, and strictly monotonic
   \end{itemize}
   \underline{Example - Cobb Douglas $n>2$}: suppose we have $u(x) = \prod_{j=1}^{n} x_{j}^{\alpha_{j}}$ where $\alpha_{j} > 0$ for all $j = 1, \dots, n$ and $\sum_{j=1}^{n} \alpha_{j} = 1 \equiv \alpha$. We want to solve $\max_{x} u(x) \ \text{s.t.} \ \sum_{j=1}^{n}p_{j}x_{j} \leq I$. Since we have strong monotonicity we will always exhaust the budget so our constraint can be rewritten as $\sum_{j=1}^{n}p_{j}x_{j} = I$. We can use bang-for-buck equalization and budget exhaustion to solve this where:
@@ -976,7 +978,7 @@ Given that utility is a function of bundles of goods, if a consumer is presumed 
   Note that we raise $x_{j}$ by $\alpha_{j}$ since this is the utility obtained from a given quantity of $x_{j}$. We also can place $I$ outside of $\prod$ since the sum of $\alpha_{j}$ is 1 and $I$ is a constant, i.e. $I^{\alpha_{1}} \times \dots \times I^{\alpha_{n}} = I^{\alpha_{1} + \dots + \alpha_{n}} = I$.
   \par
 \vspace{6mm}
-\subsubsection{Expenditure Minimization Problem}
+\subsection{Expenditure Minimization Problem}
 Involves finding $x(p, \overline{u})$ to minimize the expenditure $e(p,\overline{u}) = \sum_{i=1}^{n}p_{i}x_{i}$ incurred to obtain utility $\overline{u}$ \par \vspace{0.3em}
 \vspace{6mm}
   \underline{Translation}: what is the cheapest way to get a specified level of utility given price and income $(p, I)$
@@ -1029,7 +1031,7 @@ Involves finding $x(p, \overline{u})$ to minimize the expenditure $e(p,\overline
   \begin{gather*}
     e(p,\overline{u}) = p_{1}x_{1}(p,\overline{u}) + p_{2}x_{2}(p,\overline{u}) + \dots + p_{n}x_{n}(p,\overline{u}) \ \tag{***}
   \end{gather*}
-\subsubsection{Dual Problem}
+\subsection{Dual Problem}
 A solution to the utility maximization problem also solves the expenditure minimization problem (and vice versa), the two problems are in essence a different way of stating the same thing \par \vspace{0.3em}
   \underline{Utility Maximization Problem (u-max)}: find $x(p, I)$ that maximizes $u(x)$ subject to the budget $(p, I)$, i.e. indirect utility
   \par
@@ -1056,7 +1058,7 @@ A solution to the utility maximization problem also solves the expenditure minim
   where the expenditure function is just the inverse of the utility function \begingroup\color{magenta} why is this different to our direct solution for the expenditure function? \endgroup
   \par
 \vspace{6mm}
-\subsubsection{Welfare}
+\subsection{Welfare}
 Welfare refers to consumer surplus, typically the \textit{area under the demand curve minus what the consumer pays}. The change in welfare therefore is the change in consumper surplus, typically the \textit{change in the area under the demand curve minus what the consumer pays} \par \vspace{0.3em}
   \underline{Assumptions}: utility is quasi-linear
   \par
@@ -1100,7 +1102,7 @@ Welfare refers to consumer surplus, typically the \textit{area under the demand 
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Compensating Variation (CV)}
+\subsection{Compensating Variation (CV)}
 Example 1 of the welfare subsection is a demonstration of the \textit{compensating variation} method of computing a welfare change. The compensating variation resulting from a change from $(p, I)$ to $(p', I')$ measures \textit{how much the consumer is willing to pay} to move from $(p, I)$ to $(p', I')$ \par \vspace{0.3em}
   \underline{Measurement of CV}: we can measure CV using the new expenditure function calibrated to the old utility such that $CV = e(p', u) - I'$, where $u$ is the utility obtained at the initial solution $(p, I)$. Alternatively, we can write this as:
   \begin{gather*}
@@ -1118,7 +1120,7 @@ Example 1 of the welfare subsection is a demonstration of the \textit{compensati
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Exercise 1}
+\subsection{Exercise 1}
 Consider the utility function $u(x,y) = xy$ for Cameron. Suppose that initially $I = 100$, $p_{x} = 1$, and $p_{y} = 4$ \par \vspace{0.3em}
 \begin{itemize}
   \item  \underline{Question 1}: find the indirect utility function and expenditure minimization function for Cameron and  the respective values for each
@@ -1199,7 +1201,7 @@ Consider the utility function $u(x,y) = xy$ for Cameron. Suppose that initially 
 \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 2}
+\subsection{Exercise 2}
 The Stone-Geary utility function has the form
 \begin{gather*}
   u(x) = \prod_{i=1}^{n}(x_{i} - a_{i})^{b_{i}}
@@ -1267,7 +1269,7 @@ where $b_{i} > 0$ and $\sum_{i=1}^{n}b_{i} = 1$. The $a_{i} \geq 0$ are often in
 \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 3}
+\subsection{Exercise 3}
 Consider the utility function $u(x_{1}, x_{2}) = \ln x_{1} + x_{2}$ where $x_{1} > 0$ so that utility is not only real-valued but also well-defined \par \vspace{0.3em}
 \begin{itemize}
   \item  \underline{Question 1}: find the demand functions, called Hicksian demand functions, which come from the expenditure minimization problem
@@ -1347,7 +1349,7 @@ Consider the utility function $u(x_{1}, x_{2}) = \ln x_{1} + x_{2}$ where $x_{1}
 \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 3}
+\subsection{Exercise 3}
 Consider the following demand system:
 \begin{gather*}
   x(p,I) = \frac{Ip_{z}}{4p_{x}p_{y}}; \ y(p,I) = \frac{I}{4p_{y}}; \ z(p,I) = 0
@@ -1417,7 +1419,7 @@ Consider the following demand system:
 \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 4}
+\subsection{Exercise 4}
 Let $u(x) = \sqrt{x_{1}x_{2}} + \sqrt{x_{3}}$
 \par \vspace{0.3em}
 \begin{itemize}
@@ -1544,11 +1546,13 @@ Let $u(x) = \sqrt{x_{1}x_{2}} + \sqrt{x_{3}}$
   \end{itemize}
 \end{itemize}
 
+\newpage
+
 \vspace{2.5mm}
-\subsection{Uncertainty}
+\section{Uncertainty}
 In this section, the concepts of expected utility theory, the St Petersburg Paradox, and risk are discussed \par
 \vspace{6mm}
-\subsubsection{Set of Alternatives/Lotteries}
+\subsection{Set of Alternatives/Lotteries}
 The standard set of alternatives for situations involving uncertainty is a set of lotteries - wherein a single lottery is a probability distribution over some set of outcomes $Z$. Here the set of alternatives is the set of these lotteries and is denoted by $L$ with a single lottery denoted by lower case letters $p, \ q, \ etc$. Preferences $\succeq$ are expressed as a binary relation on the set of lotteries $L$ \par \vspace{0.3em}
   \underline{Outcomes in Z}: $Z$ could include things such as a bundle of goods (i.e. points in $\mathbb{R}_{+}^{n}$), amounts of money (i.e. points in $\mathbb{R}$), or even complete descriptions of a situation. Probable are referred to as certain outcomes within $Z$
   \begin{itemize}
@@ -1556,12 +1560,12 @@ The standard set of alternatives for situations involving uncertainty is a set o
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Subjective Uncertainty}
+\subsection{Subjective Uncertainty}
 This occurs when there is uncertainty about the probabilities within a given lottery, with these probabilities interpreted as beliefs. In this case, in addition to the set $Z$ of certain outcomes, there is a state space $S$ (i.e. different states of the world) which assigns different possible probabilities for the lottery \par \vspace{0.3em}
   \underline{Acts}: the function $f: S \rightarrow Z$ is referred to as an act, with preferences defined over the set of acts. This assigns for each state of the world $S$ the corresponding set of certain outcomes $Z$
   \par
 \vspace{6mm}
-\subsubsection{St Petersburg Paradox}
+\subsection{St Petersburg Paradox}
 You face a situation where you can select either:
 \begin{itemize}
   \item  \underline{Option A}: take \$ 1000 for certain
@@ -1571,7 +1575,7 @@ You face a situation where you can select either:
   \underline{Evaluation}: we need a criterion to determine which of the two lotteries to select, option A or option B
   \par
 \vspace{6mm}
-\subsubsection{Expected Value Criterion}
+\subsection{Expected Value Criterion}
 The expected value criterion can be used to evaluate lotteries, where the expected value of a lottery $p$ with possible outcomes in $Z$ is defined as
 \begin{gather*}
   EV(p) = \sum_{z \in Z} p_{z}z
@@ -1589,7 +1593,7 @@ where $p_{z}$ is the probability of the outcome $z$. This has the wealth of a lo
   \par
   \underline{Change in Welfare}: the expected value criterion suggests that the change in welfare (utility) is $\partial u = \partial w$, where $w$ denotes wealth and $u$ denoted utility. By integration, this leads to the utility function $u(w) = w$
 \vspace{6mm}
-\subsubsection{Expected Utility Criterion}
+\subsection{Expected Utility Criterion}
 The expected utility criterion (from Bernoulli) can be used to evaluate lotteries, where the expected utility of a lottery $p$ with possible outcomes in $Z$ is defined as
 \begin{gather*}
   EU(p) = \sum_{z \in Z} p_{z}u(z)
@@ -1608,7 +1612,7 @@ where $p_{z}$ is the probability of the outcome $z$ and $u(\cdot) = \ln (\cdot)$
   Therefore, the expected utility criterion suggests we should choose option A as $\ln (1000) > \ln(4)$. This solves the St Petersburg Paradox
   \par
 \vspace{6mm}
-\subsubsection{Expected Utility Theory}
+\subsection{Expected Utility Theory}
 Suppose that $Z = \left\{ z_{1}, \dots, z_{n} \right\}$ is finite. In this case, a lottery can be described as a point $p = (p_{1}, \dots, p_{n}) \in \mathbb{R}_{+}^{n}$ with the restriction that
 \begin{gather*}
   \sum_{i=1}^{n}p_{i} = 1
@@ -1631,7 +1635,7 @@ to give us a probability distribution over all elements in Z
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Expected Utility Maximizer (EUMs)}
+\subsection{Expected Utility Maximizer (EUMs)}
 We assume that individuals evaluate lotteries by comparing the expected utility of those lotteries. Therefore, we define an individual with preferences $\succeq$ over the set of lotteries $L$ to be an expected utility maximizer if and only if there exists a utility function $u: Z \rightarrow \mathbb{R}$ such that for all lotteries $p,q \in L$:
 \begin{gather*}
   p \succeq q \Leftrightarrow \sum_{i=1}^{n} p_{i}u(z_{i}) \geq \sum_{i=1}^{n} q_{i}u(z_{i})
@@ -1675,7 +1679,7 @@ where the utility function $u: Z \rightarrow \mathbb{R}$ represents the preferen
   \par
   \underline{Example of Axiom Violation}: suppose we have $p, q, r$ where $q$ is the status quo, $p$ is the status quo plus $100$, and $r$ is the total destruction of the universe. Therefore we have that $p \succ q \succ r$ and by the intermediate value theorem $\exists \alpha \in (0,1)$ such that $\alpha p + (1- \alpha)r \sim q$. This is not feasible since no one is likely to take a gamble on the total destruction of the universe and so the indifference $\sim$ would not hold. Since the intermediate value theorem does not hold, we have that either continuity or completeness is violated
 \vspace{6mm}
-\subsubsection{Lottery Illustration}
+\subsection{Lottery Illustration}
 Consider the finite set of outcomes $Z = \left\{ (1,1), (1,2), (3,0) \right\}$ where we take $z_{1} = (1,1)$, $z_{2} = (1,2)$, and $z_{3} = (3,0)$. Suppose we use the Cobb-Douglas utility function $u(x_{1}, x_{2}) = x_{1}x_{2}$ such that we have a certain outcome (i.e. $z_{1} = (1,1)$ has the utility $u(1,1) = 1$) \par \vspace{6mm}
   \underline{Lottery Probability Representation}: a lottery over these 3 bundles can be represented by a triple $p = (p_{1}, p_{2}, p_{3}) \in \Delta (Z)$
   \begin{itemize}
@@ -1696,14 +1700,14 @@ Consider the finite set of outcomes $Z = \left\{ (1,1), (1,2), (3,0) \right\}$ w
   \end{itemize}
   \par
 \vspace{6mm}
-\subsubsection{Risk Attitudes and Lotteries over Money}
+\subsection{Risk Attitudes and Lotteries over Money}
 If the set $Z \subseteq \mathbb{R}$ (i.e. is a lottery over money), then the shape of the utility function $u: Z \rightarrow \mathbb{R}$ reveals the following risk attitudes of an individual: \\
 \null\quad \textit{Strictly Risk Adverse} iff the person prefers the expected value of a lottery to the lottery itself \\
 \null\quad \textit{Risk Neutral} iff the person is indiffferent between the expected value of a lottery and the lottery itself \\
 \null\quad \textit{Strictly Risk Loving} iff the person prefers the lottery itself to the expected value of the lottery \par \vspace{0.3em}
   \underline{Shape of U-function Implication}: an expected utility maximizer is strictly risk adverse/loving/neutral if and only if his utility function over certain outcomes is strictly concave/convex/linear
 \vspace{6mm}
-\subsubsection{Exercise 1}
+\subsection{Exercise 1}
 Consider a decision maker who is an expected utility maximizer with a utility function over wealth $w > 0$ defined as $u(w) = \ln w$ \par \vspace{0.3em}
   \begin{itemize}
     \item  \underline{Question 1}: is the decision maker risk neutral, strictly risk averse, or strictly risk loving
@@ -1790,7 +1794,7 @@ Consider a decision maker who is an expected utility maximizer with a utility fu
   \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 2}
+\subsection{Exercise 2}
 The independence axiom states that for all lotteries $p,q,r $ and all $\alpha \in (0,1)$:
 \begin{gather*}
   p \succeq q \Leftrightarrow \alpha p + (1-\alpha)r \succeq \alpha q + (1-\alpha)r
@@ -1830,7 +1834,7 @@ Show that this axiom implies that for all lotteries $p,q,r$ and $\alpha \in (0,1
   \end{itemize}
 \par
 \vspace{6mm}
-\subsubsection{Exercise 3}
+\subsection{Exercise 3}
 Prove that if a decision maker is an expected utility maximizer, then the independence axiom is satisfied \par \vspace{0.3em}
 \begin{itemize}
   \item  \underline{Approach/Guide}: since the decision maker is an expected utility maximizer, her preferences $\succeq$ over the set of lotteries $L$ satisfy that for all $p,q \in L$
@@ -1856,8 +1860,745 @@ Prove that if a decision maker is an expected utility maximizer, then the indepe
 
 \newpage
 
-\section{Producer Theory}
+\vspace{2.5mm}
+\section{Cost and Production}
+In this section we will reviewing theories of firm cost, firm production, and cost minimization. Note that unlike consumer theory, production numbers have a cardinal meaning while utility numbers do not
+\vspace{6mm}
+\subsection{Production}
+This involves a firm acquiring inputs and combining them to produce an output with the assumption that the firm seeks to maximize profit. Inputs are purchased on input markets with expenditure on these markets representing the firm's costs. Outputs are sold on product markets with the earnings from their sale representing the firm's revenue \par \vspace{0.3em}
+  \underline{Production Possibility Set}: the firm has a production possibility set, $Y \subset \mathbb{R}^{m}$, where each vector $y = (y_{1}, \dots, y_{m})$ is a production plan where $y_{i} < 0$ if resource $i$ is an input and $y_{i} > 0$ if resource $i$ is an output
+  \par
+  \underline{Production Function}: $y = f(x)$ means that $y$ units of output (and no more) can be produceed using the input vector $x$
+  \begin{itemize}
+    \item  \underline{Assumptions}: the production function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}_{+}$ is continuous, strictly increasing (i.e. striclty monotonic), strictly quasiconcave on $\mathbb{R}_{+}^{n}$ (so that we have a unique solution), and $f(0) = 0$
+    \item  \underline{Single Mapping}: if a firm produces a single output $y$ from a vector of inputs $x = (x_{1}, \dots, x_{n})$, with $x \geq 0$ and $y \geq 0$, then the production function $f$ is a mapping from $\mathbb{R}_{+}^{n}$ into $\mathbb{R}_{+}$
+  \end{itemize}
+  \par
+  \underline{Production Set Representation}: let $y = f(x)$ be a production function where $x \in \mathbb{R}_{+}^{n}$. We define the production set as $Y = \left\{ (-x, y): y \leq f(x) \ \text{and} \ x \in \mathbb{R}_{+}^{n} \right\}$, in other words this is the set of different levels of production that can be produced given $x$ (i.e. with the maximum level of production being $f(x)$)
+  \begin{itemize}
+    \item  \underline{General Equilibrium Requirements}: we must have convexity of the production set where the production set $Y = \left\{ (-x, y): y \leq f(x) \ \text{and} \ x \in \mathbb{R}_{+}^{n} \right\}$ is a convex set if and only if $f(x)$ is a concave function
+  \end{itemize}
+  \par
+  \underline{Examples of 2 Inputs}: perfect complements where $f(x_{1}, x_{2}) = \min \left\{ x_{1}, x_{2} \right\}$, perfect substitutes where $f(x_{1}, x_{2}) = x_{1} + x_{2}$, cobb-douglas where $f(x_{1}, x_{2}) = x_{1}^{\alpha}x_{2}^{\beta}$ with $\alpha + \beta \leq 1$ (to make the function concave)
+  \par
+  \underline{Returns to Scale}: a production function has \textit{constant returns to scale} iff $f(tx) = tf(x) \ \forall t > 0$, \textit{decreasing returns to scale} iff $f(tx) < tf(x) \ \forall t > 1$, and \textit{increasing returns to scale} iff $f(tx) > tf(x) \ \forall t > 1$
+  \begin{itemize}
+    \item  \underline{Cobb-Douglas Note}: if $\alpha + \beta > 1$ we have increasing returns to scale, if $\alpha + \beta = 1$ we have constant returns, and if $\alpha + \beta < 1$ we have decreasing returns to scale
+  \end{itemize}
+  \par
+  \underline{Marginal Product of Input}: when $f$ is differentiable, its partial derivative, $\partial f(x) / \partial x_{i}$, is the marginal product of input $i$. We will typically assume that $\partial f(x) / \partial x_{i} > 0$
+  \par
+  \underline{Isoquant}: for any fixed output $y$, the set of input vectors producing $y$ units is the y-level isoquant $Q(y)$ which is just a level set of $f(\cdot)$ where
+  \begin{gather*}
+    Q(y) \equiv \left\{ x \geq 0 | f(x) = y \right\}
+  \end{gather*}
+  Note that for an input vector x, the isoquant through x is just the set of input vectors $Q(f(x))$. This is similar to an indifference curve except instead of utility we have production output
+  \par
+  \underline{Marginal Rate of Technical Substitution}: the rate at which one input can be substituted for another without changing the amount of output produced is called the marginal rate of technical substitution. The MRTS of input $j$ for input $i$ when the input vector is $x$ is:
+  \begin{gather*}
+    MRTS_{ij}(x) = \frac{\partial f(x) / \partial x_{i}}{\partial f(x) / \partial x_{j}}
+  \end{gather*}
+  \begin{itemize}
+    \item  \underline{Graph}: the below graph shows the marginal rate of substitution of $x^{1}$ as the slope tangent to $x^{1}$ on the isoquant $Q(y)$ curve \\
+    \begin{center}
+      \includegraphics[width=8cm, height=6cm]{pic28}
+    \end{center}
+  \end{itemize}
+\vspace{6mm}
+\subsection{Cost}
+We assume that firms are perfectly competitive on their input markets and face fixed input prices \par \vspace{0.3em}
+  \underline{Market Price Vector and Firm Selection}: $w = (w_{1}, \dots, w_{n}) \geq 0$ is the vector of market prices of input $x = (x_{1}, \dots, x_{n})$. Since the firm maximizes profit, it will choose the least costly vector of inputs capable of producing $y$
+  \par
+  \underline{Cost Function}: the cost function, defined for all input prices $\mathbf{w} >> 0$ and all input levels $y \in f(\mathbb{R}_{+}^{n})$, is the minimum value function:
+  \begin{gather*}
+    c(\mathbf{w},y) \equiv \min_{x \in \mathbb{R}_{+}^{n}} \mathbf{w} \cdot \mathbf{x} \\
+    \text{subject to}: \ \ f(x) = y
+  \end{gather*}
+  Note that, since $f$ is strictly increasing, the constraint will always be binding at the solution so we write $y = f(x)$ instead of $f(x) \geq y$
+  \begin{itemize}
+    \item  \underline{Conditional Input Demand}: note that the solution is referred to as the conidional input demand since it is conditional on the level of output $y$ (which need not be profit maximizing)
+    \item  \underline{Unique Solution}: since $\mathbf{w} >> 0$ and $f$ is strictly quasiconcanve, the solution $x^{*} \equiv x(w,y)$ to the cost function is unique. Note that if $\mathbf{x}(\mathbf{w},y)$ solves the cost minimisation problem then $c(\mathbf{w}, y) = \mathbf{w} \cdot \mathbf{x}(\mathbf{w},y)$
+    \item  \underline{Perfect Complements Example}: for $f(x_{1}, x_{2}) = \min \left\{ x_{1}, x_{2} \right\}$ we have the cost function $c(w,y) = (w_{1} + w_{2})y$
+    \item  \underline{Perfect Substitutes Example}: for $f(x_{1}, x_{2}) = x_{1} + x_{2}$ we have the cost function $c(w,y) = \min \left\{ w_{1}, w_{2} \right\} y$
+    \item  \underline{Cobb-Douglas Example}: for $f(x_{1}, x_{2}) = x_{1}^{\alpha}x_{2}^{\beta}$ we have the cost function
+    \begin{gather*}
+      c(w,y) = \big[ (\frac{\alpha}{\beta})^{\tfrac{\beta}{\alpha + \beta}} + (\frac{\alpha}{\beta})^{\tfrac{- \alpha}{\alpha + \beta}} \big] w_{1}^{\tfrac{\alpha}{\alpha + \beta}} w_{2}^{\tfrac{\beta}{\alpha + \beta}} y^{\tfrac{1}{\alpha + \beta}}
+    \end{gather*}
+    \begin{itemize}
+      \item  \underline{Derivation}: we have the following cost function
+      \begin{align*}
+        \min &w_{1}x_{1} + w_{2}x_{2} \\
+        &\text{subject to:} \ x_{1}^{\alpha}x_{2}^{\beta} = y
+      \end{align*}
+      From this we get the following lagrangian
+      \begin{gather*}
+        \mathcal{L} = w_{1}x_{1} + w_{2}x_{2} - \lambda (x_{1}^{\alpha}x_{2}^{\beta} - y)
+      \end{gather*}
+      which yields the following first order conditions:
+      \begin{align*}
+        \frac{\partial \mathcal{L}}{\partial x_{1}} = 0 &\Rightarrow w_{1} = \lambda \alpha x_{1}^{\alpha -1}x_{2}^{\beta} \ \tag{1} \\
+        \frac{\partial \mathcal{L}}{\partial x_{2}} = 0 &\Rightarrow w_{2} = \lambda \beta x_{1}^{\alpha}x_{2}^{\beta-1} \ \tag{2} \\
+        \frac{\partial \mathcal{L}}{\partial \lambda} = 0 &\Rightarrow y = x_{1}^{\alpha}x_{2}^{\beta} \ \tag{3}
+      \end{align*}
+      Multiplying equation (1) by $x_{1}$ and equation (2) by $x_{2}$ gives us:
+      \begin{align*}
+        w_{1}x_{1} &= \lambda \alpha x_{1}^{\alpha}x_{2}^{\beta} = \lambda \alpha y \ \tag{4} \\
+        w_{2}x_{2} &= \lambda \beta x_{1}^{\alpha}x_{2}^{\beta} = \lambda \beta y \ \tag{5}
+      \end{align*}
+      Note that equations (4) and (5) can also be written as:
+      \begin{align*}
+        x_{1} &= \frac{\lambda \alpha y}{w_{1}} \ \tag{6} \\
+        x_{2} &= \frac{\lambda \beta y}{w_{2}} \ \tag{7}
+      \end{align*}
+      Inserting equations (6) and (7) into equation (3) we get:
+      \begin{gather*}
+        y = (\frac{\lambda \beta y}{w_{2}})^{\alpha} (\frac{\lambda \beta y}{w_{2}})^{\beta} \ \tag{*}
+      \end{gather*}
+      Solving equation (*) for $\lambda (y)$ and assuming that $\alpha + \beta = 1$ yields:
+      \begin{align*}
+        \lambda (y) &= \frac{1}{\alpha^{\alpha}} \frac{1}{\beta^{\beta}}w_{1}^{\alpha}w_{2}^{\beta}y^{1-(\alpha+\beta)} \\
+        \lambda (y) &= \frac{1}{\alpha^{\alpha}} \frac{1}{\beta^{\beta}}w_{1}^{\alpha}w_{2}^{\beta} \ \tag{**}
+      \end{align*}
+       Substituting (**) into equations (4) and (5) allows us to solve for $x_{1}$ and $x_{2}$ in terms of our parameters as follows:
+       \begin{align*}
+         x_{1} (w, \beta, \alpha) &= [(\frac{\alpha w_{2}}{\beta w_{1}})^{\beta}y]^{\tfrac{1}{\alpha + \beta}} \tag{$\star$} \\
+         x_{2} (w, \beta, \alpha) &= [(\frac{\beta w_{1}}{\alpha w_{2}})^{\alpha}y]^{\tfrac{1}{\alpha + \beta}}\tag{$\star \star$}
+       \end{align*}
+       Substituting equations $(\star)$ and $(\star \star)$ into the cost minimization problem gives us the cost minimization solution
+      \item  \underline{Linear Cost}: if $\alpha + \beta = 1$ then cost is linear (i.e. constant marginal cost) such that $c(w, y) = Ay$ for some constant $A$
+      \item  \underline{Quadratic Cost}: if $\alpha + \beta = \tfrac{1}{2}$ then cost is quadratic (i.e. linear increasing marginal cost) such that $c(w,y) = Ay^{2}$ for some constant $A$
+      \item  \underline{General Cost}: generally we have $c(w,y) = Ay^{r}$ where $r \leq 1$, though for the cost minimization problem we allow $r > 1$
+    \end{itemize}
+  \end{itemize}
+  \par
+  \underline{Cost Function Properties}: if $f$ is continuous and strictly increasing then $c(w,y)$ is:
+  \begin{itemize}
+    \item  \underline{(1)}: zero when $y = 0$
+    \item  \underline{(2)}: continuous on its domain
+    \item  \underline{(3)}: for all $w >> 0$ is strictly increasing and unbounded above in $y$
+    \item  \underline{(4)}: increasing in $w$
+    \item  \underline{(5)}: homogeneous of degree one in $w$
+    \item  \underline{(6)}: concave in $w$
+    \item  \underline{(7)}: if strictly quasiconcave then we have shephard's lemma wherein $c(w,y)$ is differentiable in $w$ at $(w^{0}, y^{0})$ whenever $w^{0} >> 0$ and
+    \begin{gather*}
+      \frac{\partial c (w^{0}, y^{0})}{\partial w_{i}} = x_{i}(w^{0}, y^{0}), \ \ \forall i = 1, \dots, n
+    \end{gather*}
+  \end{itemize}
+  \par
+  \underline{Marginal Rate of Substitution}: cost minimization implies that the marginal rate of substitution between any two inputs is equal to the ratio of their prices where
+  \begin{gather*}
+    \frac{\partial f(x^{*})/ \partial x_{i}}{\partial f(x^{*}) / \partial x_{j}} = \frac{w_{i}}{w_{j}}
+  \end{gather*}
+  \begin{itemize}
+    \item  \underline{Derivation}: assuming that $x^{*} >> 0$ and that $f$ is differentiable at $x^{*}$ with $\triangledown f(x^{*}) >> 0$ then by lagrange's theorem there is a $\lambda^{*} \in \mathbb{R}$ such that
+    \begin{gather*}
+      w_{i} = \lambda^{*} \frac{\partial f(x^{*})}{\partial x_{i}} \ \ \forall i = 1, \dots, n
+    \end{gather*}
+    Since $w_{i} > 0 \ \ \forall i = 1, \dots, n$ then we may divide the preceding i-th equation by the j-th equation to obtain the above relationship
+    \item  \underline{Graphic Solution}: the below figure shows the solution to the firm's cost minimization problem where the isoquant is tangent to the cost curve. Note that $\alpha < \alpha'$ \\
+    \begin{center}
+      \includegraphics[width=8cm, height=6cm]{pic29}
+    \end{center}
+  \end{itemize}
+  \par
+\vspace{6mm}
+\subsection{Duality in Production}
+The firm's cost-minimization problem is similar to the consumer's expenditure-minimization problem so that we have duality between production and cost (just like utility and expenditure). This means that if we use a production function to derive a cost function we can use that cost function to generate the production function \par \vspace{0.3em}
+  \underline{Concavication}: if the original production function is quasiconcave, the derived production function will be identical to it. However, if the original production function is not quasiconcave then the generated production function will be a concavication of it
+  \par
+  \underline{Production Function Generation Theorem}: let $c: \mathbb{R}_{++}^{n} \times \mathbb{R}_{+} \rightarrow \mathbb{R}_{+}$ satisfy the cost function properties 1 to 7. Then the production function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}_{+}$ defined by
+  \begin{gather*}
+    f(x) \equiv \max \left\{ y \geq 0 | \mathbf{w} \cdot \mathbf{x} \geq c(\mathbf{w}, y), \ \ \forall \mathbf{w} >> 0 \right\}
+  \end{gather*}
+  is increasingm unbounded above, and quasiconcave. Moreover, the cost function generate by $f$ is $c$
+  \begin{itemize}
+    \item  \underline{Note}: any function with all the properties of a cost function generates some production function for which it is the cost function
+  \end{itemize}
+  \par
 
+\newpage
+
+\vspace{2.5mm}
+\section{Profit Maximization and Perfect Competition}
+This section focuses on profit maximization with perfectly competitive firms based on cost minimisation
+\vspace{6mm}
+\subsection{The Competitive Firm Problem}
+A profit maximizing firm produces that produces a single output chooses the level of output and the combination of inputs that solve
+\begin{align*}
+  \max_{(x,y) \geq 0} &py - \mathbf{w} \cdot \mathbf{x} \\
+  &\text{subject to:} \ \ f(x) \ y
+\end{align*}
+where $f(x)$ is a continuous, strictly increasing, and strictly concave production function. Note that we may replace the inequality in the contraint by an equality since the production function is strictly increasing, allowing us to write the profit maximization problem as
+\begin{gather*}
+  \max_{x \in \mathbb{R}_{+}^{n}} pf(\mathbf{x}) - \mathbf{w} \cdot \mathbf{x}
+\end{gather*}
+\par \vspace{0.3em}
+  \underline{Price Taker}: since the firm is both a perfect competitor on the input and output market, it is a price taker on both output and input markets
+  \par
+  \underline{Maximum at 0}: assuming that the problem has an interior solution $\mathbf{x}^{*} >>0$, the profit maximizing amount of output is $y^{*} = f(x^{*})$ and the first order conditions require that the gradient of the maximand be zero since there are no constraints. In other words we have that
+  \begin{gather*}
+    p \frac{\partial f(x^{*})}{\partial x_{i}} = w^{i} \ \ \forall i = 1, \dots, n
+  \end{gather*}
+  \par
+  \underline{Uniqueness of Solution}: when f continuous, strictly increasing, and strictly concave, solutions to the firm's maximization problem are unique for each price vector $(p, \mathbf{w})$
+  \begin{itemize}
+    \item  \underline{Output Supply Function}: this is the optimal choice of output given by $y^{*} \equiv y(p, \mathbf{w})$
+    \begin{itemize}
+      \item  \underline{Properties}: suppose the production function is strictly concave, satisfies assumptions 3.1, and the associate production function $\pi (\mathbf{p},y)$ is twice continuously differentiable. Then for all $p > 0$ and $w >> 0$, where it is well defined, the output supply function is homogeneous of degree zero where $y(tp, t\mathbf{w}) = y(p,\mathbf{w}) \ \ \forall t>0$ and its own price effect is $\tfrac{\partial y(p,\mathbf{w})}{\partial p} \geq 0$
+    \end{itemize}
+    \item  \underline{Input Demand Function}: this is the optimal choice of input given by $\mathbf{x}^{*} \equiv \mathbf{x}(p,\mathbf{w})$. Note that unlike conditional input demands that depend on output, these input demands only depend on prices and in doing so maximize the firm's profit
+    \begin{itemize}
+      \item  \underline{Properties}: suppose the production function is strictly concave, satisfies assumptions 3.1, and the associate production function $\pi (\mathbf{p},y)$ is twice continuously differentiable. Then for all $p > 0$ and $w >> 0$, where it is well defined, the output supply function is homogeneous of degree zero where $x_{i}(tp, t\mathbf{w}) = x_{i}(p,\mathbf{w}) \ \ \forall t>0 \ \text{and} \ i=1, \dots, n$ and its own price effect is $\tfrac{\partial x_{i}(p,\mathbf{w})}{\partial p} \leq 0 \ \ \forall i = 1, \dots, n$
+    \end{itemize}
+  \end{itemize}
+  \par
+\vspace{6mm}
+\subsection{Profit Function Maximization}
+The firm's profit function depends only on input and output prices and is defined as the maximum value function
+\begin{align*}
+  \pi (p,\mathbf{w}&) = \max_{(x,y) \geq 0} py - \mathbf{w} \cdot \mathbf{x} \\
+  &\text{subject to:} \ f(\mathbf{x}) \geq y
+\end{align*}
+\par \vspace{0.3em}
+  \underline{Profit Maximization and Marginal Revenue Product}: the marginal revenue product of input $i$ at the optimum must eqaul the unit input cost $w_{i}$.
+  \par
+  \underline{Profit Maximization and MRTS}: the marginal rate of technological substitution between any two inputs equals the ratio of their prices (i.e. identitical to the necessary condition for cost-minimizing input choice). This can be shown where, if all the $w_{i}$ are positive, the first order conditions of the firm problem yields:
+  \begin{gather*}
+    \frac{\partial f(\mathbf{x}^{*} / \partial x_{i})}{\partial f (\mathbf{x}^{*} / \partial x_{j})} = \frac{w_{i}}{w_{j}} \ \ \forall i, j
+  \end{gather*}
+  \par
+  \underline{Profit Maximization Method given Cost Function}: the profit maximization can be restated as
+  \begin{gather*}
+    \max_{y \geq 0} py - c(\mathbf{w}, y)
+  \end{gather*}
+  To solve the above we first calculate the minimum cost of producing each output $y$ (given by the cost function $c(\mathbf{w}, y)$) and then solve for the the output that maximizes the difference between revenue and cost as a function of just $y$ instead of $x$
+  \begin{itemize}
+    \item  \underline{Equivalency to Competitive Firm Problem}: note that the above profit maximization cost function problem is equivalent to the competitive firm problem where
+    \begin{gather*}
+      \max_{x \in \mathbb{R}_{+}^{n}} pf(\mathbf{x}) - \mathbf{w} \cdot \mathbf{x}
+    \end{gather*}
+    since $\mathbf{w} \cdot \mathbf{x}$ is the same as $c(\mathbf{w}, y)$, both being the costs of production
+    \item  \underline{Optimal Output FOC}: note that if $y^{*}$ is the optimal output then it satisfies the first order condition that price equals marginal cost
+    \begin{gather*}
+      p - \frac{\partial c(\mathbf{w}, y^{*})}{\partial y} = 0
+    \end{gather*}
+    Note that the second order conditions require that marginal cost be non-decreasing at the optimum such that
+    \begin{gather*}
+      \frac{\partial^{2} c(y^{*})}{\partial y^{2}} \geq 0
+    \end{gather*}
+  \end{itemize}
+  \par
+  \underline{Properties of the Profit Function}: if the production function is continuous, strictly increasing, strictly concave, and $f(0) = 0$, then for all non-negative $(p,w)$ the profit function $\pi(p,w)$ is continuous, increasing in $p$, decreasing in $w$, homogeneous of degree 1 in $(p,w)$, and convex in $(p,w)$
+  \par
+  \underline{Concavity Illustration}: suppose we have $y = x_{1}x_{2}$, meaning that $\alpha + \beta = 2 > 1$, and that our cost function is $c(y) = 4y^{0.5}$. Also suppose that we have a linear demand of $P = 100 - 2y$. This yields the following profit function and maximization solution:
+  \begin{align*}
+    \pi &= (100 - 2y)y - 4y^{0.5} \\
+    0 &= \frac{\partial \pi}{\partial y} = 100 - 4y - 2y^{-0.5} \\
+    \therefore y \approx 24.9
+  \end{align*}
+  Note that the second derivative is $\tfrac{\partial^{2} \pi}{\partial y} = -4 + y^{-\tfrac{3}{2}}$. Therefore, the function is only strictly concave, i.e. $\tfrac{\partial^{2} \pi}{\partial y} < 0$, when $y^{-\tfrac{3}{2}} < 4 \Rightarrow y > (\tfrac{1}{4})^{\tfrac{2}{3}}$
+\vspace{6mm}
+\subsection{Cobb Douglas Example}
+we have that $y = f(x) = x_{1}^{\alpha} x_{2}^{\beta}$ with $\alpha, \beta > 0$ and $\alpha + \beta < 1$ (to make the function strictly concave). Substituting $f(x)$ for $y$ in the profit formula $\pi(y, x) = py - (w_{1}x_{1} + w_{2}x_{2})$ yields
+\begin{gather*}
+  \pi(x) = px_{1}^{\alpha}x_{2}^{\beta} - (w_{1}x_{1} + w_{2}x_{2})
+\end{gather*}
+Since the function is differentiable and strictly concave we can solve the problem using first order conditions where
+\begin{gather*}
+  \frac{\partial \pi (x)}{\partial x_{1}} = 0 \ \ \text{for} \ i = 1,2
+\end{gather*}
+The above first order condition yields the following two relationships:
+\begin{align*}
+  w_{1} &= p \alpha x_{1}^{\alpha - 1}x_{2}^{\beta} \ \tag{1} \\
+  w_{2} &= p \beta x_{1}^{\alpha}x_{2}^{\beta - 1} \ \tag{2}
+\end{align*}
+Dividing equation (1) by $w_{1}$ and equation (2) by $w_{2}$ we can set them equal to eachother which implies the bang-for-buck equaltion equation:
+\begin{gather*}
+  \frac{\tfrac{\partial \pi(x)}{\partial x_{1}}}{w_{1}} = \frac{\tfrac{\partial \pi(x)}{\partial x_{2}}}{w_{2}}
+\end{gather*}
+Note that we can rearrange the production function $y = x_{1}^{\alpha} x_{2}^{\beta}$ and multiply it by either $p \beta$ or $p \alpha$ to derive the following:
+\begin{align*}
+  \frac{y}{x_{1}} &= x_{1}^{\alpha - 1} x_{2}^{\beta} \ \tag{3} \\
+  \frac{y}{x_{2}} &= x_{1}^{\alpha}x_{2}^{\beta-1} \ \tag{4}
+\end{align*}
+Substituting equations (3) into (1) and (4) into (2) we find that
+\begin{align*}
+  x_{1} = \frac{\alpha p}{w_{1}}y \ \tag{5} \\
+  x_{2} = \frac{\beta p}{w_{2}}y \ \tag{6}
+\end{align*}
+Substituting equations (5) and (6) into the production function we can solve for $y$:
+\begin{align*}
+  y &= (\frac{\alpha p}{w_{1}}y)^{\alpha} (\frac{\beta p}{w_{2}})^{\beta} \\
+  y^{1-(\alpha + \beta)} &= (\frac{\alpha p}{w_{1}})^{\alpha} (\frac{\beta p}{w_{2}})^{\beta} \\
+  y(p,w) &= [(\frac{\alpha}{w_{1}})^{\alpha}(\frac{\beta}{w_{2}})^{\beta} p^{\alpha + \beta}]^{\tfrac{1}{1 - (\alpha + \beta)}} \ \tag{7}
+\end{align*}
+To solve for the profit maximizing quantity of $x_{1}$, in terms of our parameters we substitute (7) into (5):
+\begin{align*}
+  x_{1} &= (\frac{\alpha p}{w_{1}})^{\tfrac{1-(\alpha + \beta)}{1-(\alpha + \beta)}} [(\frac{\alpha}{w_{1}})^{\alpha}(\frac{\beta}{w_{2}})^{\beta}p^{\alpha+\beta}]^{\tfrac{1}{1 - (\alpha + \beta)}} \\
+  x_{1}(p,w) &= [(\frac{\alpha}{w_{1}})^{1 - \beta} (\frac{\beta}{w_{2}})^{\beta}p]^{\tfrac{1}{1 - (\alpha + \beta)}} \ \tag{*}
+\end{align*}
+Similarly, we solve for the profit maximizing quantity of $x_{2}$, in terms of our parameters, by substituting equation (7) into (6):
+\begin{gather*}
+  x_{2}(p,w) = [(\frac{\alpha}{w_{1}})^{\alpha}(\frac{\beta}{w_{2}})^{1- \alpha}p]^{\tfrac{1}{1 - (\alpha + \beta)}} \ \tag{**}
+\end{gather*}
+To solve for the profit function, we substitute equations (5), (6), and (7), into the profit formula:
+\begin{align*}
+  \pi(y,x) &= py - (w_{1}x_{1} + w_{2}x_{2}) \\
+  &= py - (w_{1}(\frac{\alpha}{w_{1}})py + w_{2}(\frac{\beta}{w_{2}})py) \\
+  \pi (p,y) &= (1 - (\alpha + \beta))py \\
+  \therefore \pi (p,w) &= (1- (\alpha + \beta))[p(\frac{\alpha}{w_{1}})^{\alpha}(\frac{\beta}{w_{2}})^{\beta}]^{\tfrac{1}{1 - (\alpha + \beta)}} \ \tag{$\star$}
+\end{align*}
+which demonstrates that profit is increasing in ouput price $p$ and decreasing in input prices $w$
+\par \vspace{0.3em}
+  \underline{With Numbers}: suppose that $w_{1} = 1, w_{2} = 2, p = 10, \alpha = 0.5, \ \text{and} \ \beta 0.25$ then profit is $\pi(10,(1,2)) = (0.25)[10(\tfrac{1}{2})^{0.5}(\tfrac{1}{(8})^{0.25}]^{4} = \tfrac{10000}{128}$. If we double all prices then we have $\pi(20, (2,4)) = (0.25)[(2)10(\tfrac{1}{(2)2})^{0.5}(\tfrac{1}{(2)8})^{0.25}]^{4} = 2\pi(10,(1,1))$ which means that profit is homogeneous of degree 1 in prices
+  \par
+  \underline{Special Case - $\alpha + \beta = 0.5$}: in this instance then the level of $y$ is
+  \begin{gather*}
+    y(p,w) = [\frac{\alpha}{w_{1}}^{\alpha}(\frac{\beta}{w_{2}})^{\beta}p^{\alpha + \beta}]^{\frac{1}{1 - (\alpha + \beta)}} = ky
+  \end{gather*}
+  where $k > 0$ is a constant based on $\alpha, \beta, w$. This is as $[p^{\alpha + \beta}]^{\tfrac{1}{1-(\alpha + \beta)}} = p$ when $\alpha + \beta = 0.5$
+  \begin{itemize}
+    \item  \underline{Linearity}: in this case the supply is linear through the origin. Recall that the supply curve is the marginal cost curve and so we also have linear marginal cost. This case corresponse to the cost curve $c(w,y) = Ay^{2}$ where $A > 0$ is also a constant based on $\alpha, \beta, w$
+  \end{itemize}
+  \par
+  \underline{Special Case - $\alpha + \beta \geq 1$}: the above solution assumes that $\alpha + \beta < 1$ which is violated in this case. When $\alpha + \beta \geq 1$ we instead have the following cost function
+  \begin{gather*}
+    c(w,y) = [(\frac{\alpha}{\beta})^{\tfrac{\beta}{\alpha + \beta}} + (\frac{\alpha}{\beta})^{\tfrac{- \alpha}{\alpha + \beta}}]w_{1}^{\tfrac{\alpha}{\alpha + \beta}} w_{2}^{\tfrac{\beta}{\alpha + \beta}} y^{\tfrac{1}{\alpha + \beta}}
+  \end{gather*}
+  \begin{itemize}
+    \item  \underline{If $\alpha + \beta = 1$}: in this instance the cost function simplifies to $c(w,y) = dy$ where $d > 0$ is the constant marginal cost of $y$ which depends on $\alpha, \beta, \text{ and } w$. This gives us the following profit function:
+    \begin{gather*}
+      \pi = py - c(w,y) = py - dy = (p-d)y
+    \end{gather*}
+    This gives us three scenarios: (1) the price is to high with $p > d$ where profit is increasing in $y$ and unbounded above so there is no solution, (2) price is to low with $p < d$ where profit is negative for all $y > 0$ and zero for $y = 0$ so the unique solution is $y = 0$ and $x = (0,0)$, (3) price is just right with $p = d$ where every pair of supply $y$ and corresponding cost minimizes inputs $x(w,y)$ so we have a solution for all $y \geq 0$
+    \item  \underline{If $\alpha + \beta > 1$}: in this instance the cost function simplifies to $c(w,y) = dy^{\delta}$ where $0 < \delta = \tfrac{1}{\alpha + \beta} < 1$ and $d > 0$. Therefore we have that $\tfrac{\partial^{2} c(w,y)}{\partial y^{2}} = (\delta - 1)\delta d y^{\delta - 1} < 0$ since $0 < \delta < 1$. In other words, MC is declining in $y$ and so there will be no solution to the profit maximization problem (i.e. profit will be unbounded above)
+  \end{itemize}
+\vspace{6mm}
+\subsection{Short Run (or Restricted) Profit Function}
+Suppose that $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}_{+}$ is is a continuous, strictly increasing, and strictly concave production function. For $k < n$, let $\overline{\mathbf{x}} \in \mathbb{R}_{+}^{k}$ be a subvector of fixed inputs and consider $f(\mathbf{x}, \overline{\mathbf{x}})$ as a function of the subvector of variable inputs $\mathbf{x} \in \mathbb{R}_{+}^{n-k}$. Let $\mathbf{w}$ and $\mathbf{\overline{w}}$ be thee associated input prices for variable and fixed inputs, respectively. The short run, or restricted, profit function is defined as
+\begin{align*}
+  \pi(p,\mathbf{w},\mathbf{\overline{w}},&\mathbf{\overline{x}}) = \max_{y, \mathbf{x}} py - \mathbf{w} \cdot \mathbf{x} - \mathbf{\overline{w}} \cdot \mathbf{\overline{x}} \\
+  &\text{subject to: } f(\mathbf{x},\mathbf{\overline{x}}) \geq y
+\end{align*}
+In other words, the short run is typically defined as a period where some of the inputs are fixed while the long run is defined as the period where all inputs can be changed (with firms possibly entering and exiting)
+\par \vspace{0.3em}
+  \underline{Short Run Output Supply and Variable Input Demand}: the solutions $y(p, \mathbf{w}, \mathbf{\overline{w}}, \mathbf{\overline{x}})$ and $x(p, \mathbf{w}, \mathbf{\overline{w}}, \mathbf{\overline{x}})$ are called the short-run, or restricted, output supply and variable input demand functions respectively
+  \par
+  \underline{Properties}: for all $p > 0$ and $\mathbf{w} >> 0$,   $\pi(p,\mathbf{w},\mathbf{\overline{w}},\mathbf{\overline{x}})$, if well defined, is continuous in $p$ and $\mathbf{w}$, increasing in $p$, decreasing in $\mathbf{w}$, and convex in $(p, \mathbf{w})$. If $\pi(p,\mathbf{w},\mathbf{\overline{w}},\mathbf{\overline{x}})$ is twice continuously differentiable then $y(p, \mathbf{w}, \mathbf{\overline{w}}, \mathbf{\overline{x}})$ and $x(p, \mathbf{w}, \mathbf{\overline{w}}, \mathbf{\overline{x}})$ possess the standard (aforementioned properties) of output supply and input demand functions
+  \par
+  \underline{Average and Marginal Cost}: from the cost curves we can obtain average and marginal cost curved in the standard manner
+  \begin{align*}
+    & AC(y) = \frac{c(w,y)}{y} \\
+    & MC(y) = \frac{\partial c(w,y)}{\partial y}
+  \end{align*}
+  Note that in general short run profit will be lower
+  \par
+  \underline{Example}: we have that $f(x) = x_{1}^{0.5}x_{2}^{0.25}$ and fix the short run such that $x_{2} = 16$ and $w_{2} = 2$. Therefore, the short run production function is $f(x_{1},2) = x_{1}^{0.5}(16)^{0.25} = 2 \sqrt{x_{1}}$ and the firm's profit is $\pi = p2\sqrt{x_{1}} - (w_{1}x_{1} + 2(16))$. Taking first order conditions yields the input demand function:
+  \begin{gather*}
+    \frac{\partial \pi}{\partial x_{1}} = 0 \Rightarrow x_{1}(p,w) = (\frac{p}{w_{1}})^{2}
+  \end{gather*}
+  which when substituted into the production function gives us the output supply function $y(p,w) = \tfrac{2p}{w_{1}}$. Substituting the input supply function into firm profits lead us to the profit function:
+  \begin{gather*}
+    \pi(p,w) = \frac{p^{2}}{w_{1}} - 32
+  \end{gather*}
+
+\newpage
+
+\vspace{2.5mm}
+\section{Perfect and Imperfect Competition}
+This section focuses on perfect and imperfect competition, analyzing both short and long run type result
+\vspace{6mm}
+\subsection{Perfectly Competitive Markets}
+A perfectly competitive market features many buyers and sellers who take prices as given
+\par \vspace{0.3em}
+  \underline{Market Demand and Supply}: market demand is the sum of individual demands and market supply is the sum of individual supplies
+  \begin{itemize}
+    \item  \underline{Different Utilities}: market demand is given by the sum of all individual demands, if the utility function is the same across individuals we multiply $y^{d}$ by the number of individuals while for different utility functions $i$ we must sum $y^{d}_{i}$
+    \begin{itemize}
+      \item  \underline{Market Demand Kinks}: summing different demand functions can cause kinks, such as when you include a linear demand function $y^{d} = p - 10$
+    \end{itemize}
+  \end{itemize}
+  \par
+  \underline{Perfectly Competitive Equilibrium}: the equilibrium in a perfectly competitive market is a price $p$ and a quantity $q$ such that market supply equals market demand - combining the profit maximization of each seller and the utility maximization of each buyer
+  \begin{itemize}
+    \item  \underline{Profit Maximization}: we can find the supply of each sellers via either profit maximizing $x,y$ or via first deriving the cost function and then profit maximizing $y$
+  \end{itemize}
+  \par
+  \underline{Long Run Equilibrium}: this occurs when the price, quantity, and number of firms are such that profit at each firm is zero. Therefore, we have that $S = D$, $\pi = 0$, and $P=AC = MC$
+  \begin{itemize}
+    \item  \underline{Note}: to then find $y$ it is sometimes useful to to use $P = AC = MC$
+  \end{itemize}
+  \par
+  \underline{Example 1}: suppose that on the demand side we have 64 consumers each with the same utility function $u(y,z) = \ln y + z$ with income $I \geq 1$. On the supply side we have 4 sellers each with the same production function $y = f(x_{1}, x_{2}) = x_{1}^{0.25}x_{2}^{0.25}$ with input prices $w_{1} = 4$ and $w_{2} = 1$. Since we are interested in the market for good $y$ we fix the price of good $z$ at $p_{z} = 1$ and denote the price of good $y$ simply by $p$. In the short run we fix the 2nd intput to $x_{2} = 16$. In the long run we will allow all inputs and the number of sellers to be variable as well as impose a fixed cost of entry at $F = 4$
+  \begin{itemize}
+    \item  \underline{Demand}: the utility function $u(y,z) = \ln y + z$ is quasi-linear, which has no income effects for a sufficiently large income (i.e. you can afford the utility maximizing bundle). Since we set $p_{z} = 1$, bang for buck implies that
+    \begin{align*}
+      \frac{MU_{y}}{p} =& \frac{MU_{z}}{p_{z}} \\
+      \frac{1}{py} =& \frac{1}{1}
+    \end{align*}
+    This yields the following demand for $y$:
+    \begin{gather*}
+      y^{d} = \frac{1}{p}
+    \end{gather*}
+    The reason that we have $I \geq 1$ is the cost of $y$ is
+    \begin{gather*}
+      py^{d} = p \frac{1}{p} = 1 \Rightarrow I \geq 1
+    \end{gather*}
+    so we need atleast $I \geq 1$ since $MU_{y}$ is intially high and so under insufficient income only $y$ is consumed. Note that since we have 64 consumers our market demand is
+    \begin{gather*}
+      Y^{d} = 64 \cdot y = 64 (\frac{1}{p}) = \frac{64}{p}
+    \end{gather*}
+    \item  \underline{Short Run Supply}: given that $x_{2} = 16$, our production function becomes
+    \begin{gather*}
+      y = x_{1}^{0.25}(16)^{0.25} = 2x_{1}^{0.25}
+    \end{gather*}
+    The cost, in terms of $x_{1}$ and $x_{2}$ in this case is
+    \begin{gather*}
+      C(x_{1}, x_{2}) = w_{1}x_{1} + w_{2}x_{2} =  4x_{1} + 16x_{2}
+    \end{gather*}
+    We can rearrange the production function to solve for $x_{1}$ as a function of $y$ as follows:
+    \begin{align*}
+      y &= 2x_{1}^{0.25}8 \\
+      x_{1} &= (\frac{y}{2})^{4} \\
+      x_{1}(y) &= \frac{1}{16}y^{2}
+    \end{align*}
+    Substituting $x_{1}(y)$ into the cost equation gives us the cost function:
+    \begin{gather*}
+      c(y) = \frac{y^{4}}{4} + 16
+    \end{gather*}
+    From the cost function we can derive the profit as a function of $y$ and take first order conditions
+    \begin{align*}
+      \pi(y) = py - c(y) \\
+      \pi = py - \frac{y^{4}}{4} - 16 \\
+      0 = \frac{\partial \pi}{\partial y} = p - y^{3} \\
+      y^{s} = p^{\frac{1}{3}}
+    \end{align*}
+    Since we have 4 sellers our market supply is
+    \begin{gather*}
+      Y^{s} = 4p^{\tfrac{1}{3}}
+    \end{gather*}
+    Note that taking the second order derivative we can demonstrate that the function is strictly concave where
+    \begin{gather*}
+      \frac{\partial^{2} \pi}{\partial y^{2}} = -3y^{2} < 0 \ \ \forall y > 0
+    \end{gather*}
+    which means that our solution is a maximum
+    \item  \underline{Short Run Solution}: setting market demand equal to market supply we have
+    \begin{align*}
+      Y^{d} &= \frac{64}{p} = 4p_{y}^{\tfrac{1}{3}} = Y^{s} \\
+      16 &= p^{\tfrac{4}{3}} \\
+      16^{\tfrac{3}{4}} &= p \\
+      p &= 8
+    \end{align*}
+    From the price $p=8$ we have $y = 64/8 = 8$, so each individual seller produces $y^{s} = 2$, each individual buyer consumes $y^{d} = 1/p = 1/8$, and profit is $\pi_{s} = py_{s} - (y^{4}/4 + 16) = 8(2) - 2^{4}/4 - 16 = -4$. Note that profit is negative because of the fixed cost of $-16$ (making you better off producing regardless of profit being negative) \begingroup\color{magenta} what about how much z is consumed \endgroup
+    \item  \underline{Long Run Supply}: using the aforementioned cost function for cobb-douglas, and the fixed cost of 4, we have the following cost function:
+    \begin{align*}
+      c(w,y) &= \big[ (\frac{\alpha}{\beta})^{\tfrac{\beta}{\alpha + \beta}} + (\frac{\alpha}{\beta})^{\tfrac{- \alpha}{\alpha + \beta}} \big] w_{1}^{\tfrac{\alpha}{\alpha + \beta}} w_{2}^{\tfrac{\beta}{\alpha + \beta}} y^{\tfrac{1}{\alpha + \beta}} + 4 \\
+      &= \big[ (\frac{0.25}{0.25})^{\tfrac{0.25}{0.25 + 0.25}} + (\frac{0.25}{0.25})^{\tfrac{- 0.25}{0.25 + 0.25}} \big] 4^{\tfrac{0.25}{0.25 + 0.25}} 1^{\tfrac{0.25}{0.25 + 0.25}} y^{\tfrac{1}{0.25 + 0.25}} + 4 \\
+      c(y) &= 4y^{2} + 4
+    \end{align*}
+    Therefore, the profit function and its maximization solution is
+    \begin{align*}
+      \pi &= py - 4y^{2} + 4 \\
+      0 &= \frac{\partial \pi}{\partial y} = p - 8y \\
+      y^{s} = \frac{p}{8}
+    \end{align*}
+    Note that the above solution $p = 8y$ is equivalent to $P=MC$. Using that $MC = AC$ in equilibrium we can solve for $y$:
+    \begin{align*}
+      MC &= AC \\
+      8y &= 4y + 4/y \\
+      4y &= \frac{4}{y} \\
+      y^{s} &= 1
+    \end{align*}
+    From $y^{s} = 1$ we have that $p = 8y = 8$. Recalling the previous solution for total demand we have $Y^{d} = \frac{64}{p} = 8$, which since each seller produces only $y^{s} = 1$ means that there are 8 sellers in the market. The number of sellers in the market can
+  \end{itemize}
+  \par
+\vspace{6mm}
+\subsection{Imperfect Competition - Monopoly}
+A monopoly market features single producer with price being endogeneous (unlike price takers in perfect competition) \par \vspace{0.3em}
+  \underline{Market Supply}: market supply is now the supply given by the single producer so $y^{s} = Y^{s}$ who provides for the total market demand $Y^{d}$
+  \par
+  \underline{Example 1}: suppose we have the same parameters as the short run perfect competition example 1 except we instead have a monopoly problem. From the psrevious solution to market demand we have that $Y^{d} = \frac{64}{p} \Rightarrow p = \frac{64}{Y}$. This yields constant revenue, though variable marginal cost, and gives us the following profit function:
+  \begin{align*}
+    \pi &= \frac{64}{Y}Y - 4Y^{2} \\
+    \pi &= 64 - 4Y^{2}
+  \end{align*}
+  Note that, despite having a concave production function, taking first order conditions does not yield an interior solution. This is as $0 = \tfrac{\partial \pi}{\partial Y} = -8Y$ implies that $Y = 0$, which is not defined since the demand function is $Y^{d} = \tfrac{64}{Y}$.
+  \par
+\vspace{6mm}
+\subsection{Imperfect Competition - Oligopoly}
+An oligopoly features a small number of sellers who are innumerous enough to hold market power. In this case each sellers maximizes their profit independently given the profit of the other seller/s, we will focus on quantity as the choice variable for maximization \par \vspace{0.3em}
+  \underline{Game Theoretic Solution}: the standard approach to solving oligopoly problems is to look for an equilibrium by treating the market as a game. In this setting we look for a nash equilibrium by finding the quantities $Q_{1}, \dots, Q_{n}$ that maximize the profit of each seller given the quantity chosen by the other seller
+  \begin{itemize}
+    \item  \underline{Nash Equilibrium}: in general, a nash equilibrium in an n-player game is a tuple of strategies $s = (s_{1}, \dots, s_{n})$ such that each player's strategy maximizes his utility given the strategies of the other players
+    \item  \underline{Method}: form the profit function of each seller (by inverting the demand curve) and then derive the nash equilibrium conditions where no seller can be better off given the other sellers' strategy. Then, assuming an interior solution exists, use the FOC's together simultaneously to find a solution to the system of FOC's
+    \begin{itemize}
+      \item  \underline{Interior Solution}: it is important to check that the seller's individual profit functions are concave to allow the use of first order conditions for profit maximization (i.e. occurs with concave demand and convex cost functions)
+      \item  \underline{Multiple Equilibria}: it is possible to have multiple equilibria in situations such as when you have non-linear demand
+    \end{itemize}
+  \end{itemize}
+  \par
+  \underline{Example 1 - $n = 2$}: suppose we have linear demand $Q(p) = 100 - 2p$ and the cost function $c(q) = q^{2}$. From inverting the demand function to $P(Q) = 50 - \tfrac{Q}{2}$ we can form the profit function for seller 1 ($\pi_{1}$) and seller 2 ($\pi_{2}$):
+  \begin{align*}
+    \pi_{1}(Q_{1}, Q_{2}) &= (50 - \frac{Q}{2})Q_{1} - (Q_{1})^{2} \\
+    \pi_{2}(Q_{1}, Q_{2}) &= (50 - \frac{Q}{2})Q_{2} - (Q_{2})^{2}
+  \end{align*}
+  In this case we have that the nash equilibrium is a pair $(Q_{1}, Q_{2})$ such that:
+  \begin{align*}
+    \pi_{1}(Q_{1}, Q_{2}) &\geq \pi_{1}(Q_{1}', Q_{2}) \ \ \forall Q_{1}' \geq 0 \\
+    \pi_{2}(Q_{1},Q_{2}) &\geq \pi_{2}(Q_{1}, Q_{2}') \ \ \forall Q_{2}' \geq 0
+  \end{align*}
+  Note that the second order condition for player 1's profit function is $\tfrac{\partial^{2} \pi_{1}}{\partial Q_{1}^{2}} = -0.5 -0.5 -2 < 0$, which being symmetrical to player 1's profit function means that both are concave and there exists a solution. Noting that we need to use the product rule since $Q = f(Q_{1}, Q_{2})$, the FOCs for this problem are:
+  \begin{align*}
+    0 = \frac{\partial \pi_{1}}{\partial Q_{1}} &= (50 - \frac{Q}{2}) - \frac{Q_{1}}{2} - 2Q_{1} \\
+    &\Rightarrow Q_{1} = \frac{2}{5} (50 - \frac{Q}{2}) \ \tag{1} \\
+    0 = \frac{\partial \pi_{2}}{\partial Q_{2}} &= (50 - \frac{Q}{2}) - \frac{Q_{2}}{2} - 2Q_{2} \\
+    &\Rightarrow Q_{2} = \frac{2}{5}(50 - \frac{Q}{2}) \ \tag{2}
+  \end{align*}
+  Noting that $Q = Q_{1} + Q_{2}$ (i.e. total quantity is the sum of the individual seller quantities), we can sum equations (1) and (2) to yield $Q = \tfrac{200}{7}$. Substituting $Q = \tfrac{200}{7}$ into our first order conditions we find that:
+  \begin{gather*}
+    Q_{1} = Q_{2} = \frac{100}{7}
+  \end{gather*}
+  \par
+  \underline{Example 2 - $n \geq 1$}: we can generalize example 1 to allow more sellers where $n \geq 1$. In this case our profit function is
+  \begin{gather*}
+    \pi_{i}(Q, Q_{i}) = (a - bQ)Q_{i} - \frac{d}{2}(Q_{i})^{2}
+  \end{gather*}
+  where $a,b,d > 0$. Based on the second order order condition being
+  \begin{gather*}
+    \frac{\partial^{2} \pi_{i}}{\partial Q_{i}^{2}} = -b -b - d < 0
+  \end{gather*}
+  we have that the profit function is concave and so yields a solution. The first order conditions are:
+  \begin{gather*}
+    (a-bQ) - bQ_{i} - dQ_{i} = 0 \Rightarrow Q_{i} = \frac{(a - bQ)}{(b + d)}
+  \end{gather*}
+  By summing the first order conditions, since $Q = Q_{1} + \dots + Q_{n}$, we have
+  \begin{align*}
+    Q &= Q_{i}n = \frac{n(a-bQ)}{b+d} \\
+    Q &= \frac{na}{b+d} - \frac{nbQ}{b+d} \\
+    Q(1+\frac{nb}{b+d}) &= \frac{na}{b+d} \\
+    Q &= \frac{na}{(n+1)b + d}
+  \end{align*}
+  From this we yield the following solutions in terms of our parameters:
+  \begin{align*}
+    Q_{i} &= \frac{a}{(n+1)b+d} \\
+    p &= \frac{a(b+d)}{(n+1)b+d} \\
+    \pi_{i} &= [\frac{2b + d}{2}][\frac{a}{(n+1)b+d}]^{2}
+  \end{align*}
+  \par
+  \underline{Long Run with Entry Model Example}: suppose we extend example 2 into the long run, where we allow entry of firms and impose an entry cost of $F > 0$. In this case firms stop entering at the largest integer $n$ with positive profit (going to zero but never reaches zero). From example 2's solution our profit function is:
+  \begin{gather*}
+    \pi_{i} = [\frac{2b + d}{2}][\frac{a}{(n+1)b+d}]^{2} - F
+  \end{gather*}
+  To find where the profit is zero we solve for n where:
+  \begin{gather*}
+    n = \frac{1}{b}(a \sqrt{\frac{2b + d}{2F}} - 1)
+  \end{gather*}
+
+\newpage
+
+\section{Pure Exchange General Equilibrium}
+In this section we will be looking at general equilibrium, which allows for many markets simultaneously interacting and is meant to describe the entire economy. General equilibrium focuses on capturing all markets interacting instead of just a single market as in the former sections
+\vspace{6mm}
+\subsection{Pure Exchange Economy}
+We have a pure exchange economy where each individual is endowed with some amount of each good. Though there can be many goods, and many individuals, we will focus on two goods and two individuals. We assume that individuals make decisions about how much to buy and sell of each good to maximize their preferences given their wealth, having both a defined utility function and endowment
+\par \vspace{0.3em}
+  \underline{Pure Exchange Economy}: a pure exchange economy $E = (G,C,(w^{i},u^{i})_{i \in C})$ consists of
+  \begin{itemize}
+    \item  \underline{(1)}: a finite set of goods $G = \left\{ 1, \dots, K \right\}$
+    \item  \underline{(2)}: a finite set of consumers $C = \left\{ 1, \dots, I \right\}$ where each consumer $i$ has an endowment of goods $w^{i} = (w_{1}^{i}, \dots, w_{k}^{i}) \in \mathbb{R}_{+}^{K}$ and a utility function $u^{i}$ over bundles of goods $x^{i} = (x_{1}^{i}, \dots, x_{K}^{i}) \in \mathbb{R}_{+}^{K}$
+  \end{itemize}
+  \par
+  \underline{Allocation}: an allocation in a pure exchange economy is a vector $x = (x^{1}, \dots, x^{I})$ where each $x^{i} = (x_{1}^{i}, \dots, x_{K}^{i}) \in \mathbb{R}_{+}^{K}$ is a bundle of goods for consumer $i \in C$
+  \begin{itemize}
+    \item  \underline{Feasible Allocation}: an allocation $x$ is feasible in an economy $E$ if and only if for each good $k \in G$ we have:
+    \begin{gather*}
+      \sum_{i=1}^{I} x_{k}^{i} \leq \sum_{i=1}^{I} w_{k}^{i}
+    \end{gather*}
+    \item  \underline{Pareto Efficiency}: an allocation $x$ is pareto efficient in an economy $E$ if and only if $x$ is feasible and there is no other allocation $y$ such that $u^{i}(y^{i}) \geq u^{i}(x^{i})$ for all consumers $i \in C$ and $u^{j}(y^{j}) > u^{j}(x^{j})$ for some consumer $j \in C$
+    \begin{itemize}
+      \item  \underline{Welfare Theorem}: let $E$ be an economy in which every consumer has monotonic preferences. Every general equilibrium allocation $x$ is pareto efficient
+    \end{itemize}
+  \end{itemize}
+  \par
+  \underline{General Equilibrium}: a general equilibrium in a pure exchange economy $E$ consists of a price vector $p = (p_{1}, \dots, p_{k}) \in \mathbb{R}_{++}^{K}$ and an allocation $x$ satisfying:
+  \begin{itemize}
+    \item  \underline{Utility Maximization}: where for each consumer $i \in C$ we have:
+    \begin{gather*}
+      u^{i}(x^{i}) \geq u^{i}(y^{i}) \ \ \forall y^{i} \in \mathbb{R}_{+}^{K} \ \text{satisying} \ \sum^{K}_{k=1} p_{k}y_{k}^{i} \leq \sum^{K}_{k=1} p_{k}w_{k}^{i}
+    \end{gather*}
+    \item  \underline{Supply Equals Demand}: where for each good $k \in K$ we have:
+    \begin{gather*}
+      w^{k} \equiv \sum_{i=1}^{I} w^{i}_{k} \equiv \sum_{i=1}^{I} x_{k}^{i} \equiv x_{k}
+    \end{gather*}
+  \end{itemize}
+  \par
+  \underline{Existence of Equilibrium Theory}: if $E$ is a pure exchange economy where each consumers utility function represents strictly convex, strongly monotonic, and continuious preferences, then a general equilibrium exists
+  \begin{itemize}
+    \item  \underline{Sufficiency}: this is a sufficient condition, so existence may happen with weaker conditions but will need to be checked for
+    \item  \underline{Uniqueness and Continuity of Demand}: if the above theorem holds we have uniqueness and continuity of demand at each price vector $p$ for each good from each consumer and as a consequence in the market
+    \item  \underline{Walras Law}: if the above theorem holds then the value of excess demand is zero at any price. In other words:
+    \begin{gather*}
+      \sum_{k=1}^{K} p_{k}z_{k}(p) = 0 \ \ \forall p \in \mathbb{R}_{++}^{K}
+    \end{gather*}
+    where $z_{k}(p) \equiv \sum_{i=1}^{C}z_{k}^{i}(p)$ is the sum of excess demands over consumers
+    \begin{itemize}
+      \item  \underline{Implication}: Walras' Law implies that if supply equals demand in all but one market, then supply equals demand in the remaining market. In other words, we can drop one market when looking for an equilibrium
+      \item  \underline{Note}: this needs only some form of monotonicity of preferences to get consumers to the budget line
+    \end{itemize}
+    \item  \underline{Excess Demand Homogeneity}: if the above theorem holds then the excess demand is homogeneous of degree zero in prices where
+    \begin{gather*}
+      z_{k}(tp) = z(p) \ \ \forall t > 0
+    \end{gather*}
+    \begin{itemize}
+      \item  \underline{Implication}: this implies that we can fix a price at 1 and just consider relative prices, since this is all that matters
+      \item  \underline{Note}: this is the result of utility maximization and needs no further assumptions
+    \end{itemize}
+  \end{itemize}
+  \underline{Excess Demand}: excess demand is defined as $z_{k}(p) = x_{k}(p) - w_{k}$ where $k$ is a given good. Excess demand is positive when the agent demands more than what they own of a good and negative when they demand less than what they own (i.e. a personal demand and supply). This is what initiates engagement with the market
+  \par
+  \underline{Price Determination}: in general equilibrium, prices are determined by the point where supply equals demand in the market. Often we are primarily concerned with relative prices, in which case we fix the price of one good such that it equals 1
+  \begin{itemize}
+    \item  \underline{Autarky Case}: in the case of autarky we set the demand for a given good equal to the endowment of that good to yield the equilibrium price
+  \end{itemize}
+  \par
+\subsection{Autarky Example}
+Suppose person A has the following utility function
+\begin{gather*}
+  u^{1}(x_{1},x_{2}) = x_{1}^{2}x_{2}
+\end{gather*}
+and an endowment of $w^{1} = (w^{1}_{1}, w^{1}_{2}) = (2,2)$, which can either be consumed or traded in competitive markets at the price $p = (p_{1}, p_{2})$
+\par \vspace{0.3em}
+  \underline{Income Determinants}: since we have a pure exchange economy, person A's income is determined entirely by the value of their endowment which is
+  \begin{gather*}
+    I = p_{1}w_{1}^{1} + p_{2}w_{2}^{1} = p_{1}2 + p_{2}2
+  \end{gather*}
+  \par
+  \underline{Demand}: from person A's preferences and income constraint we can form the following lagrangian to find their demand:
+  \begin{gather*}
+    \mathcal{L} = x_{1}^{2}x_{2} + \lambda(x_{1}p_{1} + x_{2}p_{2} = I)
+  \end{gather*}
+  which yield the following first order conditions:
+  \begin{align*}
+    0 = \frac{\partial \mathcal{L}}{\partial x_{1}} &= 2x_{1}x_{2} + \lambda p_{1} \\
+    &\Rightarrow \lambda = \frac{-2x_{1}x_{2}}{p_{1}} \ \tag{1} \\
+    0 = \frac{\partial \mathcal{L}}{\partial x_{2}} &= x_{1}^{2} + \lambda p_{2} \\
+    &\Rightarrow \Lambda  = \frac{-x_{1}^{2}}{p_{2}} \ \tag{2}
+  \end{align*}
+  Setting equations (1) and (2) equal to eachother yields:
+  \begin{align*}
+    \lambda &= \lambda \\
+    \frac{-x_{1}^{2}}{p_{2}} &= \frac{-2x_{1}x_{2}}{p_{1}} \\
+    \therefore x_{1} &= \frac{2x_{2}p_{2}}{p_{1}} \ \tag{3} \\
+    \therefore x_{2} &= \frac{x_{1}p_{1}}{2p_{2}} \ \tag{4}
+  \end{align*}
+  Substituting equations (3) and (4) into $I = p_{1}x_{1} + p_{2}x_{2}$ yields the marshallian demand for $x_{2}$ and $x_{1}$ respectively:
+  \begin{align*}
+    x_{1}(p,I) &= \frac{2I}{3p_{1}} \\
+    x_{2}(p,I) &= \frac{I}{3p_{2}}
+  \end{align*}
+  Since person A's endowment is $I = p_{1}2 + p_{2}2$ we can write the demand as:
+  \begin{align*}
+    x_{1}(p) &= \frac{2(p_{1}2 + p_{2}2)}{3p_{1}} \ \tag{*} \\
+    x_{2}(p) &= \frac{(p_{1}2 + p_{2}2)}{3p_{2}} \ \tag{**}
+  \end{align*}
+  Note that, though a rise in prices simultaneously reduces purchasing power, when prices rise so does income. In effect, if relative prices do not change then person A's demand does not change
+  \underline{Market Behaviour}: presuming that person A can buy and sell in competitive markets at prices $p = (p_{1}, p_{2})$, supposing that the prices are $p = (1,2)$ demand becomes:
+  \begin{align*}
+    x_{1} &= \frac{2(2+4)}{3} = 4 \\
+    x_{2} &= \frac{2 + 4}{6} = 1
+  \end{align*}
+  Given that person A's endowment is $w^{1} = (2,2)$, this means they will purchase an addition 2 units of the first good and sell 1 unit of the second good. We have that person A's excess demand for good 1 is $z_{1}(2,1) = 4 - 2 = 2$ (buys 2 from the market) and for good 2 is $z_{2}(2,1) = 1 - 2 = -1$ (sells 1 to the market)
+  \par
+  \underline{Market 1 Equilibrium}: since person A has an endowment of $w^{1}_{1} = 2$ and they are the only individual in the market, this requires in market 1 that
+  \begin{gather*}
+    x_{1}(p) = \frac{2(p_{1}2 + p_{2}2)}{3p_{1}} =  2
+  \end{gather*}
+  Since this may yield multiple solutions, we fix prices such that $p_{1} = 1$. This gives us the following solution for the above equation:
+  \begin{align*}
+    \frac{2(2+p_{2}2)}{3} &= 2 \\
+    p_{2} &= \frac{1}{2}
+  \end{align*}
+  \par
+  \underline{Market 2 Equilibrium}: since person A has an endowment of $w^{1}_{2} = 2$ and they are the only individual in the market, this requires in market 2 that
+  \begin{gather*}
+    x_{2}(p) = \frac{(p_{1}2 + p_{2}2)}{3p_{2}} = 2
+  \end{gather*}
+  Given our solution to market 1's equilibrium, we have that the prices $p = (1, 0.5)$ satisfy the above condition. Therefore, at $p = (1,0.5)$ we have that supply equals demand in both markets and constitute the general equilibrium of the economy
+  \par
+\vspace{6mm}
+\subsection{Two Person Example}
+Suppose in addition to person A in the prior example we also have a person B with the following utility function
+\begin{gather*}
+  u^{2}(x_{1},x_{2}) = x_{1}x_{2}
+\end{gather*}
+and an endowment of $w^{2} = (2,3)$
+\par \vspace{0.3em}
+  \underline{Person B's Demand}: from previous results we have that person B's demand is
+  \begin{align*}
+    x_{1}^{2} &= \frac{I}{2p_{1}} = \frac{2p_{1} + 3p_{2}}{2p_{1}} \\
+    x_{2}^{2} &= \frac{I}{2p_{2}} = \frac{2p_{1} + 3p_{2}}{2p_{2}}
+  \end{align*}
+  \par
+  \underline{Equilibrium}: given excess demand homogeneity and Walras' Law, we set $p_{1} = 1$ and focus on market 1 only. Summing person A and B's demand and supply for good 1 and setting them equal yields:
+  \begin{gather*}
+    D \equiv \frac{4(1+p_{2})}{3} + \frac{2+3p_{2}}{2} = 2 + 2 \equiv S
+  \end{gather*}
+  which is solved when $p_{2} = \tfrac{10}{17}$. Therefore, the unique general equilibrium (up to relative prices) is $p = (1, \tfrac{10}{17})$ which gives us an allocation for person A of $x^{1} = (\tfrac{36}{17},1.8)$ and for person B $x^{2} = (\tfrac{32}{17}, 3.2)$. Note that the allocations sum to the market supply
+  \par
+  \underline{Assumption Violation}: despite not satisfying all the assumptions for the existence of an equilibrium since strong monotonicity is violated, we were still able to find the above solution (given that the existence theory is a sufficient but not necessary condition)
+  \par
+\vspace{6mm}
+\subsection{No Equilibrium Example}
+Suppose person G's utility function is $u^{1} = \max \left\{ x_{1}, x_{2} \right\}$ with endowment (1,2) and person H's utility function is $u^{2} = \min \left\{ x_{1}, x_{2} \right\}$ with endowment (2,1). In this case, fix $p_{1} = 1$ and focus on market 1
+\par \vspace{0.3em}
+  \underline{Person H's Demand}: person H's demand for good 1 is
+  \begin{gather*}
+    x_{1}^{2} = \frac{2 + p_{2}}{1 + p_{2}}
+  \end{gather*}
+  \par
+  \underline{Person G's Demand}: person G's demand for good 1 is
+  \begin{gather*}
+    x_{1}^{1} =
+    \begin{cases}
+       1 + 2p_{2} & \text{ if } p_{2} > 1 \\
+       0 \text{ or } 3 & \text{ if } p_{2} = 1 \\
+       0 & \text{ if } p_{2} < 1
+    \end{cases}
+  \end{gather*}
+  \par
+  \underline{Equilibrium}: given person G's demand we have 3 cases for the demand = supply condition:
+  \begin{itemize}
+    \item  \underline{Case 1 - $p_{2} > 1$}: in this case we have
+    \begin{gather*}
+      D \equiv 1 + 2p_{2} + \frac{2 + p_{2}}{1 + p_{2}} > 3 \equiv S
+    \end{gather*}
+    and therefore we have no equilibrium
+    \item  \underline{Case 2 - $p_{2} = 1$}: in this case we have that either
+    \begin{gather*}
+      D \equiv 0 + \frac{2 + 1}{1 + 1} = 1.5 < 3 \equiv S
+    \end{gather*}
+    or
+    \begin{gather*}
+      D \equiv 3 + \frac{2 + 1}{1 + 1} = 4.5 > 3 \equiv S
+    \end{gather*}
+    where in both cases we have no equilibrium
+    \item  \underline{Case 3 - $p_{2} < 1$}: in this case we have
+    \begin{gather*}
+      D \equiv 0 + \frac{2 + p_{2}}{1 + p_{2}} < 3 \equiv S
+    \end{gather*}
+    Since demand is 1.5 at $p_{2} = 1$ and decreasing in $p_{2}$ we therefore have no equilibrium
+  \end{itemize}
+  Exhausting all three cases we have no equilibrium and hence this problem has no solution
+  \par
+\vspace{6mm}
+\subsection{Multiple Equilibria Example}
+Suppose person A's utility function is $u^{1} = x_{1} + 3.5x_{2} - 0.5(x_{2})^{2}$ with endowment (4,0) and person B's utility function is $u^{2} = 3.5x_{1} + x_{2} - 0.5(x_{1})^{2}$ with endowment (0,4). Notice that these are both quasi-linear utilities but with respect to different goods
+\par \vspace{0.3em}
+  \underline{Equilibrium}: setting $p_{1} = 1$ and looking at the market for good 2, we find that:
+  \begin{gather*}
+    D \equiv 3.5 - p_{2} + 4 - \frac{3.5}{2p_{2}} + \frac{1}{p_{2}^{2}} = 4 \equiv S
+  \end{gather*}
+  This has three solutions: $p_{2} = 0.5$, $p_{2} = 1$, and $p_{2} = 2$. Each leads to a different allocation that is ranked by person A and person B in different ways.
 
 
 
