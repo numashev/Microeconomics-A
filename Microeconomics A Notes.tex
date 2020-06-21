@@ -35,7 +35,7 @@
 \setlength{\parskip}{0.6em}
 
 \title{Microeconomics A Notes}
-\author{Nicholas Umashev \footnote{content is not of my own authorship}}
+\author{Nicholas Umashev \footnote{content is not entirely of my own authorship}}
 \date{2020}
 
 \begin{document}
@@ -2020,6 +2020,210 @@ The firm's cost-minimization problem is similar to the consumer's expenditure-mi
     \item  \underline{Note}: any function with all the properties of a cost function generates some production function for which it is the cost function
   \end{itemize}
   \par
+\subsection{Exercise 1}
+Consider the production function $y = \min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\}$ \par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Question 1}: is this production function quasi-concave?
+    \begin{itemize}
+      \item  \underline{Answer}: note that we have quasi-concavity if and only if the function is concave. That is:
+      \begin{gather*}
+        \forall x,y \in \mathbb{R}^{n}_{+}, \ \forall \alpha \in [0,1]: \ f(\alpha x + (1- \alpha)y) \geq \alpha f(x) + (1-\alpha)f(y)
+      \end{gather*}
+      Let $x, x' \in \mathbb{R}^{n}_{+}$ and $\alpha \in [0,1]$ be given. Since each component of the function $y = \min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\}$ must be at least as great as its smallest member, each component has the quality that $c_{i} \geq \min \left\{ c_{1}, c_{2}, c_{3} \right\}$ where $i = 1, 2, 3$. Exploiting this and multiplying $c_{i}$ by $\alpha$ and $c'$ by $(1-\alpha)$ we have:
+      \begin{align*}
+        \alpha 4x_{1} + (1-\alpha)4x_{1}' &\geq \alpha \min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\} + (1-\alpha) \min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\} \ \tag{1} \\
+        \alpha x_{2} + (1-\alpha)x_{2}' &\geq \alpha \min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\} + (1-\alpha) \min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\} \ \tag{2} \\
+        \alpha 2x_{3} + (1-\alpha)2x_{3}' &\geq \alpha \min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\} + (1-\alpha)\min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\}
+      \end{align*}
+      Since the righthand side of the inequality is identical for equations (1)-(3), then the smallest component on the lefthand side is greater than or equal to the righthand side. This yields the following result:
+      \begin{gather*}
+        \min \left\{ \alpha 4x_{1} + (1-\alpha)4x_{1}', \alpha x_{2} + (1-\alpha) x_{2}', \alpha 2x_{3} + (1-\alpha)2x_{3}' \right\} \\
+        \geq \\
+        \alpha \min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\} + (1-\alpha) \min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\}
+      \end{gather*}
+      Therefore, we have that the function is concave and hence is quasi-concave
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 2}: does this production function exhibit constant, increasing, or decreasing returns to scale?
+    \begin{itemize}
+      \item  \underline{Answer}: since we have that
+      \begin{gather*}
+        \min \left\{ t4x_{1}, tx_{2}, t2x_{3} \right\} = t \min \left\{ 4x_{1}, x_{2}, 2x_{3} \right\} \ \forall t >0
+      \end{gather*}
+      we have constant returns to scale
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 3}: find the cost function $c(w,y)$
+    \begin{itemize}
+      \item  \underline{Answer}: since utility is equal to the minimum of each component of the function, each component will be equal in value and equal to $y$ when minimizing cost. Therefore we have
+      \begin{align*}
+        x_{1}(y) &= \frac{y}{4} \\
+        x_{2}(y) &= y \\
+        x_{3}(y) &= \frac{y}{2}
+      \end{align*}
+      Therefore, given input prices $\mathbf{w}$, we have:
+      \begin{align*}
+        c(\mathbf{w},y) &= x_{1}(y) w_{1} + x_{2}(y)w_{2} + x_{3}(y)w_{3} \\
+        c(\mathbf{w},y) &= (\frac{w_{1}}{4} + w_{2} + \frac{w_{3}}{2})y
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 4}: confirm that the cost function is strictly increasing in $w$ and continuous in $y$
+    \begin{itemize}
+      \item  \underline{Answer}: from the cost function it is clear that, since all input are used, any increase in $\mathbf{w}$ will cause an increase in cost for a given $y$ \\ Note that since the function is linear in y it must be continuous. More formally, for any sequence in $x$ that converges to $x^{*}$, the sequence $y(x)$ also converges to $y(x^{*})$ since there is a linear relationship between $x$ and $y(x)$
+    \end{itemize}
+  \end{itemize}
+\par
+\subsection{Exercise 2}
+Consider the production function $y = \ln x_{1}^{a} x_{2}^{b}$ with $a,b > 0$ \par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Question 1}: is this production function quasi-concave?
+    \begin{itemize}
+      \item  \underline{Answer}: note that we can write the cost function as
+      \begin{gather*}
+        y = a \ln x_{1} + b \ln x_{2}
+      \end{gather*}
+      Since $a \ln x_{1}$ and $b \ln x_{2}$ are concave functions, and the sum of concave functions is concave, this means that the production function is concave and therefore quasi-concave
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 2}: if $a + b = 1$ does the production function exhibit constant, increasing, or decreasing returns to scale?
+    \begin{itemize}
+      \item  \underline{Answer}: in this case we can write the function as
+      \begin{gather*}
+        y = \ln x_{1}^{a}x_{2}^{1-a}
+      \end{gather*}
+      To analyze returns to scale we must consider the relationship between $y(tx) - ty(x)$ and 0. Note that we can write $y(tx) - ty(x)$ as follows:
+      \begin{align*}
+        y(tx) - ty(x) &= \ln tx_{1}^{a}x_{2}^{1-a} - t \ln x_{1}^{a}x_{2}^{1-a} \\
+        &= \ln t + \ln x_{1}^{a}x_{2}^{1-a} - t \ln x_{1}^{a}x_{2}^{1-a} \\
+        &= \ln t + (1-t) \ln x_{1}^{a} x_{2}^{1-a}
+      \end{align*}
+      Considering the three returns to scale scenarios we have: \\
+      \underline{Constant Returns to Scale}: this occurs when $\ln t + (1-t) \ln x_{1}^{a}x_{2}^{1-a} = 0 \ \ \forall t>0$. Suppose that $(x_{1},x_{2}) = (1,1)$, the equation then yields:
+      \begin{gather*}
+        \ln t + (1-t) \ln 1^{a}1^{1-a} = \ln t
+        \begin{cases}
+          < 0 & \ \ \forall t < 1 \\
+          > 0 & \ \ \forall t > 1
+        \end{cases}
+      \end{gather*}
+      Therefore, the function does not exhibit constant returns to scale \\
+      \underline{Decreasing Returns to Scale}: this occurs when $\ln t + (1-t) \ln x_{1}^{a}x_{2}^{1-a} < 0 \ \ \forall t>1$. As shown in the constant returns to scale case, this is violated and so the function does not exhibit decreasing returns to scale \\
+      \underline{Increasing Returns to Scale}: this occurs when $\ln t + (1-t) \ln x_{1}^{a}x_{2}^{1-a} > 0 \ \ \forall t > 1$. Suppose that $(x_{1}, x_{2}, t) = (e,e,e)$, where $e$ is euler's number. In this case we have that:
+      \begin{gather*}
+        \ln e + (1-e)\ln e = 2 \ln e - e \ln e = 2 - e < 0
+      \end{gather*}
+      Therefore, the function does not exhibit increasing returns to scale
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 3}: for the general case, find the cost function $c(w,y)$
+    \begin{itemize}
+      \item  \underline{Answer}: we have the following cost minimization problem:
+      \begin{align*}
+        \min &\ w_{1}x_{1} + w_{2}x_{2} \\
+        &\text{s.t:} \ y = \ln x_{1}^{a}x_{2}^{n}
+      \end{align*}
+      This yields the following lagrangian:
+      \begin{gather*}
+        \mathcal{L} = w_{1}x_{1} + w_{2}x_{2} - \lambda (a \ln x_{1} + b \ln x_{2} - y)
+      \end{gather*}
+      The first order conditions for the lagrangian are:
+      \begin{align*}
+        0 = \frac{\partial \mathcal{L}}{ \partial x_{1}} &= w_{1} - \frac{\lambda a}{x_{1}} \Rightarrow \lambda = \frac{w_{1}x_{1}}{a} \ \tag{1} \\
+        0 = \frac{\partial \mathcal{L}}{ \partial x_{2}} &= w_{2} - \frac{\lambda b}{x_{2}} \Rightarrow \lambda = \frac{w_{2}x_{2}}{b} \ \tag{2} \\
+        0 = \frac{\partial \mathcal{L}}{ \partial \lambda} &= \alpha \ln x_{1} + n \ln x_{2} - y \Rightarrow e^{y} = x_{1}^{a}x_{2}^{b} \ \tag{3}
+      \end{align*}
+      where equation (3) is the inverse of $y$. Setting equation (1) and (2) equal to eachother yields:
+      \begin{align*}
+        \frac{w_{1}x_{1}}{a} &= \frac{w_{2}x_{2}}{b} \\
+        \therefore x_{1} &= \frac{w_{2}x_{2}a}{bw_{1}} \ \tag{4} \\
+        \therefore x_{2} &= \frac{w_{1}x_{1}b}{aw_{2}} \ \tag{5}
+      \end{align*}
+      Using equation (4) in (3) we have:
+      \begin{align*}
+        e^{y} &= (\frac{w_{2}x_{2}a}{bw_{1}})^{a} x_{2}^{b} \\
+        e^{y}(bw_{1})^{a} &= (w_{2}a)^{a}x_{2}^{a+b} \\
+        x_{2}(y) &= e^{\tfrac{y}{a + b}} (\frac{bw_{1}}{w_{2}a})^{\tfrac{a}{a+b}} \ \tag{*}
+      \end{align*}
+      Similarly, using equation (5) in (3) gives us:
+      \begin{gather*}
+        x_{1}(y) = e^{\tfrac{y}{a+b}} (\frac{aw_{2}}{bw_{1}})^{\tfrac{b}{a + b}} \ \tag{**}
+      \end{gather*}
+      Substituting (*) and (**) into the cost equation gives us the cost function:
+      \begin{align*}
+        c(w,y) &= w_{1}e^{\tfrac{y}{a + b}}(\frac{aw_{2}}{bw_{1}})^{\tfrac{b}{a+b}} + w_{2}e^{\tfrac{y}{a + b}}(\frac{bw_{1}}{aw_{2}})^{\tfrac{a}{a+b}} \\
+        &= w_{1}e^{\tfrac{y}{a+b}} (\frac{a}{b})^{\tfrac{b}{a+b}} w_{2}^{\tfrac{b}{a+b}}w_{1}^{\tfrac{-b}{a+b}} + w_{2}e^{\tfrac{y}{a+b}} (\frac{b}{a})^{\tfrac{a}{a+b}} w_{1}^{\tfrac{a}{a+b}} w_{2}^{\tfrac{-a}{a+b}} \\
+        c(w,y) &= e^{\tfrac{y}{a+b}} w_{1}^{\tfrac{a}{a+b}} w_{2}^{\tfrac{b}{a+b}} [(\frac{a}{b})^{\tfrac{b}{a+b}} + (\frac{b}{a})^{\tfrac{a}{a+b}}]
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 4}: confirm that the cost function is concave and homogeneous of degree one in $w$
+    \begin{itemize}
+      \item  \underline{Answer}: fixing y, a, and b as exogenous parameters in our cost function, we have:
+      \begin{gather*}
+        Aw_{1}^{\tfrac{a}{a+b}}w_{2}^{\tfrac{b}{a+b}} \ \ \text{for} \ A >0
+      \end{gather*}
+      Thus, for homogeneity of degree one we must have:
+      \begin{gather*}
+        tc(w) = tAw_{1}^{\tfrac{a}{a+b}} w_{2}^{\tfrac{b}{a+b}} = A(tw_{1})^{\tfrac{a}{a+b}} (tw_{2})^{\tfrac{b}{a+b}} = c(tw)
+      \end{gather*}
+      which holds since $t^{\tfrac{a}{a+b}} \cdot t^{\tfrac{b}{a+b}} = t$. \\ For concavity, we have that $f(w) = w_{1}^{\tfrac{a}{a+b}}w_{2}^{\tfrac{b}{a+b}}$ is concave in $w$ since its exponents $\tfrac{a}{a+b}$ and $\tfrac{b}{a+b}$ are less than 1 and, in the case where $w_{1}=w_{2}$, the exponents sum to 1. Further, since $A$ is a constant we have that
+      \begin{gather*}
+        c(w) = Af(w) = Aw_{1}^{\tfrac{a}{a+b}} w_{2}^{\tfrac{b}{a+b}}
+      \end{gather*}
+      is also concave
+    \end{itemize}
+  \end{itemize}
+\par
+\subsection{Exercise 3}
+Consider a production function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}_{+}$ that transforms each vector $x \in \mathbb{R}^{n}_{+}$ of inputs into a level of output $y \in \mathbb{R}_{+}$. Define the production set as $Z = \left\{ (-x,y): y \leq f(x) \ \text{and} \ x \in \mathbb{R}_{+}^{n} \right\}$. Prove that $Z$ is a convex set if and only if $f(x)$ is concave \par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Overview}: $Z$ is a convex set if:
+    \begin{gather*}
+      \forall (x,x'),(y,y') \in Z \ \text{and} \ \alpha \in [0,1]: \alpha (-x,y) + (1-\alpha)(-x',y') \in Z \ \tag{1}
+    \end{gather*}
+    $f(x)$ is concave if:
+    \begin{gather*}
+      \forall (x,x') \ \text{and} \ \alpha \in [0,1]: f(\alpha x + (1-\alpha)x') \geq \alpha f(x) + (1-\alpha)f(x') \ \tag{2}
+    \end{gather*}
+    We want to show that (1) is true if and only if (2) is true
+    \item  \underline{For (2) $\Rightarrow$ (1)}: we want to show that $\alpha (-x,y) + (1-\alpha)(-x',y') \in Z$. Let $f(x)$ be concave and $(x,x'),(y,y') \in Z$. From $Z = \left\{ (-x,y): y \leq f(x) \ \text{and} \ x \in \mathbb{R}_{+}^{n} \right\}$ we have that $y \leq f(x) \Rightarrow \alpha y \leq \alpha f(x)$ and $(1 - \alpha)y' \leq (1-\alpha)f(x')$. Summing the two together yields:
+    \begin{gather*}
+      \alpha y + (1-\alpha)y' \leq \alpha f(x) + (1- \alpha)f(x') \ \tag(*)
+    \end{gather*}
+    From concavity we also have thatL
+    \begin{gather*}
+      f(\alpha x + (1-\alpha)x') \geq \alpha f(x) + (1-\alpha)f(x') \ \tag{**}
+    \end{gather*}
+    Equations (*) and (**) imply that
+    \begin{gather*}
+      \alpha y + (1-\alpha)y' \leq f(\alpha x + (1-\alpha)x') \ \tag{***}
+    \end{gather*}
+    From the definition of $Z$ and (***) it must be that:
+    \begin{gather*}
+      \alpha (-x,y) + (1-\alpha)(-x',y') \in Z
+    \end{gather*}
+    Hence, $Z$ is a convex set
+    \item  \underline{For (1) $\Rightarrow$ (2)}: using the contra-positive, we want to show that if $f(x)$ is not concave then $Z$ is not a convex set. Since $f(x)$ is not concave $\exists x, x' \in R_{+}^{n}$ and $\alpha \in (0,1)$ such that:
+    \begin{gather*}
+      f(\alpha x + (1- \alpha)x') < \alpha f(x) + (1-\alpha)f(x') \ \tag{*}
+    \end{gather*}
+    Note that since $y \equiv f(x) \leq f(x)$ and $y' \equiv f(x') \leq f(x')$, both are in $Z$. However, by (*), we have that:
+    \begin{gather*}
+      f(\alpha x + (1-\alpha)x') < \alpha y + (1-\alpha)y'
+    \end{gather*}
+    Therefore, since $Z$ requires that $y \leq f(x)$ we have that
+    \begin{gather*}
+      \alpha(-x,y) + (1-\alpha)(-x',y') \notin Z
+    \end{gather*}
+    By the contra-positive, this demonstrates that a convex set implies a concave function
+  \end{itemize}
 
 \newpage
 
@@ -2216,6 +2420,181 @@ In other words, the short run is typically defined as a period where some of the
   \begin{gather*}
     \pi(p,w) = \frac{p^{2}}{w_{1}} - 32
   \end{gather*}
+\subsection{Exercise 1}
+For each of the following functions, find the profit function $\pi(p,w)$ and the supply function $y(p,w)$ for a competitive seller who takes input and output prices as given \par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Question 1}: $f(x_{1}, x_{2}) = 2 \sqrt{x_{1}+x_{2}}$
+    \begin{itemize}
+      \item  \underline{Answer}: Here we will use the cost function method. Note that profit is given by $\pi = p2 \sqrt{x_{1} + x_{2}} - w_{1}x_{1} - w_{2}x_{2}$. Given that $x_{1}$ and $x_{2}$ are perfect substitution, it is clear that the cost minimizing method of generating a given amount of output $y$ is to solely use the cheapest input. Denoting the cheapest input $\overline{x}(y)$ we have that:
+      \begin{align*}
+        y &= 2 \sqrt{\overline{x}(y)} \\
+        \therefore \overline{x}(y) &= \frac{y^{2}}{4}
+      \end{align*}
+      Given $\overline{x}(y)$ and the cost of inputs $x_{1}$ and $x_{2}$, our cost function is:
+      \begin{gather*}
+        c(w,y) = \overline{x}(y) \cdot \min \left\{ w_{1}, w_{2} \right\} = \frac{\min \left\{ w_{1}, w_{2} \right\} y^{2}}{4}
+      \end{gather*}
+      We can use either of the following two methods to find the supply function $y(p,w)$ and given this find the profit function $\pi (p,w)$ \\
+      \begin{itemize}
+        \item  \underline{Method 1: using $p = MC$}: the supply function can be found by setting $MC = p$. In this case, $MC$ is:
+        \begin{gather*}
+          MC = \frac{\partial c(w,y)}{\partial y} = \frac{2 \min \left\{ w_{1}, w_{2} \right\} y}{4}
+        \end{gather*}
+        Setting this equal to $p$ and solving for $y$ yields:
+        \begin{align*}
+          p &= \frac{2 \min \left\{ w_{1}, w_{2} \right\} y}{4} \\
+          y(p,w) &= \frac{2p}{\left\{ w_{1}, w_{2} \right\} } \ \tag{*}
+        \end{align*}
+        \item  \underline{Method 2: using first order conditions}: using the cost function in the profit formula we have:
+        \begin{gather*}
+          \pi = py - \frac{\min \left\{ w_{1}, w_{2} \right\} y^{2}}{4} \ \tag{1}
+        \end{gather*}
+        Taking first order conditions yields:
+        \begin{align*}
+          0 = \frac{\partial \pi}{\partial y} &= p - \frac{2 \min \left\{ w_{1}, w_{2} \right\} y}{4} \\
+          y(p,w) &= \frac{2p}{\left\{ w_{1}, w_{2} \right\} } \ \tag{*}
+        \end{align*}
+      \end{itemize}
+      Substituting $y(p,w)$, derived from either of the above methods, into equation (1) we have:
+      \begin{align*}
+        \pi(p,w) &= \frac{2p^{2}}{\min \left\{ w_{1}, w_{2} \right\} } - \frac{\min \left\{ w_{1}, w_{2} \right\} }{4} \cdot \frac{4p^{2}}{ \min \left\{ w_{1}, w_{2} \right\}^{2}} \\
+        \pi(p,w) &= \frac{p^{2}}{\min \left\{ w_{1}, w_{2} \right\} }
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 2}: $g(x_{1},x_{2}) = \ln x_{1} + \ln x_{2}$
+    \begin{itemize}
+      \item  \underline{Answer}: Here we will use the profit formula method. The profit formula and firm problem is given by:
+      \begin{gather*}
+        \max_{x} p(\ln x_{1} + \ln x_{2}) - w_{1}x_{1} - w_{1}x_{2}
+      \end{gather*}
+      Taking first order conditions yields:
+      \begin{align*}
+        0 = \frac{\partial \pi}{\partial x_{1}} &= \frac{p}{x_{1}} - w_{1} \Rightarrow x_{1} = \frac{p}{w_{1}} \\
+        0 = \frac{\partial \pi}{\partial x_{2}} &= \frac{p}{x_{2}} - w_{2} \Rightarrow x_{2} = \frac{p}{w_{2}}
+      \end{align*}
+      This gives us the following input demands:
+      \begin{align*}
+        x_{1}(p,w) &= \frac{p}{w_{1}} \\
+        x_{2}(p,w) &= \frac{p}{w_{2}}
+      \end{align*}
+      Using these input demands in the production function we have:
+      \begin{align*}
+        y &= \ln \frac{p}{w_{1}} + \ln \frac{p}{w_{2}} \\
+        y(p,w) &= \ln (\frac{p^{2}}{w_{1}w_{2}})
+      \end{align*}
+      Substituting $x(p,w)$ and $y(p,w)$ into the profit formula yields the profit function:
+      \begin{gather*}
+        \pi(p,w) = p \ln (\frac{p^{2}}{w_{1}w_{2}}) - 2p
+      \end{gather*}
+    \end{itemize}
+  \end{itemize}
+\par
+\subsection{Exercise 2}
+Consider a production function $f: \mathbb{R}_{+}^{n} \rightarrow \mathbb{R}$ that is differentiable on $\mathbb{R}_{++}^{n}$ and exhibits constant returns to scale \par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Question 1}: argue that for any input vector $x \in \mathbb{R}_{++}^{n}$, the output $y = \sum_{i=1}^{n} \tfrac{\partial f(x)}{\partial x_{i}} x_{i}$
+    \begin{itemize}
+      \item  \underline{Answer}: fixing $x \in \mathbb{R}_{++}^{n}$, since we have constant returns to scale:
+      \begin{gather*}
+        f(tx) = tf(x) \ \forall t >0 \ \tag{1}
+      \end{gather*}
+      Differentiating (1) with respect to $t$ yields:
+      \begin{gather*}
+        \sum_{i=1}^{n} \frac{\partial f(tx)}{\partial (tx)_{i}} x_{i} = f(x)
+      \end{gather*}
+      Setting $t=1$ gives us:
+      \begin{gather*}
+        \sum_{i=1}^{n} \frac{\partial f(x)}{\partial x_{i}} x_{i} = f(x)
+      \end{gather*}
+      Since $f(x) = y$ we can confirm that:
+      \begin{gather*}
+        y = \sum_{i=1}^{n} \frac{\partial f(x)}{\partial x_{i}} x_{i}
+      \end{gather*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 2}: the average product of an input $i$ is defined as $AP_{i}(x) = \tfrac{f(x)}{x_{i}}$. Use the result of question 1 to argue that if the average product of an input $i$ is rising at $x \in \mathbb{R}_{++}^{n}$, then the marginal product $\tfrac{\partial f(x)}{\partial x_{j}}$ of some input $j$ must be negative at $x$
+    \begin{itemize}
+      \item  \underline{Answer 1}: we want to show that $\uparrow \tfrac{f(x)}{x_{i}} \Rightarrow \frac{\partial f(x)}{\partial x_{j}} < 0$. Suppose that there are two inputs and note that from question 1 we have the following:
+      \begin{align*}
+        y &= \frac{\partial f(x)}{\partial x_{i}}x_{i} + \frac{\partial f(x)}{\partial x_{j}} x_{j} \\
+        \frac{f(x)}{x_{i}} &= \frac{\partial f(x)}{\partial x_{i}} + \frac{\partial f(x)}{\partial x_{j}} \frac{x_{j}}{x_{i}} \\
+        \frac{f(x)}{x_{i}} - \frac{\partial f(x)}{\partial x_{i}} &= \frac{\partial f(x)}{\partial x_{j}} \frac{x_{j}}{x_{i}} \ \tag{*}
+      \end{align*}
+      Since the marginal product of $x_{i}$ must the average product of $x$ when average product is rising, we have that:
+      \begin{gather*}
+        \frac{f(x)}{x_{i}} < \frac{\partial f(x)}{\partial x_{i}}
+      \end{gather*}
+      As a result, since $\frac{x_{j}}{x_{i}}$ is positive, we have that:
+      \begin{gather*}
+          \frac{f(x)}{x_{i}} - \frac{\partial f(x)}{\partial x_{i}} = \frac{\partial f(x)}{\partial x_{j}} \frac{x_{j}}{x_{i}} < 0 \Rightarrow \frac{\partial f(x)}{\partial x_{j}} < 0
+      \end{gather*}
+      \item  \underline{Answer 2}: partially differentiating $AP_{i}(x) = \tfrac{f(x)}{x_{i}}$ with respect to $x_{i}$ (assuming this is positive), we find that
+      \begin{gather*}
+        \frac{\partial AP_{i}(x)}{\partial x_{i}} = \frac{1}{x_{i}} \frac{\partial f(x)}{\partial x_{i}} - \frac{f(x)}{x_{i}^{2}} > 0
+      \end{gather*}
+      Rearranging this inequality, we find
+      \begin{gather*}
+        \frac{\partial f(x)}{\partial x_{i}} x_{i} > f(x)
+      \end{gather*}
+      From question (1) we have that:
+      \begin{gather*}
+        \sum_{j\neq 1}^{n} \frac{\partial f(x)}{\partial x_{j}} x_{j} + \frac{\partial f(x)}{\partial x_{i}} = f(x)
+      \end{gather*}
+      As all inputs are presumed to be positive, the previous inequality implies that this equality can only happen if $\tfrac{\partial f(x)}{\partial x_{j}} < 0$ for some input $j$. That is, the marginal product of some other input must be negative at $x$
+    \end{itemize}
+  \end{itemize}
+\par
+\subsection{Exercise 3}
+Consider a cost function in a competitive market $c(y) = 1 - y + y^{2}$
+\par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Question 1}: find the supply function $y(p)$ of a representative seller
+    \begin{itemize}
+      \item  \underline{Answer}: profit in this case is
+      \begin{gather*}
+        \pi = py - 1 + y - y^{2}
+      \end{gather*}
+      Taking first order conditions yields:
+      \begin{align*}
+        0 &= p + 1 - 2y \\
+        2y &= p + 1
+        y(p) &= \frac{p+1}{2}
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 2}: if the demand is given by $D(p) = 100 - p - p^{2}$ and there are 10 sellers, find every competitive equilibrium
+    \begin{itemize}
+      \item  \underline{Answer}: in this case demand is $D(p) = 100 - p - p^{2}$ and supply is:
+      \begin{gather*}
+        S(p) = Y = y(p) \cdot 10 = \frac{10p + 10}{2} = 5p + 5
+      \end{gather*}
+      Setting $D(p) = S(p)$ yields:
+      \begin{align*}
+        5p + 5 &= 100 - p - p^{2} \\
+        6p + p^{2} &= 95 \\
+        p^{2} + 6p - 95 &= 0
+      \end{align*}
+      Using the quadratic formula the solution is therefore:
+      \begin{gather*}
+        p = \frac{-6 + \sqrt{416}}{2} = 7.2
+      \end{gather*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 3}: in the long run, what is the competitive equilibrium number of sellers and equilibrium price?
+    \begin{itemize}
+      \item  \underline{Answer}: in the long run equilibrium  we have that $p = MC = AC$. In this case, $MC = AC$ requires:
+      \begin{gather*}
+        2y - 1 = \frac{1}{y} - 1 + y
+      \end{gather*}
+      which is solved when $y=1$, meaning that $MC = 1 = p$. Thus demand will be $D(p) = 98$ and so we will have 98 sellers
+    \end{itemize}
+  \end{itemize}
+\par
 
 \newpage
 
@@ -2352,6 +2731,10 @@ An oligopoly features a small number of sellers who are innumerous enough to hol
     \end{itemize}
   \end{itemize}
   \par
+  \underline{Welfare}: total welfare is made up of the area between the demand curve and marginal cost minus the total economic fixed cost
+  \begin{itemize}
+    \item  \underline{Note}: since $p \neq MC$ we must solve for the area as a trapezium
+  \end{itemize}
   \underline{Example 1 - $n = 2$}: suppose we have linear demand $Q(p) = 100 - 2p$ and the cost function $c(q) = q^{2}$. From inverting the demand function to $P(Q) = 50 - \tfrac{Q}{2}$ we can form the profit function for seller 1 ($\pi_{1}$) and seller 2 ($\pi_{2}$):
   \begin{align*}
     \pi_{1}(Q_{1}, Q_{2}) &= (50 - \frac{Q}{2})Q_{1} - (Q_{1})^{2} \\
@@ -2408,6 +2791,234 @@ An oligopoly features a small number of sellers who are innumerous enough to hol
   \begin{gather*}
     n = \frac{1}{b}(a \sqrt{\frac{2b + d}{2F}} - 1)
   \end{gather*}
+\subsection{Exercise 1}
+ Sellers will compete in quantities in a market where thee inverse demand is given by $P(Q) = 150 - Q$ where $Q$ is the sum of quantities over all sellers and each seller has identical cost: $C(q) = 10 + 50q$ \par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Question 1}: find the nash equilibrium quantities and profits for $n \geq 1$ sellers in the short run with the fixed costs sunk
+    \begin{itemize}
+      \item  \underline{Answer}: using the inverse demand and cost function, we can write the profit formula as:
+      \begin{gather*}
+        \pi_{n} = Q_{n}(150 - Q) - 10 - 50Q_{n} \ \tag{1}
+      \end{gather*}
+      The nash equilibrium conditions are as follows:
+      \begin{gather*}
+        \pi_{n}(Q_{n}, Q_{i \neq n}) \geq \pi_{n}(Q_{n}', Q_{i \neq n}) \ \ \forall Q_{n}' \geq 0
+      \end{gather*}
+      The first order condition of equation (1) is:
+      \begin{gather*}
+        0 = \frac{\partial \pi_{n}}{\partial Q_{n}} = (150 - Q_{n} - 50) \Rightarrow Q_{n} = 100 - Q
+      \end{gather*}
+      Note that the second order condition is $\tfrac{\partial^{2} \pi_{n}}{\partial^{2} Q_{n}} = -1 < 0$ meaning that the function is concave so there exists a solution. Since $Q = Q_{1} + \dots + Q_{n}$ we have:
+      \begin{gather*}
+        Q = n Q_{n} = (100 - Q)n \ \tag{2}
+      \end{gather*}
+      Solving (2) for $Q$ yields:
+      \begin{align*}
+        Q(1+n) &= 100n \\
+        \therefore Q &= \frac{100n}{1+n} \ \tag{3}
+      \end{align*}
+      Therefore, using (3), we can write $Q_{n}$ and $\pi_{n}$ as:
+      \begin{align*}
+        Q_{n} &= 100 - \frac{100n}{1 + n} \\
+        &= 100 (1 - \frac{n}{1 + n}) \\
+        Q_{n}^{*} &= 100 (\frac{1}{1+n}) \ \tag{*}
+      \end{align*}
+      Using equation (*) in our profit formula we get:
+      \begin{align*}
+        \pi_{n} &= \frac{100}{1+n} (150 - \frac{100n}{1+n}) - 10 - 50 \frac{100}{1 + n} \\
+        &= \frac{100}{1+n}(100 - \frac{100n}{1+n}) - 10 \\
+        &= \frac{100}{1+n}(\frac{100}{1+n}) - 10 \\
+        \pi_{n}^{*} &= (\frac{100}{1+n})^{2} - 10 \ \tag{**}
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 2}: suppose now that we go to a long run equilibrium where sellers can enter or leave the market. How many sellers will there be in the market?
+    \begin{itemize}
+      \item  \underline{Answer}: in this case firms enter the market until the last integer $n$ where there is still positive profit. Therefore, we set $(**)$ profit equal to 0 and solve for n:
+      \begin{align*}
+        0 = (\frac{100}{1 + n})^{2} - 10 \\
+        \sqrt{10} = \frac{100}{1 + n} \\
+        \sqrt{10}(1+n) = 100 \\
+        n^{*} = \frac{100}{\sqrt{10}} - 1 \\
+        n^{*} = 31
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 3}: suppose the government chooses the optimal number of sellers to maximize total welfare defined as the sum of consumer and producer surplus in the market. They accept that the sellers who are in the market will compete in quantities. Find an expression for the total welfare as a function of the number of sellers and use this to find the optimal number of sellers
+    \begin{itemize}
+      \item  \underline{Answer}: total welfare is made up of:
+      \begin{itemize}
+        \item  \underline{(C1)}: the area between the demand curve and marginal cost
+        \item  \underline{(C2)}: minus the total economic fixed cost
+      \end{itemize}
+      For component C1 this represents a trapezium where: \\
+      \begin{center}
+        \includegraphics[width=8cm, height=6cm]{pic31}
+      \end{center}
+      In this case we have:
+      \begin{gather*}
+        C1 = \underbrace{\frac{150-P(Q^{*})Q^{*}}{2}}_{A} + \underbrace{(P(Q^{*}) - 50)Q^{*}}_{B}
+      \end{gather*}
+      Using that $P(Q^{*}) = 150 - Q^{*}$ we get:
+      \begin{align*}
+        C1 &= \frac{(150 - 150 + Q^{*})}{2} + (150 - Q^{*} - 50)Q^{*} \\
+        &= \frac{Q^{*2}}{2} + 100Q^{*} - Q^{*2} \\
+        C1 &= 100Q^{*} - \frac{Q^{*2}}{2}
+      \end{align*}
+      For component C2, this is the fixed cost incurres across all firms:
+      \begin{gather*}
+        C2 = 10n
+      \end{gather*}
+      In this case welfare is:
+      \begin{gather*}
+        W = C1 - C2 = 100Q^{*} - \frac{Q^{*2}}{2} - 10n
+      \end{gather*}
+      Using the result that $Q^{*} = \tfrac{100n}{1+n}$ we get:
+      \begin{align*}
+        W &= \frac{10000n}{1+n} - (\frac{100n}{1+n})^{2}0.5 - 10n \\
+        W &= 10000 [\frac{n}{n+1} - \frac{n^{2}}{2(n+1)^{2}}] - 10n \\
+        W &= 10000 [n(n+1)^{-1} - 0.5n^{2}(n+1)^{-2}] - 10n \ \tag{*}
+      \end{align*}
+      To find the welfare maximizing number of sellers we take first order conditions of (*) and solve for $n$:
+      \begin{gather*}
+        0 = \frac{\partial W}{\partial n} = ((n+1)^{-1}- n(n+1)^{-2}) - (n(n+1)^{-2} - n^{2}(n+1)^{-3})10000 - 10 \\
+        \frac{10}{10000} = ((n+1)(n+1)^{-2} - n(n+1)^{-2}) - (n(n+1)(n+1)^{-3} - n^{2}(n+1)^{-3}) \\
+        = (n+1)^{-2} - n(n+1)^{-3} \\
+        = (n+1)(n+1)^{-3} - n(n+1)^{-3} \\
+        \frac{1}{1000} = (n+1)^{-3} \\
+        n^{*} = 1000^{\tfrac{1}{3}} - 1
+        n^{*} = 9
+      \end{gather*}
+    \end{itemize}
+  \end{itemize}
+\par
+\subsection{Exercise 2}
+ Consider a market with only 2 sellers who compete in quantities and we restrict individual quantities t obe in $[0,1]$. The inverse demand function is $P(Q) = 1 - Q$, where $Q$ is the sum of the quantities of the two sellers. Note that price will be zero for all $Q \geq 1$. Each seller has cost function $C(q) = \tfrac{1}{2}q - \tfrac{1}{4}q^{2}$ for all $q \in [0,1]$. Find all nash equilibrium quantity pairs $(q_{1}, q_{2})$ taking into account that prices will  be zero if $Q \geq 1$ \par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Answer}: note that $Q = q_{i} + q_{j}$ where $i,j$ refers to the two sellers. From the inverse demand the cost function we have the followings:
+    \begin{gather*}
+      \pi_{i} = (1 - q_{i} - q_{j})q_{i} - 0.5 q_{i} + 0.25 q_{i}^{2}
+    \end{gather*}
+    This yields the followings first order condition:
+    \begin{align*}
+      0 &= \frac{\partial \pi_{i}}{\partial q_{i}} = (1-q_{i}-q_{j}) - q_{i} - 0.5 + 0.5q_{i} \\
+      0 &= 0.5 - 1.5q_{i} - q_{i} \\
+      \therefore q_{i} &= \frac{1}{3} - \frac{2}{3} q_{j} \ \tag{*}
+    \end{align*}
+    We can then solve for $q_{1}$ and $q_{2}$ using one of the below methods:
+    \begin{itemize}
+      \item  \underline{Best Response Method}: given that we have two sellers who have symmetical best response function from (*) we get:
+      \begin{align*}
+        q_{1}^{*} &= \frac{1}{3} - \frac{2}{3} q_{2} \\
+        q_{2}^{*} &= \frac{1}{3} - \frac{2}{3} q_{1}
+      \end{align*}
+      Substituting $q_{2}^{*}$ into $q_{1}^{*}$ yields:
+      \begin{align*}
+        q_{1}^{*} &= \frac{1}{3} - \frac{2}{3}(\frac{1}{3} - \frac{2}{3}q_{1}) \\
+        q_{1} &= \frac{1}{3} - \frac{2}{9} + \frac{4}{9}q_{1} \\
+        \therefore q_{1} &= 1/5
+        \therefore q_{2} &= 1/5
+      \end{align*}
+      \item  \underline{Summing Q Method}: using that $Q = q_{i} + q_{j}$ we can write the first order condition as:
+      \begin{align*}
+        0 &= 0.5 - 1.5q_{i} - q_{j} \\
+        0.5 q_{i} &= 0.5 - q_{i} - q_{j} \\
+        \therefore q_{i} &= 1 - 2Q
+      \end{align*}
+      Due to the first order condition being symmetrical for $i$ and $j$ we also have that $q_{j} = 1 - 2Q$. Again using that $Q = q_{i} + q_{j}$ we get:
+      \begin{align*}
+        Q &= q_{i} + q_{j} = (1-2Q) + (1-2Q) \\
+        Q &= 2 - 4Q \\
+        Q &= 2/5
+      \end{align*}
+      Since, due to symmetry, $Q = 2/5$ means that $q_{j} = 1/5$ and $q_{i} = 1/5$
+    \end{itemize}
+  \end{itemize}
+\par
+\subsection{Exercise 3}
+Consider an asymmetric cost oligopoly where there are a total of $n$ sellers in the market. Each seller $i = 1, \dots, n$ has a cost $c_{i}(q_{i}) = iq_{i}$. That is, seller 1 has cost $c_{1}(q_{1}) = q_{1}$, seller 2 has cost $c_{2}(q_{2}) = 2q_{2}$, $\dots$, seller $n$ has cost $c_{n}(q_{n}) = nq_{n}$. Inverse demand is given by $P(Q) = a - bQ$ where $a,b > 0 $\par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Question 1}: presuming that $a$ is sufficiently high to ensure that all $n$ sellers produce a positive quantity, find an expression for the nash equilibrium quantity of each sellers. How high must $a$ be to ensure that all $n$ sellers produce positive outputs?
+    \begin{itemize}
+      \item  \underline{Answer}: from the inverse demand and cost function we have:
+      \begin{gather*}
+        \pi_{i} = (a-bQ)q_{i} - iq_{i}
+      \end{gather*}
+      Noting that each sellers profit function is concave due to linearity and taking first order conditions yields:
+      \begin{align*}
+        0 = \frac{\partial \pi_{i}}{\partial q_{i}} &= a - bQ - bq_{i} - i \\
+        \therefore q_{i} &= \frac{a-i}{b} - Q \ \tag{1}
+      \end{align*}
+      Given that $Q = \sum_{i=1}^{n} q_{i}$, we can derive an expression for Q as:
+      \begin{align*}
+        Q =& (\frac{a - 1}{b} - Q) + (\frac{a - 2}{b} - Q) + \dots + (\frac{a - n}{b} - Q) \\
+        Q + nQ =& (\frac{a}{b} - \frac{1}{b}) + (\frac{a}{b} - \frac{2}{b}) + \dots + (\frac{a}{b} - \frac{1}{n}) \\
+        Q(1 + n) =& \frac{na - \sum_{i=1}^{n}i}{b} \\
+        Q =& \frac{na - \sum_{i=1}^{n}i}{b(1+n)} \\
+        Q =& \frac{na - \tfrac{n(n+1)}{2}}{b(1+n)} \\
+        Q =& \frac{na}{(1+n)b} - \frac{n(n+1)}{2b(1+n)} \\
+        \therefore Q =& \frac{na}{(1+n)b} - \frac{n}{2b} \ \tag{2}
+      \end{align*}
+      Plugging (2) into (1) we can derive $q_{i}$ as a function of parameters:
+      \begin{align*}
+        q_{i} =& \frac{a-i}{b} - \frac{na}{(1+n)b} + \frac{n}{2b} \\
+        q_{i} =& \frac{1}{b} (a - i - \frac{na}{(1+n)} + \frac{n}{2}) \ \tag{3}
+      \end{align*}
+      For all sellers to have positive production equation (3) must be greater than 0. This can be used to find the minimum value of $a$. Note that seller $n$ has the lowest profit so we set $n=i$ and that $b > 0$:
+      \begin{align*}
+        \frac{1}{b} ( a - n \frac{na}{1 + n} + \frac{n}{2}) >& 0 \\
+        a - \frac{na}{1+n} >& n - \frac{n}{2} \\
+        a(\frac{1+n}{1+n} - \frac{n}{1+n}) >& \frac{2n}{2} = \frac{n}{2} \\
+        a >& \frac{(1+n)n}{2}
+      \end{align*}
+      Further note that $\sum_{i=1}^{n}iq_{i} = \tfrac{(1+n)n}{2}q_{i}$ and therefore $a$ must be greater than the sum of marginal costs over all sellers
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 2}: suppose that there are 2 sellers and $a=12$ and $b=1$. Find the nash equilibrium quantities of the sellers
+    \begin{itemize}
+      \item  \underline{Answer}: in this case we have the following 2 first order condition solutions:
+      \begin{align*}
+        q_{1} &= \frac{a-1}{b} - Q \\
+        \therefore q_{1} &= 11 - Q \\
+        q_{2} &= \frac{a - 2}{b} - Q \\
+        \therefore q_{2} &= 10 - Q
+      \end{align*}
+      Using that $Q = q_{1} + q_{2}$ we have:
+      \begin{align*}
+        Q &= q_{1} + q_{2} = 11 - Q + 10 - Q \\
+        Q &= 21 - 2Q
+        \therefore Q &= 7
+      \end{align*}
+      Given that $Q=7$, our solution for $q_{1}$ and $q_{2}$ is $q_{1} = 4$,  $q_{2} = 3$
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 3}: now suppose that there are 8 sellers in the market, with again $a = 12$ and $b=1$. Find the nash equilibrium quantities of the sellers
+    \begin{itemize}
+      \item  \underline{Answer}: for all 8 sellers to be in the market we must have:
+      \begin{align*}
+        a &> \frac{(1+n)n}{2} \\
+        12 &> \frac{(1+8)8}{2} \\
+        12 &> 36
+      \end{align*}
+      which is clearly violated. To determine the number of sellers that can exist we solve our condition for $n$ given $a=12$:
+      \begin{align*}
+        12 >& \frac{(1+n)n}{2} \\
+        24 >& (1+n)n \\
+        0 >& n^{2} + n - 24 \
+      \end{align*}
+      Using the quadratic formula, we find that $n = 4.424$ and so we can at most have 4 sellers. Using equation (3) these four sellers will produce:
+      \begin{gather*}
+        q_{i} = 12 - i - \frac{4 \cdot 12}{5} + 2 \\
+        q_{i} = 4.4 - i
+      \end{gather*}
+      while the remaining 4 sellers will produce $q_{i} = 0$
+    \end{itemize}
+  \end{itemize}
+\par
 
 \newpage
 
@@ -2490,14 +3101,14 @@ and an endowment of $w^{1} = (w^{1}_{1}, w^{1}_{2}) = (2,2)$, which can either b
   \par
   \underline{Demand}: from person A's preferences and income constraint we can form the following lagrangian to find their demand:
   \begin{gather*}
-    \mathcal{L} = x_{1}^{2}x_{2} + \lambda(x_{1}p_{1} + x_{2}p_{2} = I)
+    \mathcal{L} = x_{1}^{2}x_{2} + \lambda(x_{1}p_{1} + x_{2}p_{2} - I)
   \end{gather*}
   which yield the following first order conditions:
   \begin{align*}
     0 = \frac{\partial \mathcal{L}}{\partial x_{1}} &= 2x_{1}x_{2} + \lambda p_{1} \\
     &\Rightarrow \lambda = \frac{-2x_{1}x_{2}}{p_{1}} \ \tag{1} \\
     0 = \frac{\partial \mathcal{L}}{\partial x_{2}} &= x_{1}^{2} + \lambda p_{2} \\
-    &\Rightarrow \Lambda  = \frac{-x_{1}^{2}}{p_{2}} \ \tag{2}
+    &\Rightarrow \lambda  = \frac{-x_{1}^{2}}{p_{2}} \ \tag{2}
   \end{align*}
   Setting equations (1) and (2) equal to eachother yields:
   \begin{align*}
@@ -2614,8 +3225,255 @@ Suppose person A's utility function is $u^{1} = x_{1} + 3.5x_{2} - 0.5(x_{2})^{2
     D \equiv 3.5 - p_{2} + 4 - \frac{3.5}{2p_{2}} + \frac{1}{p_{2}^{2}} = 4 \equiv S
   \end{gather*}
   This has three solutions: $p_{2} = 0.5$, $p_{2} = 1$, and $p_{2} = 2$. Each leads to a different allocation that is ranked by person A and person B in different ways.
-
-
+\par
+\vspace{6mm}
+\subsection{Exercise 1}
+Consider a 2 consumer 2 good pure exchange economy where on person has utility $u^{1}(x_{1}^{1},x_{2}^{1}) = x_{1}^{1}x_{2}^{1}$ and endowment (1,3) and the other has $u^{2}(x_{1}^{2},x_{2}^{2}) = \ln x_{1}^{2} + x_{2}^{2}$ and endowment (4,2)
+  \par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Question 1}: find the demand for each good for each consumer $i= 1,2$, as a function of prices $p_{1} > 0$, $p_{2} > 0$ and income $I(i) > 0$ for the consumer
+    \begin{itemize}
+      \item  \underline{Answer}: consumer 1's problem is:
+      \begin{align*}
+        \max &x_{1}^{1}x_{2}^{1} \\
+        &\text{s.t:} \ \ p_{1}x_{1}^{1} + p_{2}x_{2}^{1} = I
+      \end{align*}
+      This gives us the following lagrangian:
+      \begin{gather*}
+        \mathcal{L} = x_{1}^{1}x_{2}^{1} + \lambda(p_{1}x_{1}^{1} + p_{2}x_{2}^{1} - I)
+      \end{gather*}
+      Yielding the following first order conditions:
+      \begin{align*}
+        0 = \frac{\partial \mathcal{L}}{\partial x_{1}^{1}} &= x_{2}^{1} + \lambda p_{1} \Rightarrow - \lambda = \frac{x_{2}^{1}}{p_{1}} \ \tag{1} \\
+        0 = \frac{\partial \mathcal{L}}{\partial x_{2}^{1}} &= x_{1}^{1} + \lambda p_{2} \Rightarrow - \lambda = \frac{x_{1}^{1}}{p_{2}} \ \tag{2}
+      \end{align*}
+      Equating equations (1) and (2) we have:
+      \begin{align*}
+        \frac{x_{2}^{1}}{p_{1}} &= \frac{x_{1}^{1}}{p_{2}}
+        \therefore x_{2}^{1} &= x_{1}^{1} \frac{p_{1}}{p_{2}} \ \tag{3} \\
+        \therefore x_{1}^{1} &= x_{2}^{1} \frac{p_{2}}{p_{1}} \ \tag{4}
+      \end{align*}
+      Substituting equation (3) into the income constraint yields:
+      \begin{align*}
+        I &= p_{1}x_{1}^{1} + p_{1}x_{1}^{1} \\
+        \therefore x_{1}^{1}(p,I) &= \frac{I}{2p_{1}}
+      \end{align*}
+      Likewise, substituting equation (4) into the income constraint yields:
+      \begin{gather*}
+        x_{2}^{1}(p,I) = \frac{I}{2p_{2}}
+      \end{gather*}
+      Consumer 2's problem is:
+      \begin{align*}
+        \max & \ln x_{1}^{2} + x_{2}^{2} \\
+        &\text{s.t:} \ \ p_{1}x_{1}^{2} + p_{2}x_{2}^{2} = I
+      \end{align*}
+      Using bang-for-buck we have:
+      \begin{align*}
+        \frac{MU_{x_{1}^{2}}}{p_{1}} &= \frac{MU_{x_{2}^{2}}}{p_{1}} \\
+        \frac{1}{x_{1}^{2}p_{1}} &= \frac{1}{p_{2}} \\
+        \therefore x_{1}^{2} &= \frac{p_{2}}{p_{1}} \ \tag{5}
+      \end{align*}
+      Using equation (5) in the budget constraint we have:
+      \begin{align*}
+        I &= p_{2} + p_{2}x_{2}^{2} \\
+        x_{2}^{2} &= \frac{I}{p_{2}} - 1 \ \tag{6}
+      \end{align*}
+      From (6) we have that if $I \leq p_{2}$ then only $x_{1}$ will be consumed, while if $I > p_{2}$ then the bundle given by (5) and (6) can be afforded. Therefore, we have:
+      \begin{gather*}
+        x_{1}^{2}(p,I) =
+        \begin{cases}
+          \frac{p_{2}}{p_{1}} & \text{ if } I \geq p_{2} \\
+          \frac{I}{p_{1}} & \text{ if } I < p_{2}
+         \end{cases}
+         , \ \ \
+         x_{2}^{2}(p,I) =
+         \begin{cases}
+           \frac{I}{p_{2}} - 1 & \text{ if } I \geq p_{2} \\
+           0 & \text{ if } I < p_{2}
+          \end{cases}
+      \end{gather*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 2}: use the endowment of each consumer to determine income as a function of prices
+    \begin{itemize}
+      \item  \underline{Answer}: since $I = p_{1}x_{i}^{1} + p_{2}x_{i}^{2} = p_{1}w_{i}^{1} + p_{2}w_{i}^{2}$ we have the following incomes given the endowment:
+      \begin{align*}
+        I_{1} &= p_{1}1 + p_{2}3 \\
+        I_{2} &= p_{1}4 + p_{2}2
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 3}: use your answer in question 2 to obtain the demands for each consumer as a function of prices only
+    \begin{itemize}
+      \item  \underline{Answer}: for consumer 1 we have:
+      \begin{align*}
+        x_{1}^{1}(p,I) &= \frac{I_{1}}{2p_{1}} = \frac{p_{1}1 + p_{2}3}{2p_{1}}
+        x_{2}^{1}(p,I) &= \frac{I_{1}}{2p_{2}} = \frac{p_{1}1 + p_{2}3}{2p_{2}}
+      \end{align*}
+      Note that since $I_{2} = p_{1}4 + p_{2}2$ it must be that $I \geq p_{2}$ so consumer 2's demands can be reduced to:
+      \begin{align*}
+        x_{1}^{2}(p,I) &= \frac{p_{2}}{p_{1}}  \\
+        x_{2}^{2}(p,I) &= \frac{I}{p_{2}} - 1 = \frac{p_{1}4 + p_{2}2}{p_{2}} - 1 = \frac{p_{1}4}{p_{2}} + 1
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 4}: fix the price of good 2 at $p_{2} =1$ and set the market supply of good 1 equal to the market demand for good 1 to find the equilibrium price
+    \begin{itemize}
+      \item  \underline{Answer}: demand for good 1 is:
+      \begin{gather*}
+        D \equiv x_{1}^{1} + x_{1}^{2} = \frac{p_{1}+3}{2p_{1}} + \frac{1}{p_{1}} = \frac{p_{1} + 5}{2p_{1}} \\
+      \end{gather*}
+      Supply for good 1 is:
+      \begin{gather*}
+        S \equiv w_{1}^{1} + w_{1}^{2} = 1 + 4 = 5
+      \end{gather*}
+      Setting demand equals supply yields:
+      \begin{align*}
+        D \equiv \frac{p_{1} + 5}{2p_{1}} &= 5 \equiv S \\
+        p_{1} + 5 &= 10p_{1} \\
+        9p_{1} + 5 &= 10p_{1} \\
+        p_{1} &= \frac{5}{9}
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 5}: calculate the equilibrium allocations (demands) for the consumers based on the equilibrium prices
+    \begin{itemize}
+      \item  \underline{Answer}: using the equilibrium price, we get tthe following demands for consuemr 1:
+      \begin{gather*}
+        x_{1}^{1} = \frac{\tfrac{5}{9} + 3}{\tfrac{10}{9}} = 3.2, x_{2}^{1} = \frac{\tfrac{5}{9} + 3}{2} = 1.8
+      \end{gather*}
+      Consumer 2 also has the folllowing demands:
+      \begin{gather*}
+        x_{1}^{2} = \frac{1}{\tfrac{5}{9}} = 1.8, x_{2}^{2} = \frac{20}{9} + 1 = 3.2
+      \end{gather*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 6}: show that each consumer is at least as well off with his equilibrium allocation relative to his endowment
+    \begin{itemize}
+      \item  \underline{Answer}: plugging the allocation into the utility function for consumer 1, we get that $u^{1}(3.2, 16/9) = 5.7$ while the utility of his endowment is only $u^{1}(1,3) = 3$. For consumer 2 their allocation yields $u^{2}(1.8, 29/9) = 3.81$ while the utility of their endowment is $u^{2}(4,2) = 3.38$. Therefore, the allocation utility is higher for both consumers than their endowment utility. In general, the general equilibrium should make each person at least as well off as each can afford their own bundle and thus choose to use it if they want. With some for of monotonicity of preferences for all consumers, general equilibrium has the property that no one can be made beetter off without making someone else worse off. This is known as pareto efficiency
+     \end{itemize}
+  \end{itemize}
+\par
+\vspace{6mm}
+\subsection{Exercise 2}
+Consider a 2 consumer 2  good pure exchange economy where person 1 has utility $u^{1}(x_{1}^{2},x_{2}^{1}) = x_{1}^{1}x_{2}^{1}$ and person 2 treats the goods as perfect complements. Suppose that the endowments are (1,0) and (2,1) to person 1 and person 2 respectively
+  \par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Question 1}: find the demands for each consumer as functions of prices $p_{1}$  and $p_{2}$ and income
+    \begin{itemize}
+      \item  \underline{Answer}: from exercise 1 we have that consumer 1's demand is:
+      \begin{gather*}
+        x_{1}^1{1}(I,p) = \frac{I}{2p_{1}}, \ x_{2}^{1}(I,p) = \frac{I}{2p_{2}}
+      \end{gather*}
+      The consumer 2 problem is:
+      \begin{align*}
+        \max & \min \left\{ x_{1}^{2}, x_{2}^{2} \right\} \\
+        &\text{s.t:} \ \ p_{1}x_{1}^{2} + p_{2}x_{2}^{2} = I
+      \end{align*}\
+      Since $x_{1}^{2}$ and $x_{2}^{2}$ are perfect complements we have:
+      \begin{gather*}
+        x_{1}^{2} = x_{2}^{2}
+      \end{gather*}
+      Using this in the budget constraint yields:
+      \begin{align*}
+        x_{1}^{2}(I,p) &= \frac{I}{p_{1} + p_{2}} \\
+        x_{2}^{2}(I,p) &= \frac{I}{p_{1} + p_{2}}
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 2}: use the endowments to determine the demands for each consumer as a function of prices only
+    \begin{itemize}
+      \item  \underline{Answer}: for consumer 1 since $I = p_{1}1 + p_{2}0$ we have:
+      \begin{align*}
+        x_{1}^{1}(p) &= \frac{I}{2p_{1}} = \frac{p_{1}1}{2p_{1}} = \frac{1}{2} \\
+        x_{2}^{1}(p) &= \frac{I}{2p_{2}} = \frac{p_{1}1}{2p_{2}}
+      \end{align*}
+      For consumer 2 since $I = p_{1}(2) + p_{2}(1)$ we have:
+      \begin{gather*}
+        x_{2}^{2}(p) = x_{1}^{2}(p) = \frac{I}{p_{1} + p_{2}} = \frac{p_{1}(2) + p_{2}(1)}{p_{1} + p_{2}}
+      \end{gather*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 3}: argue that there is no general equilibrium for this economy
+    \begin{itemize}
+      \item  \underline{Answer}: for consumer 2 we have the following:
+      \begin{gather*}
+        x_{2}^{2}(p) = \frac{p_{1}(2) + p_{2}(1)}{p_{1} + p_{2}} > \frac{p_{1} + p_{2}}{p_{1} + p_{2}} = 1
+      \end{gather*}
+      where the inequality follows from our requirement that prices are strictly positive. Therefore, person 2's demand for good 2 will always exceed 1 for any prices and so must the market demand for good 2. However, market supply of good 2 is only 1 so there can be no equilibrium
+    \end{itemize}
+  \end{itemize}
+\par
+\vspace{6mm}
+\subsection{Exercise 3}
+Consider a 2 consumer 2 good pure exchange economy. Person 1 has utility $u^{1}(x_{1}^{1},x_{2}^{1}) = x_{1}^{1}x_{2}^{1}$ and endowment (1,1). Person 2 has a constant utility for each bundle of $u^{2}(x_{1}^{2},x_{2}^{2}) = 1$ and endowment (3,3)
+  \par \vspace{0.3em}
+  \begin{itemize}
+    \item  \underline{Question 1}: argue that $p = (1,1)$ and the endowment are a general equilibrium
+    \begin{itemize}
+      \item  \underline{Answer}: for person 1 we have that:
+      \begin{align*}
+        x_{1}^{1}(I,p) &= \frac{I}{2p_{1}} \\
+        \therefore x_{1}^{1} &= \frac{p_{1} + p_{2}}{2p_{1}} \ \tag{1} \\
+        x_{2}^{1}(I,p) &= \frac{I}{2p_{2}} \\
+        \therefore x_{2}^{1}(p) &= \frac{p_{1} + p_{2}}{2p_{2}} \ \tag{2}
+      \end{align*}
+      Using that $(p_{1}, p_{2}) = (1,1)$ we have that:
+      \begin{align*}
+        x_{1}^{1} &= \frac{2}{2} = 1  \\
+        x_{2}^{1}(p) &= \frac{2}{2}  = 1
+      \end{align*}
+      which is exactly their endowment. \\
+      For person 2, since $u^{2} = 1$, regardless of $x_{1}^{2}$ and $x_{2}^{2}$ they are indifferent. Therefore, given the endowments and prices we have equilibrium where supply equals demand without any exchange
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 2}: is the equilibrium in question 1 pareto optimal?
+    \begin{itemize}
+      \item  \underline{Answer}: since person 2 is indifferent to all bundles, we could allocated (4,4) to person 1 and this would make person 1 better off without harming person 2. Hence, the first bundle cannot be pareto optimal. In fact, this allocation of (4,4) to person 1 and (0,0) to person 2 is the only allocation that is pareto optimal. The problem here is that, as stated by the welfare theorem, person 2's preferences are not strongly monotonic
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 3}: are there any other general equilibria in this economy?
+    \begin{itemize}
+      \item  \underline{Answer}: person 1 will always consumer on their budget line. For simplicity, let's fix the price of good 2 at 1. Then their demands are:
+      \begin{align*}
+        x_{1}^{1}(p) &= \frac{p_{1} + 1}{2p_{1}} \\
+        x_{2}^{1}(p) &= \frac{p_{1} + 1}{2}
+      \end{align*}
+      As total supply of each good is 4, to have a general equilibrium, we need that each of these demands is no greater than 4. Then we can allocate the remainder of the supply to person 2 since he is indifferent to every bundle. Therefore we need:
+      \begin{align*}
+        x_{1}^{1}(p) &= \frac{p_{1} + 1}{2p_{1}} = \frac{1}{2} + \frac{1}{2p_{1}} \leq 4 \\
+        x_{2}^{1}(p) &= \frac{p_{1} + 1}{2} = \frac{p_{1}}{2} + \frac{1}{2} \leq 4
+      \end{align*}
+      The first inequality requires that $p_{1} \geq \tfrac{1}{7}$ and the second that $p_{1} \leq 7$. Hence, we conclude that any $p_{1} \in [1/7, 7]$ and $p_{2} = 1$ is a general equilibrium with the corresponding allocations:
+      \begin{align*}
+        x^{1} &= (\frac{p_{1} + 1}{2p_{1}}, \frac{p_{1} + 1}{2}) \\
+        x^{2} &= (4 - \frac{p_{1} + 1}{2p_{1}}, 4 - \frac{p_{1} + 1}{2})
+      \end{align*}
+    \end{itemize}
+  \end{itemize}
+  \begin{itemize}
+    \item  \underline{Question 4}: is any general equilibrium pareto optimal in this economy?
+    \begin{itemize}
+      \item  \underline{Answer}: as shown in part (b), a general equilibrium with equal prices is not pareto optimal. Suppose we now fix $p_{2} = 1$. Recall that the only efficient point is where person 1 gets (4,4). If $p_{1} < 1$ then person 1 demands:
+      \begin{gather*}
+        x_{2}^{1} = \frac{p_{1} + 1}{2} < \frac{1 + 1}{2} = 1 < 4
+      \end{gather*}
+      So this cannot be pareto optimal. If $p_{1} > 1$ then person 1 demands:
+      \begin{gather*}
+        x_{2}^{1} = \frac{1}{2} + \frac{1}{2p_{1}} < \frac{1}{2} + \frac{1}{2} = 1 < 4
+      \end{gather*}
+      So this cannot be pareto optimal either. Therefore, exhausting all general equilibrium prices, we have shown that there is no pareto optimal allocation
+    \end{itemize}
+  \end{itemize}
 
 
 
